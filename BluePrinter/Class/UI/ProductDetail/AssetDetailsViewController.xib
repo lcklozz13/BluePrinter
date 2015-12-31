@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AssetDetailsViewController">
+            <connections>
+                <outlet property="tableview" destination="KDQ-ys-sG0" id="sZb-FI-z37"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="KDQ-ys-sG0">
+                    <rect key="frame" x="0.0" y="64" width="320" height="444"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="KGs-sA-uao"/>
+                        <outlet property="delegate" destination="-1" id="qus-FG-9H3"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUt-vl-yoE">
+                    <rect key="frame" x="0.0" y="508" width="320" height="60"/>
+                    <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="6p3-XU-ueJ"/>
+                        <constraint firstAttribute="width" constant="320" id="sqd-qc-XC8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <state key="normal" title="变现">
+                        <color key="titleColor" red="0.92941176470588238" green="0.19215686274509802" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="becomeCashAction:" destination="-1" eventType="touchUpInside" id="BPF-gt-sdb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PUt-vl-yoE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0IV-hU-cZ0"/>
+                <constraint firstAttribute="bottom" secondItem="KDQ-ys-sG0" secondAttribute="bottom" constant="60" id="5Kp-ek-LkW"/>
+                <constraint firstItem="KDQ-ys-sG0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="8FH-bW-356"/>
+                <constraint firstAttribute="trailing" secondItem="KDQ-ys-sG0" secondAttribute="trailing" id="EXO-Dq-iXH"/>
+                <constraint firstAttribute="trailing" secondItem="PUt-vl-yoE" secondAttribute="trailing" id="SSR-xM-mF1"/>
+                <constraint firstAttribute="bottom" secondItem="PUt-vl-yoE" secondAttribute="bottom" id="ncR-mF-YE0"/>
+                <constraint firstItem="KDQ-ys-sG0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oxv-YT-6vz"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="493" y="371"/>
+        </view>
+    </objects>
+</document>

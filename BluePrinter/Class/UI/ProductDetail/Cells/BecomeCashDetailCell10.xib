@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BecomeCashDetailCell10">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="变现利率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYz-Dp-6JZ">
+                        <rect key="frame" x="21" y="11" width="72" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="e2P-Jv-dRp"/>
+                            <constraint firstAttribute="width" constant="72" id="uqL-jB-Kvk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.28235294119999998" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.3%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzl-XC-h27">
+                        <rect key="frame" x="111" y="11" width="98" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="98" id="7uQ-bg-U9O"/>
+                            <constraint firstAttribute="height" constant="25" id="kLL-bi-sbX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.28235294119999998" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffa-DX-ryr">
+                        <rect key="frame" x="233" y="15" width="69" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="kGM-NT-kYQ"/>
+                            <constraint firstAttribute="height" constant="17" id="t8u-Hx-XM4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="55" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="参考" image="icon-tips">
+                            <color key="titleColor" red="0.70980392160000005" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dzl-XC-h27" firstAttribute="leading" secondItem="FYz-Dp-6JZ" secondAttribute="trailing" constant="18" id="2CP-NV-ld8"/>
+                    <constraint firstAttribute="trailing" secondItem="ffa-DX-ryr" secondAttribute="trailing" constant="18" id="FeN-iN-Kdd"/>
+                    <constraint firstAttribute="bottom" secondItem="dzl-XC-h27" secondAttribute="bottom" constant="12" id="GYQ-BJ-dlK"/>
+                    <constraint firstItem="FYz-Dp-6JZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="Gu0-qX-ini"/>
+                    <constraint firstItem="dzl-XC-h27" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="LtS-Zh-WIH"/>
+                    <constraint firstAttribute="bottom" secondItem="FYz-Dp-6JZ" secondAttribute="bottom" constant="12" id="YBm-ah-Ets"/>
+                    <constraint firstItem="ffa-DX-ryr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="aW1-cn-5qb"/>
+                    <constraint firstItem="FYz-Dp-6JZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="c0Q-U5-Owr"/>
+                    <constraint firstItem="ffa-DX-ryr" firstAttribute="leading" secondItem="dzl-XC-h27" secondAttribute="trailing" constant="24" id="sgH-AS-yjc"/>
+                    <constraint firstAttribute="bottom" secondItem="ffa-DX-ryr" secondAttribute="bottom" constant="16" id="ssb-Av-OvN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="rateLab" destination="dzl-XC-h27" id="E7L-Cl-4bV"/>
+                <outlet property="referenceBtn" destination="ffa-DX-ryr" id="PPr-pe-eaD"/>
+            </connections>
+            <point key="canvasLocation" x="493" y="284.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-tips" width="13" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="BecomeCashDetailCell00">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-personal" translatesAutoresizingMaskIntoConstraints="NO" id="nAb-TX-9eM">
+                        <rect key="frame" x="20" y="16" width="23" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="CIt-tl-7SM"/>
+                            <constraint firstAttribute="width" constant="23" id="Tvv-Jq-eHK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人贷859080" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dF-Lk-080">
+                        <rect key="frame" x="51" y="12" width="256" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="bL6-Pe-C5K"/>
+                            <constraint firstAttribute="width" constant="256" id="ldL-JP-4eL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.28235294119999998" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本金及约定收益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tD4-Mm-nyW">
+                        <rect key="frame" x="50" y="45" width="257" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="257" id="5yj-Wo-lJW"/>
+                            <constraint firstAttribute="height" constant="23" id="SXb-Ty-4Vy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.70980392160000005" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nAb-TX-9eM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="67R-xy-qqR"/>
+                    <constraint firstItem="4dF-Lk-080" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="M2g-Lm-Xh1"/>
+                    <constraint firstItem="4dF-Lk-080" firstAttribute="leading" secondItem="nAb-TX-9eM" secondAttribute="trailing" constant="8" id="OMz-h2-WuS"/>
+                    <constraint firstAttribute="trailing" secondItem="tD4-Mm-nyW" secondAttribute="trailing" constant="13" id="PoP-cr-8Fc"/>
+                    <constraint firstItem="tD4-Mm-nyW" firstAttribute="top" secondItem="4dF-Lk-080" secondAttribute="bottom" constant="8" id="S1m-2b-qmO"/>
+                    <constraint firstItem="nAb-TX-9eM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="TRB-kC-4zi"/>
+                    <constraint firstAttribute="trailing" secondItem="4dF-Lk-080" secondAttribute="trailing" constant="13" id="ah3-H1-1eJ"/>
+                    <constraint firstItem="tD4-Mm-nyW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="rOd-zt-z5K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="nAb-TX-9eM" id="J8j-Ai-Yxo"/>
+                <outlet property="titleLab" destination="4dF-Lk-080" id="WfY-TG-Hk4"/>
+            </connections>
+            <point key="canvasLocation" x="493" y="304"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-personal" width="23" height="17"/>
+    </resources>
+</document>

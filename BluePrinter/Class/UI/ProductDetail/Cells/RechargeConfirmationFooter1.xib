@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gvw-NH-bkF" customClass="RechargeConfirmationFooter1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BR9-N5-ncr">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国工商银行借记卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHJ-Yo-zh0">
+                            <rect key="frame" x="22" y="12" width="276" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.30980392159999998" green="0.45882352939999999" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="PHJ-Yo-zh0" firstAttribute="leading" secondItem="BR9-N5-ncr" secondAttribute="leading" constant="22" id="DXA-oA-1pu"/>
+                        <constraint firstItem="PHJ-Yo-zh0" firstAttribute="top" secondItem="BR9-N5-ncr" secondAttribute="top" constant="12" id="ML1-fg-N3N"/>
+                        <constraint firstAttribute="trailing" secondItem="PHJ-Yo-zh0" secondAttribute="trailing" constant="22" id="YVJ-Xx-lLK"/>
+                        <constraint firstAttribute="bottom" secondItem="PHJ-Yo-zh0" secondAttribute="bottom" constant="12" id="YeY-e7-CXK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BR9-N5-ncr" secondAttribute="trailing" id="eFF-Yg-Jpv"/>
+                <constraint firstItem="BR9-N5-ncr" firstAttribute="leading" secondItem="gvw-NH-bkF" secondAttribute="leading" id="gni-gz-IsW"/>
+                <constraint firstAttribute="bottom" secondItem="BR9-N5-ncr" secondAttribute="bottom" id="t6p-LY-eAq"/>
+                <constraint firstItem="BR9-N5-ncr" firstAttribute="top" secondItem="gvw-NH-bkF" secondAttribute="top" id="vMi-lA-Lb5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="546" y="530.5"/>
+        </view>
+    </objects>
+</document>

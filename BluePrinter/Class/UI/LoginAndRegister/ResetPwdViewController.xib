@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResetPwdViewController">
+            <connections>
+                <outlet property="tableView" destination="qDn-Oz-pdd" id="ZUq-16-rtz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qDn-Oz-pdd">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Db2-vX-lgY"/>
+                        <outlet property="delegate" destination="-1" id="WEe-nX-fRO"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="qDn-Oz-pdd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3VT-16-QUv"/>
+                <constraint firstAttribute="bottom" secondItem="qDn-Oz-pdd" secondAttribute="bottom" id="AIS-5p-MZG"/>
+                <constraint firstItem="qDn-Oz-pdd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C77-0j-rrT"/>
+                <constraint firstAttribute="trailing" secondItem="qDn-Oz-pdd" secondAttribute="trailing" id="OHQ-HK-McU"/>
+                <constraint firstItem="qDn-Oz-pdd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="gc5-Rq-zQb"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="559" y="348"/>
+        </view>
+    </objects>
+</document>
