@@ -30,7 +30,7 @@
                     </connections>
                 </segmentedControl>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="180" sectionHeaderHeight="8" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="sEW-7m-PY7">
-                    <rect key="frame" x="0.0" y="108" width="320" height="460"/>
+                    <rect key="frame" x="0.0" y="108" width="320" height="410"/>
                     <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <connections>
@@ -47,9 +47,10 @@
                 <constraint firstAttribute="trailing" secondItem="sEW-7m-PY7" secondAttribute="trailing" id="fxC-ce-axt"/>
                 <constraint firstItem="6iJ-6k-bss" firstAttribute="leading" secondItem="4ji-Q5-Nsh" secondAttribute="leading" constant="8" id="i6I-1W-5WQ"/>
                 <constraint firstAttribute="trailing" secondItem="6iJ-6k-bss" secondAttribute="trailing" constant="8" id="pgK-Fd-mvI"/>
-                <constraint firstAttribute="bottom" secondItem="sEW-7m-PY7" secondAttribute="bottom" id="xVc-xR-pTb"/>
+                <constraint firstAttribute="bottom" secondItem="sEW-7m-PY7" secondAttribute="bottom" constant="50" id="xVc-xR-pTb"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
             <point key="canvasLocation" x="331" y="343"/>
         </view>
     </objects>

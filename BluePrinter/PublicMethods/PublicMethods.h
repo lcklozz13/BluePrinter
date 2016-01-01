@@ -15,4 +15,5 @@
 + (void)setNightModel:(BOOL)nightModel;
 + (BOOL)isNightModel;
 + (NSDictionary *)getTextAttributedWithForegroundColor:(NSString *)color fontSize:(CGFloat)size;
++ (int)getRandomNumber:(int)from to:(int)to;
 @end

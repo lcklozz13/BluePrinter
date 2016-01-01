@@ -29,6 +29,11 @@
 @property (strong, nonatomic) id uid;
 @property (assign, nonatomic) NSInteger worksCount;
 @property (strong, nonatomic) NSString *leaveMoney;
+@property (strong, nonatomic) NSString *accountID;
+@property (strong, nonatomic) NSString *bankInfor;
+@property (strong, nonatomic) NSString *totalAsset;
+@property (strong, nonatomic) NSString *balance;
+@property (strong, nonatomic) NSString *income;
 
 @end
 

@@ -38,6 +38,16 @@
 		4E12FF551C32C785004126A4 /* RealizableRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E12FF531C32C785004126A4 /* RealizableRecordCell.m */; };
 		4E12FF561C32C785004126A4 /* RealizableRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E12FF541C32C785004126A4 /* RealizableRecordCell.xib */; };
 		4E52493E1BDFB90700FDED90 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E52493D1BDFB90700FDED90 /* Twitter.framework */; };
+		4E52B59B1C36C83B00C347F2 /* AccountInforCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E52B5991C36C83B00C347F2 /* AccountInforCell.m */; };
+		4E52B59C1C36C83B00C347F2 /* AccountInforCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E52B59A1C36C83B00C347F2 /* AccountInforCell.xib */; };
+		4E52B5A01C36C87000C347F2 /* AssetsInforCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E52B59E1C36C87000C347F2 /* AssetsInforCell.m */; };
+		4E52B5A11C36C87000C347F2 /* AssetsInforCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E52B59F1C36C87000C347F2 /* AssetsInforCell.xib */; };
+		4E52B5A51C36C8BE00C347F2 /* OtherInforCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E52B5A31C36C8BE00C347F2 /* OtherInforCell.m */; };
+		4E52B5A61C36C8BE00C347F2 /* OtherInforCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E52B5A41C36C8BE00C347F2 /* OtherInforCell.xib */; };
+		4E52B5AA1C36E3FC00C347F2 /* AccountInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E52B5A81C36E3FC00C347F2 /* AccountInfoViewController.m */; };
+		4E52B5AB1C36E3FC00C347F2 /* AccountInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E52B5A91C36E3FC00C347F2 /* AccountInfoViewController.xib */; };
+		4E52B5AF1C36E52C00C347F2 /* MyAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E52B5AD1C36E52C00C347F2 /* MyAccountCell.m */; };
+		4E52B5B01C36E52C00C347F2 /* MyAccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E52B5AE1C36E52C00C347F2 /* MyAccountCell.xib */; };
 		4E954C8F1BF0ED5F00372C11 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E954C8E1BF0ED5F00372C11 /* ImageIO.framework */; };
 		4EACA8C31C28361900BFC62F /* TextInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EACA8C11C28361900BFC62F /* TextInputCell.m */; };
 		4EACA8C41C28361900BFC62F /* TextInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EACA8C21C28361900BFC62F /* TextInputCell.xib */; };
@@ -297,6 +307,21 @@
 		4E12FF531C32C785004126A4 /* RealizableRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RealizableRecordCell.m; path = ProductDetail/Cells/RealizableRecordCell.m; sourceTree = "<group>"; };
 		4E12FF541C32C785004126A4 /* RealizableRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RealizableRecordCell.xib; path = ProductDetail/Cells/RealizableRecordCell.xib; sourceTree = "<group>"; };
 		4E52493D1BDFB90700FDED90 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		4E52B5981C36C83B00C347F2 /* AccountInforCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountInforCell.h; path = Cells/AccountInforCell.h; sourceTree = "<group>"; };
+		4E52B5991C36C83B00C347F2 /* AccountInforCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountInforCell.m; path = Cells/AccountInforCell.m; sourceTree = "<group>"; };
+		4E52B59A1C36C83B00C347F2 /* AccountInforCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AccountInforCell.xib; path = Cells/AccountInforCell.xib; sourceTree = "<group>"; };
+		4E52B59D1C36C87000C347F2 /* AssetsInforCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssetsInforCell.h; path = Cells/AssetsInforCell.h; sourceTree = "<group>"; };
+		4E52B59E1C36C87000C347F2 /* AssetsInforCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AssetsInforCell.m; path = Cells/AssetsInforCell.m; sourceTree = "<group>"; };
+		4E52B59F1C36C87000C347F2 /* AssetsInforCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AssetsInforCell.xib; path = Cells/AssetsInforCell.xib; sourceTree = "<group>"; };
+		4E52B5A21C36C8BE00C347F2 /* OtherInforCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OtherInforCell.h; path = Cells/OtherInforCell.h; sourceTree = "<group>"; };
+		4E52B5A31C36C8BE00C347F2 /* OtherInforCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OtherInforCell.m; path = Cells/OtherInforCell.m; sourceTree = "<group>"; };
+		4E52B5A41C36C8BE00C347F2 /* OtherInforCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OtherInforCell.xib; path = Cells/OtherInforCell.xib; sourceTree = "<group>"; };
+		4E52B5A71C36E3FC00C347F2 /* AccountInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountInfoViewController.h; sourceTree = "<group>"; };
+		4E52B5A81C36E3FC00C347F2 /* AccountInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountInfoViewController.m; sourceTree = "<group>"; };
+		4E52B5A91C36E3FC00C347F2 /* AccountInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountInfoViewController.xib; sourceTree = "<group>"; };
+		4E52B5AC1C36E52C00C347F2 /* MyAccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAccountCell.h; path = Cells/MyAccountCell.h; sourceTree = "<group>"; };
+		4E52B5AD1C36E52C00C347F2 /* MyAccountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyAccountCell.m; path = Cells/MyAccountCell.m; sourceTree = "<group>"; };
+		4E52B5AE1C36E52C00C347F2 /* MyAccountCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyAccountCell.xib; path = Cells/MyAccountCell.xib; sourceTree = "<group>"; };
 		4E954C8E1BF0ED5F00372C11 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		4EACA8C01C28361900BFC62F /* TextInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextInputCell.h; path = Views/TextInputCell.h; sourceTree = "<group>"; };
 		4EACA8C11C28361900BFC62F /* TextInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextInputCell.m; path = Views/TextInputCell.m; sourceTree = "<group>"; };
@@ -688,6 +713,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E52B5971C36C6FA00C347F2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4E52B5981C36C83B00C347F2 /* AccountInforCell.h */,
+				4E52B5991C36C83B00C347F2 /* AccountInforCell.m */,
+				4E52B59A1C36C83B00C347F2 /* AccountInforCell.xib */,
+				4E52B59D1C36C87000C347F2 /* AssetsInforCell.h */,
+				4E52B59E1C36C87000C347F2 /* AssetsInforCell.m */,
+				4E52B59F1C36C87000C347F2 /* AssetsInforCell.xib */,
+				4E52B5A21C36C8BE00C347F2 /* OtherInforCell.h */,
+				4E52B5A31C36C8BE00C347F2 /* OtherInforCell.m */,
+				4E52B5A41C36C8BE00C347F2 /* OtherInforCell.xib */,
+				4E52B5AC1C36E52C00C347F2 /* MyAccountCell.h */,
+				4E52B5AD1C36E52C00C347F2 /* MyAccountCell.m */,
+				4E52B5AE1C36E52C00C347F2 /* MyAccountCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		4EACA8B11C28288A00BFC62F /* GuidView */ = {
 			isa = PBXGroup;
 			children = (
@@ -764,9 +808,13 @@
 		4ED7973B1C2C253200766A6E /* MyAssets */ = {
 			isa = PBXGroup;
 			children = (
+				4E52B5971C36C6FA00C347F2 /* Cells */,
 				4ED7973C1C2C253200766A6E /* MyAssetsViewController.h */,
 				4ED7973D1C2C253200766A6E /* MyAssetsViewController.m */,
 				4ED7973E1C2C253200766A6E /* MyAssetsViewController.xib */,
+				4E52B5A71C36E3FC00C347F2 /* AccountInfoViewController.h */,
+				4E52B5A81C36E3FC00C347F2 /* AccountInfoViewController.m */,
+				4E52B5A91C36E3FC00C347F2 /* AccountInfoViewController.xib */,
 			);
 			path = MyAssets;
 			sourceTree = "<group>";
@@ -1472,6 +1520,7 @@
 				4E0E5D9B1C340AF200BE9F94 /* RechargeFootView.xib in Resources */,
 				4E12FF511C32B50A004126A4 /* BecomeCashCell.xib in Resources */,
 				E182C8941C2D35FF00050471 /* ProductDescriptionCell.xib in Resources */,
+				4E52B59C1C36C83B00C347F2 /* AccountInforCell.xib in Resources */,
 				4E12FF491C32B50A004126A4 /* AssetDetailCell11.xib in Resources */,
 				E1B226F61C34C6B800973195 /* RechargeConfirmationFooter2.xib in Resources */,
 				E182C8871C2D2C9200050471 /* ProductInfoCell.xib in Resources */,
@@ -1490,12 +1539,14 @@
 				4ED3128C1C262B7E0041A546 /* Launch Screen.storyboard in Resources */,
 				4ED797491C2C253200766A6E /* MoreActionViewController.xib in Resources */,
 				4ED7974D1C2C253200766A6E /* RecommendedViewController.xib in Resources */,
+				4E52B5A11C36C87000C347F2 /* AssetsInforCell.xib in Resources */,
 				E15E3B211BDDB67F00976465 /* Assets.xcassets in Resources */,
 				4EADDA6C1C2FD48900DE49A6 /* RiskDisclosureViewController.xib in Resources */,
 				4EE2B8DE1C316BE200CD3A10 /* InputPayPasswordViewController.xib in Resources */,
 				621764811C0FDBF900613950 /* Localizable.strings in Resources */,
 				4E12FF4F1C32B50A004126A4 /* AssetDetailsHeadView.xib in Resources */,
 				E1C2E37E1C33735C00804EB2 /* BecomeCashDetailFootView.xib in Resources */,
+				4E52B5B01C36E52C00C347F2 /* MyAccountCell.xib in Resources */,
 				4EE2B8F41C3190F800CD3A10 /* OrderCell3.xib in Resources */,
 				E1F3F7031C310FDB00A33954 /* PaymentCell1.xib in Resources */,
 				4EE2B8D11C3164EE00CD3A10 /* SelectBankCell.xib in Resources */,
@@ -1504,7 +1555,9 @@
 				4E12FF561C32C785004126A4 /* RealizableRecordCell.xib in Resources */,
 				4E12FF451C32B50A004126A4 /* AssetDetailCell01.xib in Resources */,
 				E1C2E3971C33C0C000804EB2 /* CashDetailCell01.xib in Resources */,
+				4E52B5AB1C36E3FC00C347F2 /* AccountInfoViewController.xib in Resources */,
 				4EADDA621C2ECBE600DE49A6 /* ProductsContractViewController.xib in Resources */,
+				4E52B5A61C36C8BE00C347F2 /* OtherInforCell.xib in Resources */,
 				4EACA8D31C2844B900BFC62F /* ResetPwdFootView.xib in Resources */,
 				4ED797261C2AF98400766A6E /* LeftMenuFootView.xib in Resources */,
 				4EADDA761C2FE7B000DE49A6 /* PurchaseCell.xib in Resources */,
@@ -1581,21 +1634,25 @@
 				4E0E5D9A1C340AF200BE9F94 /* RechargeFootView.m in Sources */,
 				4E12FF4C1C32B50A004126A4 /* AssetDetailCell30.m in Sources */,
 				4E12FF421C32B50A004126A4 /* AssetDetailCell00.m in Sources */,
+				4E52B5A01C36C87000C347F2 /* AssetsInforCell.m in Sources */,
 				E1B226FA1C350EF600973195 /* RechargeConfirmCell.m in Sources */,
 				620877361BF4AB78002178AE /* LeftMenuTableViewController.m in Sources */,
 				620876E51BF42EE5002178AE /* UIView+MJExtension.m in Sources */,
 				4E12FF481C32B50A004126A4 /* AssetDetailCell11.m in Sources */,
 				4E12FF4E1C32B50A004126A4 /* AssetDetailsHeadView.m in Sources */,
+				4E52B59B1C36C83B00C347F2 /* AccountInforCell.m in Sources */,
 				4E12FF461C32B50A004126A4 /* AssetDetailCell10.m in Sources */,
 				620877571BF4CB11002178AE /* NSData+Base64.m in Sources */,
 				620876EE1BF42EE5002178AE /* MKNetworkOperation.m in Sources */,
 				6208775E1BF4CB11002178AE /* SBJsonWriter.m in Sources */,
 				4E0E5D951C340ACF00BE9F94 /* RechargeCell01.m in Sources */,
+				4E52B5A51C36C8BE00C347F2 /* OtherInforCell.m in Sources */,
 				620876D91BF42EE5002178AE /* FMDatabaseAdditions.m in Sources */,
 				620876C91BF42EE5002178AE /* ShareData.m in Sources */,
 				4EADDA521C2E744700DE49A6 /* RegularProductCell.m in Sources */,
 				E1F3F7071C3111E300A33954 /* PaymentCell2.m in Sources */,
 				E1C2E36E1C33730B00804EB2 /* BecomeCashDetailCell00.m in Sources */,
+				4E52B5AA1C36E3FC00C347F2 /* AccountInfoViewController.m in Sources */,
 				4EE2B8E41C318EEC00CD3A10 /* OrderViewController.m in Sources */,
 				E145AB641C2CE2B4008BC687 /* ProductProfitCell.m in Sources */,
 				4ED797461C2C253200766A6E /* FinancialProductViewController.m in Sources */,
@@ -1655,6 +1712,7 @@
 				620876E31BF42EE5002178AE /* UIScrollView+MJExtension.m in Sources */,
 				621964411C22B095004EF284 /* ShareManager.m in Sources */,
 				620876C71BF42EE5002178AE /* CusWidget.m in Sources */,
+				4E52B5AF1C36E52C00C347F2 /* MyAccountCell.m in Sources */,
 				620877401BF4CA34002178AE /* NetDataManager.m in Sources */,
 				E1B226E31C34C67A00973195 /* RechargeConfirmationHeader.m in Sources */,
 				4E12FF1E1C32B4F0004126A4 /* AssetDetailsViewController.m in Sources */,

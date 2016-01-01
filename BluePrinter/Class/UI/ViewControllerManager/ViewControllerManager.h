@@ -17,4 +17,5 @@
 - (void)setLoginSuccessBackViewController:(UIViewController *)backViewController;
 - (UIViewController *)loginSuccessBackViewController;
 + (UINavigationController *)createNavigationWithRootViewController:(UIViewController *)vc;
+- (UIViewController *)getVisableRootViewController;
 @end

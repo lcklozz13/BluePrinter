@@ -93,5 +93,10 @@
     return @{NSForegroundColorAttributeName:[PublicMethods gs_colorWithHexString:color], NSFontAttributeName:[UIFont systemFontOfSize:size]};
 }
 
++ (int)getRandomNumber:(int)from to:(int)to
+{
+    return (int)(from + (arc4random() % (to - from + 1)));
+}
+
 @end
 

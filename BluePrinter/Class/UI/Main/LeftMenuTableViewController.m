@@ -14,6 +14,7 @@
 #import "LeftMenuFootView.h"
 #import "LeftMenuCell.h"
 #import <UIImageView+WebCache.h>
+#import "LoginOrRegisterViewController.h"
 
 @interface LeftMenuTableViewController ()
 
@@ -175,14 +176,19 @@
     SlideMenuViewController *viewController = (SlideMenuViewController *)[[UIApplication sharedApplication].keyWindow rootViewController];
     [viewController showRootController:YES];
 
-//    if (!DATA_MANAGER.isLogin) {
-//        //未登录 跳到登录界面
-//        LoginAccController *loginView = [[LoginAccController alloc] init];
-//        [(UINavigationController *)viewController.rootViewController pushViewController:loginView animated:YES];
-//        return;
-//    }
+    if (!DATA_MANAGER.isLogin) {
+        //未登录 跳到登录界面
+        LoginOrRegisterViewController *view = [[LoginOrRegisterViewController alloc] init];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:view];
+        
+        
+        [[ViewControllerManager getInstance] setLoginSuccessBackViewController:self];
+        [[[ViewControllerManager getInstance] getVisableRootViewController] presentViewController:nav animated:YES completion:nil];
+        
+        return;
+    }
     
-    UIViewController *vc = nil;
+//    UIViewController *vc = nil;
 //    switch (indexPath.row) {
 //        case 0:
 //            vc = [[SelectCustomProductsViewController alloc] init];
@@ -209,8 +215,8 @@
 //            vc = nil;
 //        break;
 //    }
-    if (vc)
-        [(UINavigationController *)viewController.rootViewController pushViewController:vc animated:NO];
+//    if (vc)
+//        [(UINavigationController *)viewController.rootViewController pushViewController:vc animated:NO];
 }
 
 

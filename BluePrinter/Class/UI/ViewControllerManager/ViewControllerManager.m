@@ -21,6 +21,7 @@
 @interface ViewControllerManager ()<SlideMenuViewControllerDelegate>
 @property (nonatomic, strong) SlideMenuViewController       *slideViewController;
 @property (nonatomic, strong) UIViewController              *backViewController;
+@property (nonatomic, strong) UITabBarController            *rootController;
 - (UIViewController *)getRootViewControllers;
 - (UIViewController *)createSlideViewController;
 + (BOOL)isFirstLoad;
@@ -103,29 +104,43 @@
 
 - (UIViewController *)getRootViewControllers
 {
-    RecommendedViewController *recommended = [[RecommendedViewController alloc] init];
-    FinancialProductViewController *product = [[FinancialProductViewController alloc] init];
-    MyAssetsViewController  *myAssets = [[MyAssetsViewController alloc] init];
-    MoreActionViewController *more = [[MoreActionViewController alloc] init];
+    if (!_rootController)
+    {
+        RecommendedViewController *recommended = [[RecommendedViewController alloc] init];
+        FinancialProductViewController *product = [[FinancialProductViewController alloc] init];
+        MyAssetsViewController  *myAssets = [[MyAssetsViewController alloc] init];
+        MoreActionViewController *more = [[MoreActionViewController alloc] init];
+        
+        
+        [[self class] setTabBarItemForVc:recommended selectedImage:@"icon-recommend-select" unSelectImage:@"icon-recommend-unselected" vcTitle:@"精品推荐"];
+        [[self class] setTabBarItemForVc:product selectedImage:@"icon-product-selected" unSelectImage:@"icon-product-unselected" vcTitle:@"理财产品"];
+        [[self class] setTabBarItemForVc:myAssets selectedImage:@"icon-my-selected" unSelectImage:@"icon-my-unselected" vcTitle:@"我的资产"];
+        [[self class] setTabBarItemForVc:more selectedImage:@"icon-more-selected" unSelectImage:@"icon-more-unselected" vcTitle:@"更多"];
+        
+        NSArray *controllers = [NSArray arrayWithObjects:
+                                [[self class] createNavigationWithRootViewController:recommended],
+                                [[self class] createNavigationWithRootViewController:product],
+                                [[self class] createNavigationWithRootViewController:myAssets],
+                                [[self class] createNavigationWithRootViewController:more],
+                                nil];
+        
+        _rootController = [[UITabBarController alloc] init];
+        [_rootController setViewControllers:controllers];
+    }
     
+    return self.rootController;
+}
+
+- (UIViewController *)getVisableRootViewController
+{
+    if (self.rootController)
+    {
+        NSArray *viewcontrollers = [self.rootController viewControllers];
+        
+        return viewcontrollers[self.rootController.selectedIndex];
+    }
     
-    [[self class] setTabBarItemForVc:recommended selectedImage:@"icon-recommend-select" unSelectImage:@"icon-recommend-unselected" vcTitle:@"精品推荐"];
-    [[self class] setTabBarItemForVc:product selectedImage:@"icon-product-selected" unSelectImage:@"icon-product-unselected" vcTitle:@"理财产品"];
-    [[self class] setTabBarItemForVc:myAssets selectedImage:@"icon-my-selected" unSelectImage:@"icon-my-unselected" vcTitle:@"我的资产"];
-    [[self class] setTabBarItemForVc:more selectedImage:@"icon-more-selected" unSelectImage:@"icon-more-unselected" vcTitle:@"更多"];
-    
-    NSArray *controllers = [NSArray arrayWithObjects:
-                            [[self class] createNavigationWithRootViewController:recommended],
-                            [[self class] createNavigationWithRootViewController:product],
-                            [[self class] createNavigationWithRootViewController:myAssets],
-                            [[self class] createNavigationWithRootViewController:more],
-                            nil];
-    
-    UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    [tabBarController setViewControllers:controllers];
-    
-    
-    return tabBarController;
+    return nil;
 }
 
 - (UIViewController *)createSlideViewController
