@@ -90,7 +90,7 @@
     if (indexPath.section == 0)
     {
         cell = [tableView dequeueReusableCellWithIdentifier:@"MyAccountCell" forIndexPath:indexPath];
-        MyAccountCell *cellTmp =(MyAccountCell *)cell;
+        MyAccountCell *cellTmp = (MyAccountCell *)cell;
         cellTmp.accountIDLab.text = DATA_MANAGER.userInfo.accountID;
     }
     else
@@ -111,7 +111,6 @@
         }
         else if (indexPath.row == 3)
         {
-            cell.imageView.image = [UIImage imageNamed:@"icon-trade"];
             cell.textLabel.text = @"找回交易密码";
         }
         else if (indexPath.row == 4)

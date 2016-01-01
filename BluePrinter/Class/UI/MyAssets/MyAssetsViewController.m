@@ -11,6 +11,7 @@
 #import "AssetsInforCell.h"
 #import "OtherInforCell.h"
 #import "AccountInfoViewController.h"
+#import "LoginOrRegisterViewController.h"
 
 @interface MyAssetsViewController ()
 @property (weak, nonatomic) IBOutlet    UITableView     *tableview;
@@ -189,10 +190,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    if (indexPath.section == 2 && DATA_MANAGER.isLogin)
+    if (indexPath.section == 2)
     {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        
+        if (!DATA_MANAGER.isLogin) {
+            //未登录 跳到登录界面
+            LoginOrRegisterViewController *view = [[LoginOrRegisterViewController alloc] init];
+            
+            [[ViewControllerManager getInstance] setLoginSuccessBackViewController:self];
+            [self.navigationController pushViewController:view animated:YES];
+            
+            return;
+        }
+        
         switch (indexPath.row)
         {
             case 0:
