@@ -197,5 +197,5 @@
 @property (nonatomic, assign) BOOL                      product_is_sold_out;
 @property (nonatomic, strong) NSString                  *paymentMoney;
 
-
++ (FinancialProduct *)createFinancialProductFromFinancialProductType:(FinancialProductType)type;
 @end

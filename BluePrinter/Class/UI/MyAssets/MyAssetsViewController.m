@@ -14,6 +14,7 @@
 #import "LoginOrRegisterViewController.h"
 #import "MyAssetDetailViewController.h"
 #import "BalanceBoxViewController.h"
+#import "AccumulatedEarningsViewController.h"
 
 @interface MyAssetsViewController ()
 @property (weak, nonatomic) IBOutlet    UITableView     *tableview;
@@ -224,7 +225,7 @@
                 
             case 2:
             {
-                
+                viewController = [[AccumulatedEarningsViewController alloc] init];
             }
                 break;
                 

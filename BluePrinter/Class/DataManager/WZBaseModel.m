@@ -278,4 +278,47 @@
 @end
 
 @implementation FinancialProduct
++ (FinancialProduct *)createFinancialProductFromFinancialProductType:(FinancialProductType)type
+{
+    FinancialProduct *product = [[FinancialProduct alloc] init];
+    
+    product.product_type = type;
+    product.product_annual_rate = [[NSString alloc] initWithFormat:@"%d.00", [PublicMethods getRandomNumber:8 to:100]];
+    product.product_limit_time = [[NSString alloc] initWithFormat:@"%d月", [PublicMethods getRandomNumber:1 to:12]];
+    product.product_purchase_amount = [[NSString alloc] initWithFormat:@"%d元", [PublicMethods getRandomNumber:100 to:10000]];
+    product.product_progress_rate = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:0 to:100]];
+    product.product_purchased_quantity = [[NSString alloc] initWithFormat:@"%d笔", [PublicMethods getRandomNumber:10 to:100]];
+    product.product_remaining_amount = [[NSString alloc] initWithFormat:@"%d.00元", [PublicMethods getRandomNumber:100000 to:1000000000]];
+    product.product_gross = [[NSString alloc] initWithFormat:@"%d.00", [PublicMethods getRandomNumber:100000 to:1000000000]];
+    product.product_deadline = @"2016年12月31日";
+    product.product_repayment = @"一次性还清本息";
+    product.product_is_sold_out = [PublicMethods getRandomNumber:0 to:1];
+    
+    switch (type)
+    {
+        case FinancialProductType_Personal:
+        {
+            product.product_title = [[NSString alloc] initWithFormat:@"个人贷%d", [PublicMethods getRandomNumber:123456 to:999999]];
+        }
+            break;
+            
+        case FinancialProductType_Enterprise:
+        {
+            product.product_title = [[NSString alloc] initWithFormat:@"中小企业贷%d号", [PublicMethods getRandomNumber:123456 to:999999]];
+        }
+            break;
+            
+        case FinancialProductType_Regular:
+        {
+            product.product_title = [[NSString alloc] initWithFormat:@"定期 招财宝%d", [PublicMethods getRandomNumber:1000 to:9999]];
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+    return product;
+}
+
 @end

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="AccumulatedEarningsDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人贷98870号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1g-rZ-yh9">
+                        <rect key="frame" x="8" y="8" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="bjV-YO-tNQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.44705882349999998" green="0.4431372549" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="持有资产累计收益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAu-VP-MDy">
+                        <rect key="frame" x="8" y="42" width="115" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="115" id="GNQ-D7-Hbr"/>
+                            <constraint firstAttribute="height" constant="14" id="jde-K3-HI2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.70980392156862748" green="0.70980392156862748" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00元" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0g-TR-vad">
+                        <rect key="frame" x="131" y="42" width="181" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="535-dC-eJh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.98039215690000003" green="0.31764705879999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DAu-VP-MDy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="GRf-BQ-zl4"/>
+                    <constraint firstItem="y1g-rZ-yh9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Tfl-7N-kWV"/>
+                    <constraint firstItem="d0g-TR-vad" firstAttribute="leading" secondItem="DAu-VP-MDy" secondAttribute="trailing" constant="8" id="eM3-6r-hR4"/>
+                    <constraint firstAttribute="trailing" secondItem="y1g-rZ-yh9" secondAttribute="trailing" constant="8" id="ilw-So-ygf"/>
+                    <constraint firstAttribute="trailing" secondItem="d0g-TR-vad" secondAttribute="trailing" constant="8" id="jyx-Lg-Lyq"/>
+                    <constraint firstAttribute="bottom" secondItem="DAu-VP-MDy" secondAttribute="bottom" constant="8" id="mdk-UM-Ibe"/>
+                    <constraint firstItem="y1g-rZ-yh9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="o1p-ab-YLQ"/>
+                    <constraint firstAttribute="bottom" secondItem="d0g-TR-vad" secondAttribute="bottom" constant="8" id="xrJ-d3-qYK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="incomeLab" destination="d0g-TR-vad" id="Dft-qe-d4p"/>
+                <outlet property="titleLab" destination="y1g-rZ-yh9" id="brQ-kf-Vo4"/>
+            </connections>
+            <point key="canvasLocation" x="278" y="356.5"/>
+        </tableViewCell>
+    </objects>
+</document>

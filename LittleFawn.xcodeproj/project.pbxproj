@@ -74,6 +74,12 @@
 		4E52B5FA1C37933B00C347F2 /* PNScatterChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E52B5E91C37933B00C347F2 /* PNScatterChartData.m */; };
 		4E52B5FB1C37933B00C347F2 /* PNScatterChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E52B5EB1C37933B00C347F2 /* PNScatterChartDataItem.m */; };
 		4E52B5FC1C37933B00C347F2 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E52B5EE1C37933B00C347F2 /* UICountingLabel.m */; };
+		4E52B6011C3964A600C347F2 /* AccumulatedEarningsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E52B5FF1C3964A600C347F2 /* AccumulatedEarningsViewController.m */; };
+		4E52B6021C3964A600C347F2 /* AccumulatedEarningsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E52B6001C3964A600C347F2 /* AccumulatedEarningsViewController.xib */; };
+		4E52B6061C3966C800C347F2 /* AccumulatedEarningsTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E52B6041C3966C800C347F2 /* AccumulatedEarningsTitleCell.m */; };
+		4E52B6071C3966C800C347F2 /* AccumulatedEarningsTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E52B6051C3966C800C347F2 /* AccumulatedEarningsTitleCell.xib */; };
+		4E52B60B1C3966DE00C347F2 /* AccumulatedEarningsDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E52B6091C3966DE00C347F2 /* AccumulatedEarningsDetailCell.m */; };
+		4E52B60C1C3966DE00C347F2 /* AccumulatedEarningsDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E52B60A1C3966DE00C347F2 /* AccumulatedEarningsDetailCell.xib */; };
 		4E954C8F1BF0ED5F00372C11 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E954C8E1BF0ED5F00372C11 /* ImageIO.framework */; };
 		4EACA8C31C28361900BFC62F /* TextInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EACA8C11C28361900BFC62F /* TextInputCell.m */; };
 		4EACA8C41C28361900BFC62F /* TextInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EACA8C21C28361900BFC62F /* TextInputCell.xib */; };
@@ -396,6 +402,15 @@
 		4E52B5EB1C37933B00C347F2 /* PNScatterChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNScatterChartDataItem.m; sourceTree = "<group>"; };
 		4E52B5ED1C37933B00C347F2 /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
 		4E52B5EE1C37933B00C347F2 /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		4E52B5FE1C3964A500C347F2 /* AccumulatedEarningsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccumulatedEarningsViewController.h; sourceTree = "<group>"; };
+		4E52B5FF1C3964A600C347F2 /* AccumulatedEarningsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccumulatedEarningsViewController.m; sourceTree = "<group>"; };
+		4E52B6001C3964A600C347F2 /* AccumulatedEarningsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccumulatedEarningsViewController.xib; sourceTree = "<group>"; };
+		4E52B6031C3966C800C347F2 /* AccumulatedEarningsTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccumulatedEarningsTitleCell.h; path = Cells/AccumulatedEarningsTitleCell.h; sourceTree = "<group>"; };
+		4E52B6041C3966C800C347F2 /* AccumulatedEarningsTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccumulatedEarningsTitleCell.m; path = Cells/AccumulatedEarningsTitleCell.m; sourceTree = "<group>"; };
+		4E52B6051C3966C800C347F2 /* AccumulatedEarningsTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AccumulatedEarningsTitleCell.xib; path = Cells/AccumulatedEarningsTitleCell.xib; sourceTree = "<group>"; };
+		4E52B6081C3966DE00C347F2 /* AccumulatedEarningsDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccumulatedEarningsDetailCell.h; path = Cells/AccumulatedEarningsDetailCell.h; sourceTree = "<group>"; };
+		4E52B6091C3966DE00C347F2 /* AccumulatedEarningsDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccumulatedEarningsDetailCell.m; path = Cells/AccumulatedEarningsDetailCell.m; sourceTree = "<group>"; };
+		4E52B60A1C3966DE00C347F2 /* AccumulatedEarningsDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AccumulatedEarningsDetailCell.xib; path = Cells/AccumulatedEarningsDetailCell.xib; sourceTree = "<group>"; };
 		4E954C8E1BF0ED5F00372C11 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		4EACA8C01C28361900BFC62F /* TextInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextInputCell.h; path = Views/TextInputCell.h; sourceTree = "<group>"; };
 		4EACA8C11C28361900BFC62F /* TextInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextInputCell.m; path = Views/TextInputCell.m; sourceTree = "<group>"; };
@@ -814,6 +829,12 @@
 				4E52B5C51C37906000C347F2 /* BalanceBoxIncomeRateCell.h */,
 				4E52B5C61C37906000C347F2 /* BalanceBoxIncomeRateCell.m */,
 				4E52B5C71C37906000C347F2 /* BalanceBoxIncomeRateCell.xib */,
+				4E52B6031C3966C800C347F2 /* AccumulatedEarningsTitleCell.h */,
+				4E52B6041C3966C800C347F2 /* AccumulatedEarningsTitleCell.m */,
+				4E52B6051C3966C800C347F2 /* AccumulatedEarningsTitleCell.xib */,
+				4E52B6081C3966DE00C347F2 /* AccumulatedEarningsDetailCell.h */,
+				4E52B6091C3966DE00C347F2 /* AccumulatedEarningsDetailCell.m */,
+				4E52B60A1C3966DE00C347F2 /* AccumulatedEarningsDetailCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -951,6 +972,9 @@
 				4E52B5CA1C37909000C347F2 /* BalanceBoxViewController.h */,
 				4E52B5CB1C37909000C347F2 /* BalanceBoxViewController.m */,
 				4E52B5CC1C37909000C347F2 /* BalanceBoxViewController.xib */,
+				4E52B5FE1C3964A500C347F2 /* AccumulatedEarningsViewController.h */,
+				4E52B5FF1C3964A600C347F2 /* AccumulatedEarningsViewController.m */,
+				4E52B6001C3964A600C347F2 /* AccumulatedEarningsViewController.xib */,
 			);
 			path = MyAssets;
 			sourceTree = "<group>";
@@ -1644,6 +1668,7 @@
 				4E0E5DA51C3418CB00BE9F94 /* RechargeConfirmationViewController.xib in Resources */,
 				4E12FF1F1C32B4F0004126A4 /* AssetDetailsViewController.xib in Resources */,
 				E1C2E3831C33B76100804EB2 /* CashDetailCell00.xib in Resources */,
+				4E52B6071C3966C800C347F2 /* AccumulatedEarningsTitleCell.xib in Resources */,
 				4ED7970E1C2AC47700766A6E /* AccountLoginViewController.xib in Resources */,
 				4ED797181C2AD13100766A6E /* ResetPwdViewController.xib in Resources */,
 				4E12FF4B1C32B50A004126A4 /* AssetDetailCell20.xib in Resources */,
@@ -1696,6 +1721,7 @@
 				4EADDA531C2E744700DE49A6 /* RegularProductCell.xib in Resources */,
 				4E12FF561C32C785004126A4 /* RealizableRecordCell.xib in Resources */,
 				4E12FF451C32B50A004126A4 /* AssetDetailCell01.xib in Resources */,
+				4E52B6021C3964A600C347F2 /* AccumulatedEarningsViewController.xib in Resources */,
 				4E52B5BA1C3789DD00C347F2 /* MyAssetDetailCell.xib in Resources */,
 				E1C2E3971C33C0C000804EB2 /* CashDetailCell01.xib in Resources */,
 				4E52B5AB1C36E3FC00C347F2 /* AccountInfoViewController.xib in Resources */,
@@ -1726,6 +1752,7 @@
 				E1C2E38D1C33BB6800804EB2 /* CashDetailCell1.xib in Resources */,
 				E1C2E3741C33732500804EB2 /* BecomeCashDetailCell10.xib in Resources */,
 				4E52B5B51C37818500C347F2 /* MyAssetDetailViewController.xib in Resources */,
+				4E52B60C1C3966DE00C347F2 /* AccumulatedEarningsDetailCell.xib in Resources */,
 				E145AB601C2CD050008BC687 /* ProductHeadView.xib in Resources */,
 				4EACA8C91C28390100BFC62F /* LoginFootView.xib in Resources */,
 				4EE2B8E51C318EEC00CD3A10 /* OrderViewController.xib in Resources */,
@@ -1893,8 +1920,11 @@
 				6208775B1BF4CB11002178AE /* NSString+SBJSON.m in Sources */,
 				4ED797481C2C253200766A6E /* MoreActionViewController.m in Sources */,
 				620877381BF4AB78002178AE /* SlideMenuViewController.m in Sources */,
+				4E52B6061C3966C800C347F2 /* AccumulatedEarningsTitleCell.m in Sources */,
 				E1B226F51C34C6B800973195 /* RechargeConfirmationFooter2.m in Sources */,
+				4E52B60B1C3966DE00C347F2 /* AccumulatedEarningsDetailCell.m in Sources */,
 				4E52B5FB1C37933B00C347F2 /* PNScatterChartDataItem.m in Sources */,
+				4E52B6011C3964A600C347F2 /* AccumulatedEarningsViewController.m in Sources */,
 				4E0E5DA41C3418CB00BE9F94 /* RechargeConfirmationViewController.m in Sources */,
 				4ED797121C2ACD6B00766A6E /* RegisterAccountViewController.m in Sources */,
 			);
