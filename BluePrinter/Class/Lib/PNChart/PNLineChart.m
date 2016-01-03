@@ -48,10 +48,6 @@
     return self;
 }
 
-- (void)awakeFromNib {
-    [self setupDefaultValues];
-}
-
 #pragma mark instance methods
 
 - (void)setYLabels:(NSArray *)yLabels

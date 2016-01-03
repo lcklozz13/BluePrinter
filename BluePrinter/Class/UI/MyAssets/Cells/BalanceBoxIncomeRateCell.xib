@@ -25,7 +25,7 @@
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2Q-RC-RPw" customClass="PNLineChart">
                         <rect key="frame" x="8" y="37" width="304" height="194"/>
-                        <color key="backgroundColor" red="0.078431372550000003" green="0.74117647060000003" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </subviews>
                 <constraints>
