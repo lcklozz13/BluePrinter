@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="BalanceBoxIncomeRateCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="239"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="七日年化收益率(%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zId-lq-Ypk">
+                        <rect key="frame" x="8" y="8" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9XB-5P-eXp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.44705882349999998" green="0.4431372549" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2Q-RC-RPw" customClass="PNLineChart">
+                        <rect key="frame" x="8" y="37" width="304" height="194"/>
+                        <color key="backgroundColor" red="0.078431372550000003" green="0.74117647060000003" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="X2Q-RC-RPw" secondAttribute="trailing" constant="8" id="1OS-aa-fDs"/>
+                    <constraint firstItem="X2Q-RC-RPw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="2wP-uw-sMT"/>
+                    <constraint firstAttribute="trailing" secondItem="zId-lq-Ypk" secondAttribute="trailing" constant="8" id="S3f-54-KGD"/>
+                    <constraint firstAttribute="bottom" secondItem="X2Q-RC-RPw" secondAttribute="bottom" constant="8" id="V9j-vq-qby"/>
+                    <constraint firstItem="X2Q-RC-RPw" firstAttribute="top" secondItem="zId-lq-Ypk" secondAttribute="bottom" constant="8" id="VJb-Ru-cUW"/>
+                    <constraint firstItem="zId-lq-Ypk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="VpI-ct-vwd"/>
+                    <constraint firstItem="zId-lq-Ypk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="cu5-qO-beV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lineChart" destination="X2Q-RC-RPw" id="NQs-m1-4VD"/>
+            </connections>
+            <point key="canvasLocation" x="278" y="342"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -50,6 +50,7 @@
                 <constraint firstItem="z1S-Fh-vww" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="I66-Vp-T2L"/>
                 <constraint firstAttribute="trailing" secondItem="z1S-Fh-vww" secondAttribute="trailing" id="JQt-Wo-cys"/>
                 <constraint firstItem="dSI-fd-rna" firstAttribute="leading" secondItem="z1S-Fh-vww" secondAttribute="leading" id="OyV-p0-x4e"/>
+                <constraint firstAttribute="trailing" secondItem="dSI-fd-rna" secondAttribute="trailing" id="cUc-VU-eVC"/>
                 <constraint firstItem="dSI-fd-rna" firstAttribute="centerX" secondItem="z1S-Fh-vww" secondAttribute="centerX" id="hhP-ZR-hah"/>
                 <constraint firstItem="z1S-Fh-vww" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kaP-Yf-xYe"/>
             </constraints>

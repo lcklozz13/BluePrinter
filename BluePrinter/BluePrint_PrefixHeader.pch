@@ -15,7 +15,6 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import <ServerInterface/ServerInterface.h>
 #import "PublicMethods.h"
 #import "PublicEnum.h"
 #import "DataManager.h"

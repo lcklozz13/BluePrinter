@@ -12,6 +12,8 @@
 #import "OtherInforCell.h"
 #import "AccountInfoViewController.h"
 #import "LoginOrRegisterViewController.h"
+#import "MyAssetDetailViewController.h"
+#import "BalanceBoxViewController.h"
 
 @interface MyAssetsViewController ()
 @property (weak, nonatomic) IBOutlet    UITableView     *tableview;
@@ -204,17 +206,19 @@
             return;
         }
         
+        UIViewController *viewController = nil;
+        
         switch (indexPath.row)
         {
             case 0:
             {
-                
+                viewController = [[BalanceBoxViewController alloc] init];
             }
                 break;
                 
             case 1:
             {
-                
+                viewController = [[MyAssetDetailViewController alloc] init];
             }
                 break;
                 
@@ -232,13 +236,18 @@
                 
             case 4:
             {
-                AccountInfoViewController *view = [[AccountInfoViewController alloc] init];
-                [self.navigationController pushViewController:view animated:YES];
+                viewController = [[AccountInfoViewController alloc] init];
+                
             }
                 break;
                 
             default:
                 break;
+        }
+        
+        if (viewController)
+        {
+            [self.navigationController pushViewController:viewController animated:YES];
         }
     }
 }

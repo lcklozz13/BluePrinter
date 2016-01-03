@@ -13,7 +13,6 @@
 #import "LeftMenuHeadView.h"
 #import "LeftMenuFootView.h"
 #import "LeftMenuCell.h"
-#import <UIImageView+WebCache.h>
 #import "LoginOrRegisterViewController.h"
 
 @interface LeftMenuTableViewController ()

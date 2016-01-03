@@ -65,7 +65,7 @@ static NSTimer *m_loadingTimer = nil;
 + (void)initLoadingTimer
 {
     [LoadingHUD stopTimer];
-    m_loadingTimer = [NSTimer scheduledTimerWithTimeInterval:TIME_OUT target:self selector:@selector(loadingTimeOut) userInfo:nil repeats:NO];
+    m_loadingTimer = [NSTimer scheduledTimerWithTimeInterval:60.0f target:self selector:@selector(loadingTimeOut) userInfo:nil repeats:NO];
 }
 
 + (void)stopTimer
