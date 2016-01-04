@@ -37,6 +37,20 @@
 		4E12FF511C32B50A004126A4 /* BecomeCashCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E12FF411C32B50A004126A4 /* BecomeCashCell.xib */; };
 		4E12FF551C32C785004126A4 /* RealizableRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E12FF531C32C785004126A4 /* RealizableRecordCell.m */; };
 		4E12FF561C32C785004126A4 /* RealizableRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E12FF541C32C785004126A4 /* RealizableRecordCell.xib */; };
+		4E21B5991C3AA19A00848287 /* TransactionInquiryDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E21B5971C3AA19A00848287 /* TransactionInquiryDetailCell.m */; };
+		4E21B59A1C3AA19A00848287 /* TransactionInquiryDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E21B5981C3AA19A00848287 /* TransactionInquiryDetailCell.xib */; };
+		4E21B59E1C3AA1C200848287 /* TransactionInquiryRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E21B59C1C3AA1C200848287 /* TransactionInquiryRecordCell.m */; };
+		4E21B59F1C3AA1C200848287 /* TransactionInquiryRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E21B59D1C3AA1C200848287 /* TransactionInquiryRecordCell.xib */; };
+		4E21B5A31C3AA1DC00848287 /* TransactionInquiryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E21B5A11C3AA1DC00848287 /* TransactionInquiryViewController.m */; };
+		4E21B5A41C3AA1DC00848287 /* TransactionInquiryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E21B5A21C3AA1DC00848287 /* TransactionInquiryViewController.xib */; };
+		4E21B5A81C3AAC2C00848287 /* TransactionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E21B5A61C3AAC2C00848287 /* TransactionDetailViewController.m */; };
+		4E21B5A91C3AAC2C00848287 /* TransactionDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E21B5A71C3AAC2C00848287 /* TransactionDetailViewController.xib */; };
+		4E21B5AD1C3AACCC00848287 /* TransactionTotalIncomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E21B5AB1C3AACCC00848287 /* TransactionTotalIncomeCell.m */; };
+		4E21B5AE1C3AACCC00848287 /* TransactionTotalIncomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E21B5AC1C3AACCC00848287 /* TransactionTotalIncomeCell.xib */; };
+		4E21B5B21C3AACF800848287 /* TransactionHistoryDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E21B5B01C3AACF800848287 /* TransactionHistoryDetailCell.m */; };
+		4E21B5B31C3AACF800848287 /* TransactionHistoryDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E21B5B11C3AACF800848287 /* TransactionHistoryDetailCell.xib */; };
+		4E21B5B71C3AAD2100848287 /* TransactionDateFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E21B5B51C3AAD2100848287 /* TransactionDateFootView.m */; };
+		4E21B5B81C3AAD2100848287 /* TransactionDateFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E21B5B61C3AAD2100848287 /* TransactionDateFootView.xib */; };
 		4E52493E1BDFB90700FDED90 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E52493D1BDFB90700FDED90 /* Twitter.framework */; };
 		4E52B59B1C36C83B00C347F2 /* AccountInforCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E52B5991C36C83B00C347F2 /* AccountInforCell.m */; };
 		4E52B59C1C36C83B00C347F2 /* AccountInforCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E52B59A1C36C83B00C347F2 /* AccountInforCell.xib */; };
@@ -338,6 +352,27 @@
 		4E12FF521C32C785004126A4 /* RealizableRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RealizableRecordCell.h; path = ProductDetail/Cells/RealizableRecordCell.h; sourceTree = "<group>"; };
 		4E12FF531C32C785004126A4 /* RealizableRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RealizableRecordCell.m; path = ProductDetail/Cells/RealizableRecordCell.m; sourceTree = "<group>"; };
 		4E12FF541C32C785004126A4 /* RealizableRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RealizableRecordCell.xib; path = ProductDetail/Cells/RealizableRecordCell.xib; sourceTree = "<group>"; };
+		4E21B5961C3AA19A00848287 /* TransactionInquiryDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransactionInquiryDetailCell.h; path = Cells/TransactionInquiryDetailCell.h; sourceTree = "<group>"; };
+		4E21B5971C3AA19A00848287 /* TransactionInquiryDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransactionInquiryDetailCell.m; path = Cells/TransactionInquiryDetailCell.m; sourceTree = "<group>"; };
+		4E21B5981C3AA19A00848287 /* TransactionInquiryDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransactionInquiryDetailCell.xib; path = Cells/TransactionInquiryDetailCell.xib; sourceTree = "<group>"; };
+		4E21B59B1C3AA1C200848287 /* TransactionInquiryRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransactionInquiryRecordCell.h; path = Cells/TransactionInquiryRecordCell.h; sourceTree = "<group>"; };
+		4E21B59C1C3AA1C200848287 /* TransactionInquiryRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransactionInquiryRecordCell.m; path = Cells/TransactionInquiryRecordCell.m; sourceTree = "<group>"; };
+		4E21B59D1C3AA1C200848287 /* TransactionInquiryRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransactionInquiryRecordCell.xib; path = Cells/TransactionInquiryRecordCell.xib; sourceTree = "<group>"; };
+		4E21B5A01C3AA1DC00848287 /* TransactionInquiryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionInquiryViewController.h; sourceTree = "<group>"; };
+		4E21B5A11C3AA1DC00848287 /* TransactionInquiryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionInquiryViewController.m; sourceTree = "<group>"; };
+		4E21B5A21C3AA1DC00848287 /* TransactionInquiryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionInquiryViewController.xib; sourceTree = "<group>"; };
+		4E21B5A51C3AAC2C00848287 /* TransactionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionDetailViewController.h; sourceTree = "<group>"; };
+		4E21B5A61C3AAC2C00848287 /* TransactionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionDetailViewController.m; sourceTree = "<group>"; };
+		4E21B5A71C3AAC2C00848287 /* TransactionDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionDetailViewController.xib; sourceTree = "<group>"; };
+		4E21B5AA1C3AACCC00848287 /* TransactionTotalIncomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransactionTotalIncomeCell.h; path = Cells/TransactionTotalIncomeCell.h; sourceTree = "<group>"; };
+		4E21B5AB1C3AACCC00848287 /* TransactionTotalIncomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransactionTotalIncomeCell.m; path = Cells/TransactionTotalIncomeCell.m; sourceTree = "<group>"; };
+		4E21B5AC1C3AACCC00848287 /* TransactionTotalIncomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransactionTotalIncomeCell.xib; path = Cells/TransactionTotalIncomeCell.xib; sourceTree = "<group>"; };
+		4E21B5AF1C3AACF800848287 /* TransactionHistoryDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransactionHistoryDetailCell.h; path = Cells/TransactionHistoryDetailCell.h; sourceTree = "<group>"; };
+		4E21B5B01C3AACF800848287 /* TransactionHistoryDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransactionHistoryDetailCell.m; path = Cells/TransactionHistoryDetailCell.m; sourceTree = "<group>"; };
+		4E21B5B11C3AACF800848287 /* TransactionHistoryDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransactionHistoryDetailCell.xib; path = Cells/TransactionHistoryDetailCell.xib; sourceTree = "<group>"; };
+		4E21B5B41C3AAD2100848287 /* TransactionDateFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransactionDateFootView.h; path = Cells/TransactionDateFootView.h; sourceTree = "<group>"; };
+		4E21B5B51C3AAD2100848287 /* TransactionDateFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransactionDateFootView.m; path = Cells/TransactionDateFootView.m; sourceTree = "<group>"; };
+		4E21B5B61C3AAD2100848287 /* TransactionDateFootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransactionDateFootView.xib; path = Cells/TransactionDateFootView.xib; sourceTree = "<group>"; };
 		4E52493D1BDFB90700FDED90 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		4E52B5981C36C83B00C347F2 /* AccountInforCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountInforCell.h; path = Cells/AccountInforCell.h; sourceTree = "<group>"; };
 		4E52B5991C36C83B00C347F2 /* AccountInforCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountInforCell.m; path = Cells/AccountInforCell.m; sourceTree = "<group>"; };
@@ -835,6 +870,21 @@
 				4E52B6081C3966DE00C347F2 /* AccumulatedEarningsDetailCell.h */,
 				4E52B6091C3966DE00C347F2 /* AccumulatedEarningsDetailCell.m */,
 				4E52B60A1C3966DE00C347F2 /* AccumulatedEarningsDetailCell.xib */,
+				4E21B5961C3AA19A00848287 /* TransactionInquiryDetailCell.h */,
+				4E21B5971C3AA19A00848287 /* TransactionInquiryDetailCell.m */,
+				4E21B5981C3AA19A00848287 /* TransactionInquiryDetailCell.xib */,
+				4E21B59B1C3AA1C200848287 /* TransactionInquiryRecordCell.h */,
+				4E21B59C1C3AA1C200848287 /* TransactionInquiryRecordCell.m */,
+				4E21B59D1C3AA1C200848287 /* TransactionInquiryRecordCell.xib */,
+				4E21B5AA1C3AACCC00848287 /* TransactionTotalIncomeCell.h */,
+				4E21B5AB1C3AACCC00848287 /* TransactionTotalIncomeCell.m */,
+				4E21B5AC1C3AACCC00848287 /* TransactionTotalIncomeCell.xib */,
+				4E21B5AF1C3AACF800848287 /* TransactionHistoryDetailCell.h */,
+				4E21B5B01C3AACF800848287 /* TransactionHistoryDetailCell.m */,
+				4E21B5B11C3AACF800848287 /* TransactionHistoryDetailCell.xib */,
+				4E21B5B41C3AAD2100848287 /* TransactionDateFootView.h */,
+				4E21B5B51C3AAD2100848287 /* TransactionDateFootView.m */,
+				4E21B5B61C3AAD2100848287 /* TransactionDateFootView.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -975,6 +1025,12 @@
 				4E52B5FE1C3964A500C347F2 /* AccumulatedEarningsViewController.h */,
 				4E52B5FF1C3964A600C347F2 /* AccumulatedEarningsViewController.m */,
 				4E52B6001C3964A600C347F2 /* AccumulatedEarningsViewController.xib */,
+				4E21B5A01C3AA1DC00848287 /* TransactionInquiryViewController.h */,
+				4E21B5A11C3AA1DC00848287 /* TransactionInquiryViewController.m */,
+				4E21B5A21C3AA1DC00848287 /* TransactionInquiryViewController.xib */,
+				4E21B5A51C3AAC2C00848287 /* TransactionDetailViewController.h */,
+				4E21B5A61C3AAC2C00848287 /* TransactionDetailViewController.m */,
+				4E21B5A71C3AAC2C00848287 /* TransactionDetailViewController.xib */,
 			);
 			path = MyAssets;
 			sourceTree = "<group>";
@@ -1664,11 +1720,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E21B5A41C3AA1DC00848287 /* TransactionInquiryViewController.xib in Resources */,
 				E1B226E41C34C67A00973195 /* RechargeConfirmationHeader.xib in Resources */,
 				4E0E5DA51C3418CB00BE9F94 /* RechargeConfirmationViewController.xib in Resources */,
 				4E12FF1F1C32B4F0004126A4 /* AssetDetailsViewController.xib in Resources */,
 				E1C2E3831C33B76100804EB2 /* CashDetailCell00.xib in Resources */,
 				4E52B6071C3966C800C347F2 /* AccumulatedEarningsTitleCell.xib in Resources */,
+				4E21B5B31C3AACF800848287 /* TransactionHistoryDetailCell.xib in Resources */,
 				4ED7970E1C2AC47700766A6E /* AccountLoginViewController.xib in Resources */,
 				4ED797181C2AD13100766A6E /* ResetPwdViewController.xib in Resources */,
 				4E12FF4B1C32B50A004126A4 /* AssetDetailCell20.xib in Resources */,
@@ -1689,6 +1747,7 @@
 				E182C8871C2D2C9200050471 /* ProductInfoCell.xib in Resources */,
 				E1B226FB1C350EF600973195 /* RechargeConfirmCell.xib in Resources */,
 				E1F3F6EC1C30D9DF00A33954 /* PurchaseProtocolViewController.xib in Resources */,
+				4E21B59A1C3AA19A00848287 /* TransactionInquiryDetailCell.xib in Resources */,
 				4ED312801C2628790041A546 /* LoginOrRegisterViewController.xib in Resources */,
 				4EE2B8EF1C3190E100CD3A10 /* OrderCell2.xib in Resources */,
 				4E52B5BF1C378BF700C347F2 /* MyAssetDetailOtherCell.xib in Resources */,
@@ -1696,11 +1755,13 @@
 				4EACA8C41C28361900BFC62F /* TextInputCell.xib in Resources */,
 				621964391C229A2D004EF284 /* ShareSDK.bundle in Resources */,
 				4EADDA7B1C2FE95A00DE49A6 /* PurchaseFootView.xib in Resources */,
+				4E21B5B81C3AAD2100848287 /* TransactionDateFootView.xib in Resources */,
 				4ED797321C2AFD1300766A6E /* LeftMenuTableViewController.xib in Resources */,
 				4E52B5C41C37900C00C347F2 /* BalanceBoxOtherCell.xib in Resources */,
 				4EACA8CE1C283BA200BFC62F /* RegisterFootView.xib in Resources */,
 				4ED797091C2AC1C000766A6E /* GuidViewController.xib in Resources */,
 				4ED797131C2ACD6B00766A6E /* RegisterAccountViewController.xib in Resources */,
+				4E21B5AE1C3AACCC00848287 /* TransactionTotalIncomeCell.xib in Resources */,
 				4ED3128C1C262B7E0041A546 /* Launch Screen.storyboard in Resources */,
 				4ED797491C2C253200766A6E /* MoreActionViewController.xib in Resources */,
 				4ED7974D1C2C253200766A6E /* RecommendedViewController.xib in Resources */,
@@ -1719,6 +1780,7 @@
 				4EE2B8D11C3164EE00CD3A10 /* SelectBankCell.xib in Resources */,
 				4E12FF471C32B50A004126A4 /* AssetDetailCell10.xib in Resources */,
 				4EADDA531C2E744700DE49A6 /* RegularProductCell.xib in Resources */,
+				4E21B59F1C3AA1C200848287 /* TransactionInquiryRecordCell.xib in Resources */,
 				4E12FF561C32C785004126A4 /* RealizableRecordCell.xib in Resources */,
 				4E12FF451C32B50A004126A4 /* AssetDetailCell01.xib in Resources */,
 				4E52B6021C3964A600C347F2 /* AccumulatedEarningsViewController.xib in Resources */,
@@ -1737,6 +1799,7 @@
 				620876DE1BF42EE5002178AE /* MJRefresh.bundle in Resources */,
 				E1C2E3921C33BB8700804EB2 /* CashDetailFootView.xib in Resources */,
 				E1C2E3881C33B80600804EB2 /* CashDetailViewController.xib in Resources */,
+				4E21B5A91C3AAC2C00848287 /* TransactionDetailViewController.xib in Resources */,
 				E182C8991C2D42D600050471 /* ContractInformationCell.xib in Resources */,
 				6219643D1C229A2D004EF284 /* ShareSDKUI.bundle in Resources */,
 				4ED7971D1C2AD60000766A6E /* RegisterProtocolViewController.xib in Resources */,
@@ -1799,6 +1862,7 @@
 				620876ED1BF42EE5002178AE /* MKNetworkEngine.m in Sources */,
 				620877581BF4CB11002178AE /* NSData+CommonCrypto.m in Sources */,
 				4E12FF551C32C785004126A4 /* RealizableRecordCell.m in Sources */,
+				4E21B5991C3AA19A00848287 /* TransactionInquiryDetailCell.m in Sources */,
 				E1C2E3821C33B76100804EB2 /* CashDetailCell00.m in Sources */,
 				6208775C1BF4CB11002178AE /* SBJsonBase.m in Sources */,
 				4E52B5F61C37933B00C347F2 /* PNLineChartDataItem.m in Sources */,
@@ -1824,10 +1888,12 @@
 				6208775E1BF4CB11002178AE /* SBJsonWriter.m in Sources */,
 				4E0E5D951C340ACF00BE9F94 /* RechargeCell01.m in Sources */,
 				4E52B5A51C36C8BE00C347F2 /* OtherInforCell.m in Sources */,
+				4E21B5B21C3AACF800848287 /* TransactionHistoryDetailCell.m in Sources */,
 				4E52B5F31C37933B00C347F2 /* PNColor.m in Sources */,
 				620876D91BF42EE5002178AE /* FMDatabaseAdditions.m in Sources */,
 				620876C91BF42EE5002178AE /* ShareData.m in Sources */,
 				4EADDA521C2E744700DE49A6 /* RegularProductCell.m in Sources */,
+				4E21B59E1C3AA1C200848287 /* TransactionInquiryRecordCell.m in Sources */,
 				4E52B5B91C3789DD00C347F2 /* MyAssetDetailCell.m in Sources */,
 				E1F3F7071C3111E300A33954 /* PaymentCell2.m in Sources */,
 				E1C2E36E1C33730B00804EB2 /* BecomeCashDetailCell00.m in Sources */,
@@ -1847,6 +1913,7 @@
 				E1C2E3611C336BD100804EB2 /* BecomeCashDetailViewController.m in Sources */,
 				620876EA1BF42EE5002178AE /* NSString+MKNetworkKitAdditions.m in Sources */,
 				4E52B5F81C37933B00C347F2 /* PNPieChartDataItem.m in Sources */,
+				4E21B5A31C3AA1DC00848287 /* TransactionInquiryViewController.m in Sources */,
 				E145AB5F1C2CD050008BC687 /* ProductHeadView.m in Sources */,
 				E1F3F6F81C30DEE900A33954 /* PaymentViewController.m in Sources */,
 				4E12FF201C32B4F0004126A4 /* BecomeCashViewController.m in Sources */,
@@ -1854,6 +1921,7 @@
 				620876D41BF42EE5002178AE /* ASIHTTPRequest.m in Sources */,
 				620876D71BF42EE5002178AE /* GTMBase64.m in Sources */,
 				4EE2B8EE1C3190E100CD3A10 /* OrderCell2.m in Sources */,
+				4E21B5A81C3AAC2C00848287 /* TransactionDetailViewController.m in Sources */,
 				4ED797171C2AD13100766A6E /* ResetPwdViewController.m in Sources */,
 				620876C61BF42EE5002178AE /* CusCategory.m in Sources */,
 				6218B1FC1BFEBF380085AB7C /* PhotoSelectManager.m in Sources */,
@@ -1868,6 +1936,7 @@
 				4ED797251C2AF98400766A6E /* LeftMenuFootView.m in Sources */,
 				4EADDA701C2FDC5000DE49A6 /* PurchaseViewController.m in Sources */,
 				620876E61BF42EE5002178AE /* NSAlert+MKNetworkKitAdditions.m in Sources */,
+				4E21B5AD1C3AACCC00848287 /* TransactionTotalIncomeCell.m in Sources */,
 				4ED3127F1C2628790041A546 /* LoginOrRegisterViewController.m in Sources */,
 				620876EF1BF42EE5002178AE /* Reachability.m in Sources */,
 				4ED7974A1C2C253200766A6E /* MyAssetsViewController.m in Sources */,
@@ -1915,6 +1984,7 @@
 				E1F3F7021C310FDB00A33954 /* PaymentCell1.m in Sources */,
 				4E52B5F41C37933B00C347F2 /* PNLineChart.m in Sources */,
 				620876DF1BF42EE5002178AE /* MJRefreshBaseView.m in Sources */,
+				4E21B5B71C3AAD2100848287 /* TransactionDateFootView.m in Sources */,
 				620876D11BF42EE5002178AE /* ASIDataDecompressor.m in Sources */,
 				4EADDA7A1C2FE95A00DE49A6 /* PurchaseFootView.m in Sources */,
 				6208775B1BF4CB11002178AE /* NSString+SBJSON.m in Sources */,

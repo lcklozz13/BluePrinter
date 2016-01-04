@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="KGk-i7-Jjw" customClass="TransactionInquiryRecordCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人贷2000487" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PQq-2a-acj">
+                        <rect key="frame" x="14" y="8" width="273" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="e9L-rk-YQI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.44705882352941173" green="0.44313725490196076" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-12-25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJQ-L5-OTq">
+                        <rect key="frame" x="14" y="42" width="265" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="4a4-qV-048"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.70980392156862748" green="0.70980392156862748" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PQq-2a-acj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="23R-K7-5Ab"/>
+                    <constraint firstAttribute="trailing" secondItem="PQq-2a-acj" secondAttribute="trailing" id="4HN-vd-y0m"/>
+                    <constraint firstItem="PQq-2a-acj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="AHQ-pX-mHI"/>
+                    <constraint firstAttribute="trailing" secondItem="VJQ-L5-OTq" secondAttribute="trailing" constant="8" id="RpL-dH-Oeq"/>
+                    <constraint firstAttribute="bottom" secondItem="VJQ-L5-OTq" secondAttribute="bottom" constant="8" id="U0E-bB-JLe"/>
+                    <constraint firstItem="VJQ-L5-OTq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="uky-yc-0YL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="timeLab" destination="VJQ-L5-OTq" id="cdD-Hn-cHa"/>
+                <outlet property="titleLab" destination="PQq-2a-acj" id="xZc-FZ-nNX"/>
+            </connections>
+            <point key="canvasLocation" x="278" y="341.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="IjK-sy-fxx">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPd-X2-itx">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交易时间：2015-1-11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OsR-64-BiI">
+                            <rect key="frame" x="8" y="11" width="304" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.70980392156862748" green="0.70980392156862748" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="OsR-64-BiI" firstAttribute="leading" secondItem="wPd-X2-itx" secondAttribute="leading" constant="8" id="Awe-ya-5cH"/>
+                        <constraint firstAttribute="trailing" secondItem="OsR-64-BiI" secondAttribute="trailing" constant="8" id="JTr-SW-ThE"/>
+                        <constraint firstItem="OsR-64-BiI" firstAttribute="top" secondItem="wPd-X2-itx" secondAttribute="top" constant="11" id="WE1-Oy-VGy"/>
+                        <constraint firstAttribute="bottom" secondItem="OsR-64-BiI" secondAttribute="bottom" constant="12" id="XGA-IR-de0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wPd-X2-itx" secondAttribute="trailing" id="GEj-uZ-17A"/>
+                <constraint firstAttribute="bottom" secondItem="wPd-X2-itx" secondAttribute="bottom" id="QcQ-sf-CxM"/>
+                <constraint firstItem="wPd-X2-itx" firstAttribute="leading" secondItem="IjK-sy-fxx" secondAttribute="leading" id="e37-ix-0fy"/>
+                <constraint firstItem="wPd-X2-itx" firstAttribute="top" secondItem="IjK-sy-fxx" secondAttribute="top" id="xi2-JM-KpB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="334" y="353"/>
+        </view>
+    </objects>
+</document>
