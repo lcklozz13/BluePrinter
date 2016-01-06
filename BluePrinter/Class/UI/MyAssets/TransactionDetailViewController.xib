@@ -1,19 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransactionDetailViewController">
             <connections>
+                <outlet property="tableview" destination="yNU-3z-yCD" id="82K-mI-aoo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5w-SA-ShC">
+                    <rect key="frame" x="0.0" y="508" width="320" height="60"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="CTQ-75-WuO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <state key="normal" title="变现">
+                        <color key="titleColor" red="0.70980392156862748" green="0.70980392156862748" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="becomeCashAction:" destination="-1" eventType="touchUpInside" id="R8W-D8-TZq"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="8" sectionFooterHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="yNU-3z-yCD">
+                    <rect key="frame" x="0.0" y="64" width="320" height="444"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Nvk-Cv-X8g"/>
+                        <outlet property="delegate" destination="-1" id="LfO-sQ-PgW"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yNU-3z-yCD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="HBz-3w-aIz"/>
+                <constraint firstItem="yNU-3z-yCD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Jcb-k4-dRu"/>
+                <constraint firstItem="W5w-SA-ShC" firstAttribute="top" secondItem="yNU-3z-yCD" secondAttribute="bottom" id="THI-wM-dN0"/>
+                <constraint firstItem="W5w-SA-ShC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fXR-1B-gOX"/>
+                <constraint firstAttribute="trailing" secondItem="W5w-SA-ShC" secondAttribute="trailing" id="jk4-z8-fgA"/>
+                <constraint firstAttribute="trailing" secondItem="yNU-3z-yCD" secondAttribute="trailing" id="kkt-vd-pRt"/>
+                <constraint firstAttribute="bottom" secondItem="W5w-SA-ShC" secondAttribute="bottom" id="o59-6l-uZX"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="278" y="238"/>
         </view>
     </objects>
 </document>

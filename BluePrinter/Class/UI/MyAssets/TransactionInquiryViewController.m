@@ -9,6 +9,7 @@
 #import "TransactionInquiryViewController.h"
 #import "TransactionInquiryDetailCell.h"
 #import "TransactionInquiryRecordCell.h"
+#import "TransactionDetailViewController.h"
 
 @interface TransactionInquiryViewController ()
 @property (weak, nonatomic) IBOutlet UITableView    *tableview;
@@ -107,6 +108,9 @@
     {
         [self.tableview deselectRowAtIndexPath:indexPath animated:YES];
         FinancialProduct *product = self.recordArray[indexPath.row-1];
+        
+        TransactionDetailViewController *view = [[TransactionDetailViewController alloc] initWithProduct:product];
+        [self.navigationController pushViewController:view animated:YES];
     }
 }
 @end

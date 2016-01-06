@@ -9,5 +9,5 @@
 #import "BaseViewController.h"
 
 @interface TransactionDetailViewController : BaseViewController
-
+- (id)initWithProduct:(FinancialProduct *)product;
 @end

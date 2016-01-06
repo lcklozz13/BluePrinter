@@ -1,14 +1,14 @@
 //
-//  TransactionTotalIncomeCell.m
+//  TransactionHistoryCell.m
 //  LittleFawn
 //
-//  Created by klozz on 16/1/4.
+//  Created by klozz on 16/1/5.
 //  Copyright © 2016年 com.xhj001. All rights reserved.
 //
 
-#import "TransactionTotalIncomeCell.h"
+#import "TransactionHistoryCell.h"
 
-@implementation TransactionTotalIncomeCell
+@implementation TransactionHistoryCell
 
 - (void)awakeFromNib {
     // Initialization code
@@ -19,10 +19,9 @@
 
     // Configure the view for the selected state
 }
-
 + (CGFloat)cellHeight
 {
-    return 114.0f;
+    return 58.0f;
 }
 
 @end

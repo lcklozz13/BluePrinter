@@ -12,6 +12,7 @@
 #import "CashDetailCell1.h"
 #import "CashDetailFootView.h"
 #import "AssetDetailsViewController.h"
+#import "TransactionDetailViewController.h"
 
 @interface CashDetailViewController ()<UIAlertViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView     *tableview;
@@ -53,7 +54,7 @@
     }
     else if (alertView.tag == 10086 && buttonIndex == 1)
     {
-        AssetDetailsViewController *assetDetailHandle = nil;
+        UIViewController *assetDetailHandle = nil;
         NSArray *controllers = [self.navigationController viewControllers];
         
         for (id viewcontroll in controllers)
@@ -62,6 +63,18 @@
             {
                 assetDetailHandle = viewcontroll;
                 break;
+            }
+        }
+        
+        if (!assetDetailHandle)
+        {
+            for (id viewcontroll in controllers)
+            {
+                if ([viewcontroll isKindOfClass:[TransactionDetailViewController class]])
+                {
+                    assetDetailHandle = viewcontroll;
+                    break;
+                }
             }
         }
         

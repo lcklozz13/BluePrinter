@@ -12,6 +12,7 @@
 #import "BecomeCashDetailCell11.h"
 #import "BecomeCashDetailFootView.h"
 #import "AssetDetailsViewController.h"
+#import "TransactionDetailViewController.h"
 
 @interface BecomeCashDetailViewController ()
 @property (nonatomic, weak) IBOutlet UITableView     *tableview;
@@ -36,7 +37,7 @@
 
 - (void)gotoAssetDetailAction
 {
-    AssetDetailsViewController *assetDetailHandle = nil;
+    UIViewController *assetDetailHandle = nil;
     NSArray *controllers = [self.navigationController viewControllers];
     
     for (id viewcontroll in controllers)
@@ -45,6 +46,18 @@
         {
             assetDetailHandle = viewcontroll;
             break;
+        }
+    }
+    
+    if (!assetDetailHandle)
+    {
+        for (id viewcontroll in controllers)
+        {
+            if ([viewcontroll isKindOfClass:[TransactionDetailViewController class]])
+            {
+                assetDetailHandle = viewcontroll;
+                break;
+            }
         }
     }
     

@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="IjK-sy-fxx">
+        <view contentMode="scaleToFill" id="IjK-sy-fxx" customClass="TransactionDateFootView">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -20,13 +20,23 @@
                             <color key="textColor" red="0.70980392156862748" green="0.70980392156862748" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tuU-Y6-qcu">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="mlS-dz-Xy0"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="OsR-64-BiI" firstAttribute="leading" secondItem="wPd-X2-itx" secondAttribute="leading" constant="8" id="Awe-ya-5cH"/>
+                        <constraint firstAttribute="trailing" secondItem="tuU-Y6-qcu" secondAttribute="trailing" id="D68-xv-9aD"/>
                         <constraint firstAttribute="trailing" secondItem="OsR-64-BiI" secondAttribute="trailing" constant="8" id="JTr-SW-ThE"/>
+                        <constraint firstItem="tuU-Y6-qcu" firstAttribute="leading" secondItem="wPd-X2-itx" secondAttribute="leading" id="T1Z-lW-Mog"/>
                         <constraint firstItem="OsR-64-BiI" firstAttribute="top" secondItem="wPd-X2-itx" secondAttribute="top" constant="11" id="WE1-Oy-VGy"/>
                         <constraint firstAttribute="bottom" secondItem="OsR-64-BiI" secondAttribute="bottom" constant="12" id="XGA-IR-de0"/>
+                        <constraint firstItem="tuU-Y6-qcu" firstAttribute="top" secondItem="wPd-X2-itx" secondAttribute="top" id="lrX-f6-AuG"/>
                     </constraints>
                 </view>
             </subviews>
