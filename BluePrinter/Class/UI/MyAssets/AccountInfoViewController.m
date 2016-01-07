@@ -10,6 +10,9 @@
 #import "OtherInforCell.h"
 #import "MyAccountCell.h"
 
+#import "AddBankViewController.h"
+#import "DeleteBankCardViewController.h"
+
 @interface AccountInfoViewController ()
 @property (nonatomic, weak) IBOutlet    UITableView     *tableview;
 @end
@@ -129,17 +132,19 @@
     {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         
+        UIViewController    *vc = nil;
+        
         switch (indexPath.row)
         {
             case 0:
             {
-                
+                vc = [[AddBankViewController alloc] init];
             }
                 break;
                 
             case 1:
             {
-                
+                vc = [[DeleteBankCardViewController alloc] init];
             }
                 break;
                 
@@ -163,6 +168,11 @@
                 
             default:
                 break;
+        }
+        
+        if (vc)
+        {
+            [self.navigationController pushViewController:vc animated:YES];
         }
     }
 }
