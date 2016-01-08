@@ -12,6 +12,9 @@
 
 #import "AddBankViewController.h"
 #import "DeleteBankCardViewController.h"
+#import "ChangeLoginPwdViewController.h"
+#import "RetrieveLoginPwdViewController.h"
+#import "ChangeTransactionPwdViewController.h"
 
 @interface AccountInfoViewController ()
 @property (nonatomic, weak) IBOutlet    UITableView     *tableview;
@@ -150,19 +153,19 @@
                 
             case 2:
             {
-                
+                vc = [[ChangeLoginPwdViewController alloc] init];
             }
                 break;
                 
             case 3:
             {
-                
+                vc = [[RetrieveLoginPwdViewController alloc] init];
             }
                 break;
                 
             case 4:
             {
-                
+                vc = [[ChangeTransactionPwdViewController alloc] init];
             }
                 break;
                 

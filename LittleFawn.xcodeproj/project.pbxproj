@@ -63,6 +63,14 @@
 		4E2343211C3EA22A00976283 /* DeleteBankCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E23431F1C3EA22A00976283 /* DeleteBankCardCell.xib */; };
 		4E2343251C3EA49600976283 /* DeleteBankCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2343231C3EA49600976283 /* DeleteBankCardViewController.m */; };
 		4E2343261C3EA49600976283 /* DeleteBankCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E2343241C3EA49600976283 /* DeleteBankCardViewController.xib */; };
+		4E23432A1C3FE0C100976283 /* ChangeLoginPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2343281C3FE0C100976283 /* ChangeLoginPwdViewController.m */; };
+		4E23432B1C3FE0C100976283 /* ChangeLoginPwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E2343291C3FE0C100976283 /* ChangeLoginPwdViewController.xib */; };
+		4E23432F1C3FE24A00976283 /* RetrieveLoginPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23432D1C3FE24A00976283 /* RetrieveLoginPwdViewController.m */; };
+		4E2343301C3FE24A00976283 /* RetrieveLoginPwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E23432E1C3FE24A00976283 /* RetrieveLoginPwdViewController.xib */; };
+		4E2343341C3FE29300976283 /* ChangeTransactionPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2343321C3FE29300976283 /* ChangeTransactionPwdViewController.m */; };
+		4E2343351C3FE29300976283 /* ChangeTransactionPwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E2343331C3FE29300976283 /* ChangeTransactionPwdViewController.xib */; };
+		4E2343391C3FE2E700976283 /* InputTextForChangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2343371C3FE2E700976283 /* InputTextForChangeCell.m */; };
+		4E23433A1C3FE2E700976283 /* InputTextForChangeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E2343381C3FE2E700976283 /* InputTextForChangeCell.xib */; };
 		4E52493E1BDFB90700FDED90 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E52493D1BDFB90700FDED90 /* Twitter.framework */; };
 		4E52B59B1C36C83B00C347F2 /* AccountInforCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E52B5991C36C83B00C347F2 /* AccountInforCell.m */; };
 		4E52B59C1C36C83B00C347F2 /* AccountInforCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E52B59A1C36C83B00C347F2 /* AccountInforCell.xib */; };
@@ -403,6 +411,18 @@
 		4E2343221C3EA49600976283 /* DeleteBankCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteBankCardViewController.h; sourceTree = "<group>"; };
 		4E2343231C3EA49600976283 /* DeleteBankCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteBankCardViewController.m; sourceTree = "<group>"; };
 		4E2343241C3EA49600976283 /* DeleteBankCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteBankCardViewController.xib; sourceTree = "<group>"; };
+		4E2343271C3FE0C100976283 /* ChangeLoginPwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeLoginPwdViewController.h; sourceTree = "<group>"; };
+		4E2343281C3FE0C100976283 /* ChangeLoginPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeLoginPwdViewController.m; sourceTree = "<group>"; };
+		4E2343291C3FE0C100976283 /* ChangeLoginPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeLoginPwdViewController.xib; sourceTree = "<group>"; };
+		4E23432C1C3FE24A00976283 /* RetrieveLoginPwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetrieveLoginPwdViewController.h; sourceTree = "<group>"; };
+		4E23432D1C3FE24A00976283 /* RetrieveLoginPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetrieveLoginPwdViewController.m; sourceTree = "<group>"; };
+		4E23432E1C3FE24A00976283 /* RetrieveLoginPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RetrieveLoginPwdViewController.xib; sourceTree = "<group>"; };
+		4E2343311C3FE29300976283 /* ChangeTransactionPwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeTransactionPwdViewController.h; sourceTree = "<group>"; };
+		4E2343321C3FE29300976283 /* ChangeTransactionPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeTransactionPwdViewController.m; sourceTree = "<group>"; };
+		4E2343331C3FE29300976283 /* ChangeTransactionPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeTransactionPwdViewController.xib; sourceTree = "<group>"; };
+		4E2343361C3FE2E700976283 /* InputTextForChangeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputTextForChangeCell.h; path = Cells/InputTextForChangeCell.h; sourceTree = "<group>"; };
+		4E2343371C3FE2E700976283 /* InputTextForChangeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InputTextForChangeCell.m; path = Cells/InputTextForChangeCell.m; sourceTree = "<group>"; };
+		4E2343381C3FE2E700976283 /* InputTextForChangeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InputTextForChangeCell.xib; path = Cells/InputTextForChangeCell.xib; sourceTree = "<group>"; };
 		4E52493D1BDFB90700FDED90 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		4E52B5981C36C83B00C347F2 /* AccountInforCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountInforCell.h; path = Cells/AccountInforCell.h; sourceTree = "<group>"; };
 		4E52B5991C36C83B00C347F2 /* AccountInforCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountInforCell.m; path = Cells/AccountInforCell.m; sourceTree = "<group>"; };
@@ -927,6 +947,9 @@
 				4E23431D1C3EA22A00976283 /* DeleteBankCardCell.h */,
 				4E23431E1C3EA22A00976283 /* DeleteBankCardCell.m */,
 				4E23431F1C3EA22A00976283 /* DeleteBankCardCell.xib */,
+				4E2343361C3FE2E700976283 /* InputTextForChangeCell.h */,
+				4E2343371C3FE2E700976283 /* InputTextForChangeCell.m */,
+				4E2343381C3FE2E700976283 /* InputTextForChangeCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -1079,6 +1102,15 @@
 				4E2343221C3EA49600976283 /* DeleteBankCardViewController.h */,
 				4E2343231C3EA49600976283 /* DeleteBankCardViewController.m */,
 				4E2343241C3EA49600976283 /* DeleteBankCardViewController.xib */,
+				4E2343271C3FE0C100976283 /* ChangeLoginPwdViewController.h */,
+				4E2343281C3FE0C100976283 /* ChangeLoginPwdViewController.m */,
+				4E2343291C3FE0C100976283 /* ChangeLoginPwdViewController.xib */,
+				4E23432C1C3FE24A00976283 /* RetrieveLoginPwdViewController.h */,
+				4E23432D1C3FE24A00976283 /* RetrieveLoginPwdViewController.m */,
+				4E23432E1C3FE24A00976283 /* RetrieveLoginPwdViewController.xib */,
+				4E2343311C3FE29300976283 /* ChangeTransactionPwdViewController.h */,
+				4E2343321C3FE29300976283 /* ChangeTransactionPwdViewController.m */,
+				4E2343331C3FE29300976283 /* ChangeTransactionPwdViewController.xib */,
 			);
 			path = MyAssets;
 			sourceTree = "<group>";
@@ -1793,7 +1825,9 @@
 				4E52B59C1C36C83B00C347F2 /* AccountInforCell.xib in Resources */,
 				4E12FF491C32B50A004126A4 /* AssetDetailCell11.xib in Resources */,
 				E1B226F61C34C6B800973195 /* RechargeConfirmationFooter2.xib in Resources */,
+				4E2343351C3FE29300976283 /* ChangeTransactionPwdViewController.xib in Resources */,
 				E182C8871C2D2C9200050471 /* ProductInfoCell.xib in Resources */,
+				4E23432B1C3FE0C100976283 /* ChangeLoginPwdViewController.xib in Resources */,
 				E1B226FB1C350EF600973195 /* RechargeConfirmCell.xib in Resources */,
 				E1F3F6EC1C30D9DF00A33954 /* PurchaseProtocolViewController.xib in Resources */,
 				4E21B59A1C3AA19A00848287 /* TransactionInquiryDetailCell.xib in Resources */,
@@ -1806,6 +1840,7 @@
 				4EADDA7B1C2FE95A00DE49A6 /* PurchaseFootView.xib in Resources */,
 				4E21B5B81C3AAD2100848287 /* TransactionDateFootView.xib in Resources */,
 				4ED797321C2AFD1300766A6E /* LeftMenuTableViewController.xib in Resources */,
+				4E23433A1C3FE2E700976283 /* InputTextForChangeCell.xib in Resources */,
 				4E52B5C41C37900C00C347F2 /* BalanceBoxOtherCell.xib in Resources */,
 				4EACA8CE1C283BA200BFC62F /* RegisterFootView.xib in Resources */,
 				4E21B5BD1C3B96AF00848287 /* TransactionHistoryCell.xib in Resources */,
@@ -1856,6 +1891,7 @@
 				6219643D1C229A2D004EF284 /* ShareSDKUI.bundle in Resources */,
 				4ED7971D1C2AD60000766A6E /* RegisterProtocolViewController.xib in Resources */,
 				E1B226F11C34C6A100973195 /* RechargeConfirmationFooter1.xib in Resources */,
+				4E2343301C3FE24A00976283 /* RetrieveLoginPwdViewController.xib in Resources */,
 				E1C2E3621C336BD100804EB2 /* BecomeCashDetailViewController.xib in Resources */,
 				4E2343211C3EA22A00976283 /* DeleteBankCardCell.xib in Resources */,
 				4ED797471C2C253200766A6E /* FinancialProductViewController.xib in Resources */,
@@ -1921,6 +1957,7 @@
 				4E12FF551C32C785004126A4 /* RealizableRecordCell.m in Sources */,
 				4E21B5991C3AA19A00848287 /* TransactionInquiryDetailCell.m in Sources */,
 				E1C2E3821C33B76100804EB2 /* CashDetailCell00.m in Sources */,
+				4E23432A1C3FE0C100976283 /* ChangeLoginPwdViewController.m in Sources */,
 				6208775C1BF4CB11002178AE /* SBJsonBase.m in Sources */,
 				4E52B5F61C37933B00C347F2 /* PNLineChartDataItem.m in Sources */,
 				620876D81BF42EE5002178AE /* FMDatabase.m in Sources */,
@@ -2023,7 +2060,9 @@
 				E1F3F7111C313A0E00A33954 /* SelectBankViewController.m in Sources */,
 				4E52B5F51C37933B00C347F2 /* PNLineChartData.m in Sources */,
 				4E52B5F01C37933B00C347F2 /* PNBarChart.m in Sources */,
+				4E2343341C3FE29300976283 /* ChangeTransactionPwdViewController.m in Sources */,
 				620877591BF4CB11002178AE /* NSString+Base64.m in Sources */,
+				4E2343391C3FE2E700976283 /* InputTextForChangeCell.m in Sources */,
 				E1F3F6EB1C30D9DF00A33954 /* PurchaseProtocolViewController.m in Sources */,
 				620876E31BF42EE5002178AE /* UIScrollView+MJExtension.m in Sources */,
 				621964411C22B095004EF284 /* ShareManager.m in Sources */,
@@ -2034,6 +2073,7 @@
 				4E12FF1E1C32B4F0004126A4 /* AssetDetailsViewController.m in Sources */,
 				E1C2E3961C33C0C000804EB2 /* CashDetailCell01.m in Sources */,
 				4EADDA6B1C2FD48900DE49A6 /* RiskDisclosureViewController.m in Sources */,
+				4E23432F1C3FE24A00976283 /* RetrieveLoginPwdViewController.m in Sources */,
 				4ED7974C1C2C253200766A6E /* RecommendedViewController.m in Sources */,
 				6208775A1BF4CB11002178AE /* NSObject+SBJSON.m in Sources */,
 				4EE2B8DD1C316BE200CD3A10 /* InputPayPasswordViewController.m in Sources */,
