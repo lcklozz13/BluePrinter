@@ -8,6 +8,8 @@
 
 #import "BaseViewController.h"
 
-@interface SelectBankViewController : BaseViewController
+typedef void(^didSelectBankAction)(NSInteger index, id bankInfo);
 
+@interface SelectBankViewController : BaseViewController
+@property (nonatomic, copy) didSelectBankAction selectedAction;
 @end

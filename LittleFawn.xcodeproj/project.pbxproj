@@ -269,6 +269,16 @@
 		E145AB601C2CD050008BC687 /* ProductHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E145AB5E1C2CD050008BC687 /* ProductHeadView.xib */; };
 		E145AB641C2CE2B4008BC687 /* ProductProfitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E145AB621C2CE2B4008BC687 /* ProductProfitCell.m */; };
 		E145AB651C2CE2B4008BC687 /* ProductProfitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E145AB631C2CE2B4008BC687 /* ProductProfitCell.xib */; };
+		E14A60F91C438DBC00E6BFCF /* TransferredIntoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E14A60F71C438DBC00E6BFCF /* TransferredIntoViewController.m */; };
+		E14A60FA1C438DBC00E6BFCF /* TransferredIntoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14A60F81C438DBC00E6BFCF /* TransferredIntoViewController.xib */; };
+		E14A60FE1C4392CC00E6BFCF /* TransferredBankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E14A60FC1C4392CC00E6BFCF /* TransferredBankCell.m */; };
+		E14A60FF1C4392CC00E6BFCF /* TransferredBankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14A60FD1C4392CC00E6BFCF /* TransferredBankCell.xib */; };
+		E14A61031C4392F800E6BFCF /* TransferredHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E14A61011C4392F800E6BFCF /* TransferredHeaderView.m */; };
+		E14A61041C4392F800E6BFCF /* TransferredHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14A61021C4392F800E6BFCF /* TransferredHeaderView.xib */; };
+		E14A61081C43930D00E6BFCF /* TransferredFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = E14A61061C43930D00E6BFCF /* TransferredFootView.m */; };
+		E14A61091C43930D00E6BFCF /* TransferredFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14A61071C43930D00E6BFCF /* TransferredFootView.xib */; };
+		E14A610D1C43990900E6BFCF /* TransferredInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E14A610B1C43990900E6BFCF /* TransferredInputCell.m */; };
+		E14A610E1C43990900E6BFCF /* TransferredInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E14A610C1C43990900E6BFCF /* TransferredInputCell.xib */; };
 		E15E3B161BDDB67F00976465 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E15E3B151BDDB67F00976465 /* main.m */; };
 		E15E3B191BDDB67F00976465 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E15E3B181BDDB67F00976465 /* AppDelegate.m */; };
 		E15E3B211BDDB67F00976465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15E3B201BDDB67F00976465 /* Assets.xcassets */; };
@@ -276,6 +286,18 @@
 		E15E3B341BDDCFB900976465 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15E3B331BDDCFB900976465 /* UIKit.framework */; };
 		E15E3B361BDDCFCD00976465 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15E3B351BDDCFCD00976465 /* Foundation.framework */; };
 		E15E3B381BDDCFD600976465 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15E3B371BDDCFD600976465 /* CoreGraphics.framework */; };
+		E1652C291C43A74A004E3282 /* TransferredIntoExplanationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1652C271C43A74A004E3282 /* TransferredIntoExplanationCell.m */; };
+		E1652C2A1C43A74A004E3282 /* TransferredIntoExplanationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1652C281C43A74A004E3282 /* TransferredIntoExplanationCell.xib */; };
+		E1652C2E1C43A7F2004E3282 /* TransferredIntoExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1652C2C1C43A7F2004E3282 /* TransferredIntoExplanationViewController.m */; };
+		E1652C2F1C43A7F2004E3282 /* TransferredIntoExplanationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1652C2D1C43A7F2004E3282 /* TransferredIntoExplanationViewController.xib */; };
+		E1652C331C43ABED004E3282 /* TransferredIntoResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1652C311C43ABED004E3282 /* TransferredIntoResultViewController.m */; };
+		E1652C341C43ABED004E3282 /* TransferredIntoResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1652C321C43ABED004E3282 /* TransferredIntoResultViewController.xib */; };
+		E1652C381C43AC4B004E3282 /* TransferredIntoResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1652C361C43AC4B004E3282 /* TransferredIntoResultCell.m */; };
+		E1652C391C43AC4B004E3282 /* TransferredIntoResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1652C371C43AC4B004E3282 /* TransferredIntoResultCell.xib */; };
+		E1652C3E1C43B2F5004E3282 /* MoreLogoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1652C3C1C43B2F5004E3282 /* MoreLogoCell.m */; };
+		E1652C3F1C43B2F5004E3282 /* MoreLogoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1652C3D1C43B2F5004E3282 /* MoreLogoCell.xib */; };
+		E1652C431C43B308004E3282 /* MoreDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1652C411C43B308004E3282 /* MoreDetailCell.m */; };
+		E1652C441C43B308004E3282 /* MoreDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1652C421C43B308004E3282 /* MoreDetailCell.xib */; };
 		E182C8861C2D2C9200050471 /* ProductInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E182C8841C2D2C9200050471 /* ProductInfoCell.m */; };
 		E182C8871C2D2C9200050471 /* ProductInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E182C8851C2D2C9200050471 /* ProductInfoCell.xib */; };
 		E182C8931C2D35FF00050471 /* ProductDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E182C8911C2D35FF00050471 /* ProductDescriptionCell.m */; };
@@ -761,6 +783,21 @@
 		E145AB611C2CE2B4008BC687 /* ProductProfitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductProfitCell.h; path = ProductDetail/Cells/ProductProfitCell.h; sourceTree = "<group>"; };
 		E145AB621C2CE2B4008BC687 /* ProductProfitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductProfitCell.m; path = ProductDetail/Cells/ProductProfitCell.m; sourceTree = "<group>"; };
 		E145AB631C2CE2B4008BC687 /* ProductProfitCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductProfitCell.xib; path = ProductDetail/Cells/ProductProfitCell.xib; sourceTree = "<group>"; };
+		E14A60F61C438DBC00E6BFCF /* TransferredIntoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferredIntoViewController.h; sourceTree = "<group>"; };
+		E14A60F71C438DBC00E6BFCF /* TransferredIntoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferredIntoViewController.m; sourceTree = "<group>"; };
+		E14A60F81C438DBC00E6BFCF /* TransferredIntoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransferredIntoViewController.xib; sourceTree = "<group>"; };
+		E14A60FB1C4392CC00E6BFCF /* TransferredBankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransferredBankCell.h; path = Cells/TransferredBankCell.h; sourceTree = "<group>"; };
+		E14A60FC1C4392CC00E6BFCF /* TransferredBankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransferredBankCell.m; path = Cells/TransferredBankCell.m; sourceTree = "<group>"; };
+		E14A60FD1C4392CC00E6BFCF /* TransferredBankCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransferredBankCell.xib; path = Cells/TransferredBankCell.xib; sourceTree = "<group>"; };
+		E14A61001C4392F800E6BFCF /* TransferredHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransferredHeaderView.h; path = Cells/TransferredHeaderView.h; sourceTree = "<group>"; };
+		E14A61011C4392F800E6BFCF /* TransferredHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransferredHeaderView.m; path = Cells/TransferredHeaderView.m; sourceTree = "<group>"; };
+		E14A61021C4392F800E6BFCF /* TransferredHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransferredHeaderView.xib; path = Cells/TransferredHeaderView.xib; sourceTree = "<group>"; };
+		E14A61051C43930D00E6BFCF /* TransferredFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransferredFootView.h; path = Cells/TransferredFootView.h; sourceTree = "<group>"; };
+		E14A61061C43930D00E6BFCF /* TransferredFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransferredFootView.m; path = Cells/TransferredFootView.m; sourceTree = "<group>"; };
+		E14A61071C43930D00E6BFCF /* TransferredFootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransferredFootView.xib; path = Cells/TransferredFootView.xib; sourceTree = "<group>"; };
+		E14A610A1C43990900E6BFCF /* TransferredInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransferredInputCell.h; path = Cells/TransferredInputCell.h; sourceTree = "<group>"; };
+		E14A610B1C43990900E6BFCF /* TransferredInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransferredInputCell.m; path = Cells/TransferredInputCell.m; sourceTree = "<group>"; };
+		E14A610C1C43990900E6BFCF /* TransferredInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransferredInputCell.xib; path = Cells/TransferredInputCell.xib; sourceTree = "<group>"; };
 		E15E3B111BDDB67F00976465 /* 小鹿理财.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "小鹿理财.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15E3B151BDDB67F00976465 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E15E3B171BDDB67F00976465 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -772,6 +809,24 @@
 		E15E3B331BDDCFB900976465 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E15E3B351BDDCFCD00976465 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E15E3B371BDDCFD600976465 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E1652C261C43A74A004E3282 /* TransferredIntoExplanationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransferredIntoExplanationCell.h; path = Cells/TransferredIntoExplanationCell.h; sourceTree = "<group>"; };
+		E1652C271C43A74A004E3282 /* TransferredIntoExplanationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransferredIntoExplanationCell.m; path = Cells/TransferredIntoExplanationCell.m; sourceTree = "<group>"; };
+		E1652C281C43A74A004E3282 /* TransferredIntoExplanationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransferredIntoExplanationCell.xib; path = Cells/TransferredIntoExplanationCell.xib; sourceTree = "<group>"; };
+		E1652C2B1C43A7F2004E3282 /* TransferredIntoExplanationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferredIntoExplanationViewController.h; sourceTree = "<group>"; };
+		E1652C2C1C43A7F2004E3282 /* TransferredIntoExplanationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferredIntoExplanationViewController.m; sourceTree = "<group>"; };
+		E1652C2D1C43A7F2004E3282 /* TransferredIntoExplanationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransferredIntoExplanationViewController.xib; sourceTree = "<group>"; };
+		E1652C301C43ABED004E3282 /* TransferredIntoResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferredIntoResultViewController.h; sourceTree = "<group>"; };
+		E1652C311C43ABED004E3282 /* TransferredIntoResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferredIntoResultViewController.m; sourceTree = "<group>"; };
+		E1652C321C43ABED004E3282 /* TransferredIntoResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransferredIntoResultViewController.xib; sourceTree = "<group>"; };
+		E1652C351C43AC4B004E3282 /* TransferredIntoResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransferredIntoResultCell.h; path = Cells/TransferredIntoResultCell.h; sourceTree = "<group>"; };
+		E1652C361C43AC4B004E3282 /* TransferredIntoResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransferredIntoResultCell.m; path = Cells/TransferredIntoResultCell.m; sourceTree = "<group>"; };
+		E1652C371C43AC4B004E3282 /* TransferredIntoResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransferredIntoResultCell.xib; path = Cells/TransferredIntoResultCell.xib; sourceTree = "<group>"; };
+		E1652C3B1C43B2F5004E3282 /* MoreLogoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreLogoCell.h; sourceTree = "<group>"; };
+		E1652C3C1C43B2F5004E3282 /* MoreLogoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreLogoCell.m; sourceTree = "<group>"; };
+		E1652C3D1C43B2F5004E3282 /* MoreLogoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreLogoCell.xib; sourceTree = "<group>"; };
+		E1652C401C43B308004E3282 /* MoreDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreDetailCell.h; sourceTree = "<group>"; };
+		E1652C411C43B308004E3282 /* MoreDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreDetailCell.m; sourceTree = "<group>"; };
+		E1652C421C43B308004E3282 /* MoreDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreDetailCell.xib; sourceTree = "<group>"; };
 		E182C8831C2D2C9200050471 /* ProductInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductInfoCell.h; path = ProductDetail/Cells/ProductInfoCell.h; sourceTree = "<group>"; };
 		E182C8841C2D2C9200050471 /* ProductInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductInfoCell.m; path = ProductDetail/Cells/ProductInfoCell.m; sourceTree = "<group>"; };
 		E182C8851C2D2C9200050471 /* ProductInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductInfoCell.xib; path = ProductDetail/Cells/ProductInfoCell.xib; sourceTree = "<group>"; };
@@ -950,6 +1005,24 @@
 				4E2343361C3FE2E700976283 /* InputTextForChangeCell.h */,
 				4E2343371C3FE2E700976283 /* InputTextForChangeCell.m */,
 				4E2343381C3FE2E700976283 /* InputTextForChangeCell.xib */,
+				E14A60FB1C4392CC00E6BFCF /* TransferredBankCell.h */,
+				E14A60FC1C4392CC00E6BFCF /* TransferredBankCell.m */,
+				E14A60FD1C4392CC00E6BFCF /* TransferredBankCell.xib */,
+				E14A61001C4392F800E6BFCF /* TransferredHeaderView.h */,
+				E14A61011C4392F800E6BFCF /* TransferredHeaderView.m */,
+				E14A61021C4392F800E6BFCF /* TransferredHeaderView.xib */,
+				E14A61051C43930D00E6BFCF /* TransferredFootView.h */,
+				E14A61061C43930D00E6BFCF /* TransferredFootView.m */,
+				E14A61071C43930D00E6BFCF /* TransferredFootView.xib */,
+				E14A610A1C43990900E6BFCF /* TransferredInputCell.h */,
+				E14A610B1C43990900E6BFCF /* TransferredInputCell.m */,
+				E14A610C1C43990900E6BFCF /* TransferredInputCell.xib */,
+				E1652C261C43A74A004E3282 /* TransferredIntoExplanationCell.h */,
+				E1652C271C43A74A004E3282 /* TransferredIntoExplanationCell.m */,
+				E1652C281C43A74A004E3282 /* TransferredIntoExplanationCell.xib */,
+				E1652C351C43AC4B004E3282 /* TransferredIntoResultCell.h */,
+				E1652C361C43AC4B004E3282 /* TransferredIntoResultCell.m */,
+				E1652C371C43AC4B004E3282 /* TransferredIntoResultCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -1064,6 +1137,7 @@
 		4ED797371C2C253200766A6E /* MoreAction */ = {
 			isa = PBXGroup;
 			children = (
+				E1652C3A1C43B2DD004E3282 /* cells */,
 				4ED797381C2C253200766A6E /* MoreActionViewController.h */,
 				4ED797391C2C253200766A6E /* MoreActionViewController.m */,
 				4ED7973A1C2C253200766A6E /* MoreActionViewController.xib */,
@@ -1111,6 +1185,15 @@
 				4E2343311C3FE29300976283 /* ChangeTransactionPwdViewController.h */,
 				4E2343321C3FE29300976283 /* ChangeTransactionPwdViewController.m */,
 				4E2343331C3FE29300976283 /* ChangeTransactionPwdViewController.xib */,
+				E14A60F61C438DBC00E6BFCF /* TransferredIntoViewController.h */,
+				E14A60F71C438DBC00E6BFCF /* TransferredIntoViewController.m */,
+				E14A60F81C438DBC00E6BFCF /* TransferredIntoViewController.xib */,
+				E1652C2B1C43A7F2004E3282 /* TransferredIntoExplanationViewController.h */,
+				E1652C2C1C43A7F2004E3282 /* TransferredIntoExplanationViewController.m */,
+				E1652C2D1C43A7F2004E3282 /* TransferredIntoExplanationViewController.xib */,
+				E1652C301C43ABED004E3282 /* TransferredIntoResultViewController.h */,
+				E1652C311C43ABED004E3282 /* TransferredIntoResultViewController.m */,
+				E1652C321C43ABED004E3282 /* TransferredIntoResultViewController.xib */,
 			);
 			path = MyAssets;
 			sourceTree = "<group>";
@@ -1727,6 +1810,19 @@
 			name = Tools;
 			sourceTree = "<group>";
 		};
+		E1652C3A1C43B2DD004E3282 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				E1652C3B1C43B2F5004E3282 /* MoreLogoCell.h */,
+				E1652C3C1C43B2F5004E3282 /* MoreLogoCell.m */,
+				E1652C3D1C43B2F5004E3282 /* MoreLogoCell.xib */,
+				E1652C401C43B308004E3282 /* MoreDetailCell.h */,
+				E1652C411C43B308004E3282 /* MoreDetailCell.m */,
+				E1652C421C43B308004E3282 /* MoreDetailCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 		E1B226FE1C3527ED00973195 /* cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -1803,6 +1899,7 @@
 				4E21B5A41C3AA1DC00848287 /* TransactionInquiryViewController.xib in Resources */,
 				E1B226E41C34C67A00973195 /* RechargeConfirmationHeader.xib in Resources */,
 				4E0E5DA51C3418CB00BE9F94 /* RechargeConfirmationViewController.xib in Resources */,
+				E1652C391C43AC4B004E3282 /* TransferredIntoResultCell.xib in Resources */,
 				4E12FF1F1C32B4F0004126A4 /* AssetDetailsViewController.xib in Resources */,
 				E1C2E3831C33B76100804EB2 /* CashDetailCell00.xib in Resources */,
 				4E52B6071C3966C800C347F2 /* AccumulatedEarningsTitleCell.xib in Resources */,
@@ -1822,11 +1919,14 @@
 				4E0E5D9B1C340AF200BE9F94 /* RechargeFootView.xib in Resources */,
 				4E12FF511C32B50A004126A4 /* BecomeCashCell.xib in Resources */,
 				E182C8941C2D35FF00050471 /* ProductDescriptionCell.xib in Resources */,
+				E1652C2A1C43A74A004E3282 /* TransferredIntoExplanationCell.xib in Resources */,
+				E14A60FF1C4392CC00E6BFCF /* TransferredBankCell.xib in Resources */,
 				4E52B59C1C36C83B00C347F2 /* AccountInforCell.xib in Resources */,
 				4E12FF491C32B50A004126A4 /* AssetDetailCell11.xib in Resources */,
 				E1B226F61C34C6B800973195 /* RechargeConfirmationFooter2.xib in Resources */,
 				4E2343351C3FE29300976283 /* ChangeTransactionPwdViewController.xib in Resources */,
 				E182C8871C2D2C9200050471 /* ProductInfoCell.xib in Resources */,
+				E14A60FA1C438DBC00E6BFCF /* TransferredIntoViewController.xib in Resources */,
 				4E23432B1C3FE0C100976283 /* ChangeLoginPwdViewController.xib in Resources */,
 				E1B226FB1C350EF600973195 /* RechargeConfirmCell.xib in Resources */,
 				E1F3F6EC1C30D9DF00A33954 /* PurchaseProtocolViewController.xib in Resources */,
@@ -1837,6 +1937,7 @@
 				4E12FF4D1C32B50A004126A4 /* AssetDetailCell30.xib in Resources */,
 				4EACA8C41C28361900BFC62F /* TextInputCell.xib in Resources */,
 				621964391C229A2D004EF284 /* ShareSDK.bundle in Resources */,
+				E1652C3F1C43B2F5004E3282 /* MoreLogoCell.xib in Resources */,
 				4EADDA7B1C2FE95A00DE49A6 /* PurchaseFootView.xib in Resources */,
 				4E21B5B81C3AAD2100848287 /* TransactionDateFootView.xib in Resources */,
 				4ED797321C2AFD1300766A6E /* LeftMenuTableViewController.xib in Resources */,
@@ -1853,6 +1954,7 @@
 				4E52B5A11C36C87000C347F2 /* AssetsInforCell.xib in Resources */,
 				E15E3B211BDDB67F00976465 /* Assets.xcassets in Resources */,
 				4EADDA6C1C2FD48900DE49A6 /* RiskDisclosureViewController.xib in Resources */,
+				E14A610E1C43990900E6BFCF /* TransferredInputCell.xib in Resources */,
 				4EE2B8DE1C316BE200CD3A10 /* InputPayPasswordViewController.xib in Resources */,
 				4E52B5C91C37906000C347F2 /* BalanceBoxIncomeRateCell.xib in Resources */,
 				621764811C0FDBF900613950 /* Localizable.strings in Resources */,
@@ -1885,8 +1987,10 @@
 				4E0E5D961C340ACF00BE9F94 /* RechargeCell01.xib in Resources */,
 				620876DE1BF42EE5002178AE /* MJRefresh.bundle in Resources */,
 				E1C2E3921C33BB8700804EB2 /* CashDetailFootView.xib in Resources */,
+				E1652C2F1C43A7F2004E3282 /* TransferredIntoExplanationViewController.xib in Resources */,
 				E1C2E3881C33B80600804EB2 /* CashDetailViewController.xib in Resources */,
 				4E21B5A91C3AAC2C00848287 /* TransactionDetailViewController.xib in Resources */,
+				E1652C341C43ABED004E3282 /* TransferredIntoResultViewController.xib in Resources */,
 				E182C8991C2D42D600050471 /* ContractInformationCell.xib in Resources */,
 				6219643D1C229A2D004EF284 /* ShareSDKUI.bundle in Resources */,
 				4ED7971D1C2AD60000766A6E /* RegisterProtocolViewController.xib in Resources */,
@@ -1905,9 +2009,12 @@
 				E1C2E3741C33732500804EB2 /* BecomeCashDetailCell10.xib in Resources */,
 				4E52B5B51C37818500C347F2 /* MyAssetDetailViewController.xib in Resources */,
 				4E52B60C1C3966DE00C347F2 /* AccumulatedEarningsDetailCell.xib in Resources */,
+				E1652C441C43B308004E3282 /* MoreDetailCell.xib in Resources */,
 				4E2343121C3E919E00976283 /* AddBankCardCell.xib in Resources */,
 				E145AB601C2CD050008BC687 /* ProductHeadView.xib in Resources */,
 				4EACA8C91C28390100BFC62F /* LoginFootView.xib in Resources */,
+				E14A61041C4392F800E6BFCF /* TransferredHeaderView.xib in Resources */,
+				E14A61091C43930D00E6BFCF /* TransferredFootView.xib in Resources */,
 				4EE2B8E51C318EEC00CD3A10 /* OrderViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1933,6 +2040,8 @@
 				6218B2601BFF24C30085AB7C /* WZBaseViewController.m in Sources */,
 				E1C2E38C1C33BB6800804EB2 /* CashDetailCell1.m in Sources */,
 				4EACA8C81C28390100BFC62F /* LoginFootView.m in Sources */,
+				E14A60F91C438DBC00E6BFCF /* TransferredIntoViewController.m in Sources */,
+				E1652C381C43AC4B004E3282 /* TransferredIntoResultCell.m in Sources */,
 				620876E71BF42EE5002178AE /* NSData+MKBase64.m in Sources */,
 				4EADDA611C2ECBE500DE49A6 /* ProductsContractViewController.m in Sources */,
 				620876CF1BF42EE5002178AE /* ASIAuthenticationDialog.m in Sources */,
@@ -1974,6 +2083,7 @@
 				4E2343111C3E919E00976283 /* AddBankCardCell.m in Sources */,
 				620877361BF4AB78002178AE /* LeftMenuTableViewController.m in Sources */,
 				620876E51BF42EE5002178AE /* UIView+MJExtension.m in Sources */,
+				E1652C2E1C43A7F2004E3282 /* TransferredIntoExplanationViewController.m in Sources */,
 				4E12FF481C32B50A004126A4 /* AssetDetailCell11.m in Sources */,
 				4E12FF4E1C32B50A004126A4 /* AssetDetailsHeadView.m in Sources */,
 				4E52B59B1C36C83B00C347F2 /* AccountInforCell.m in Sources */,
@@ -1981,6 +2091,7 @@
 				620877571BF4CB11002178AE /* NSData+Base64.m in Sources */,
 				620876EE1BF42EE5002178AE /* MKNetworkOperation.m in Sources */,
 				6208775E1BF4CB11002178AE /* SBJsonWriter.m in Sources */,
+				E14A61081C43930D00E6BFCF /* TransferredFootView.m in Sources */,
 				4E0E5D951C340ACF00BE9F94 /* RechargeCell01.m in Sources */,
 				4E52B5A51C36C8BE00C347F2 /* OtherInforCell.m in Sources */,
 				4E21B5B21C3AACF800848287 /* TransactionHistoryDetailCell.m in Sources */,
@@ -2005,6 +2116,7 @@
 				4E52B5F71C37933B00C347F2 /* PNPieChart.m in Sources */,
 				620876D01BF42EE5002178AE /* ASIDataCompressor.m in Sources */,
 				620876CD1BF42EE5002178AE /* FileManager.m in Sources */,
+				E1652C291C43A74A004E3282 /* TransferredIntoExplanationCell.m in Sources */,
 				620876E41BF42EE5002178AE /* UIScrollView+MJRefresh.m in Sources */,
 				E1C2E3611C336BD100804EB2 /* BecomeCashDetailViewController.m in Sources */,
 				620876EA1BF42EE5002178AE /* NSString+MKNetworkKitAdditions.m in Sources */,
@@ -2012,13 +2124,16 @@
 				4E21B5A31C3AA1DC00848287 /* TransactionInquiryViewController.m in Sources */,
 				E145AB5F1C2CD050008BC687 /* ProductHeadView.m in Sources */,
 				E1F3F6F81C30DEE900A33954 /* PaymentViewController.m in Sources */,
+				E1652C431C43B308004E3282 /* MoreDetailCell.m in Sources */,
 				4E12FF201C32B4F0004126A4 /* BecomeCashViewController.m in Sources */,
 				620877321BF4AB78002178AE /* LeftMenuCell.m in Sources */,
 				620876D41BF42EE5002178AE /* ASIHTTPRequest.m in Sources */,
 				620876D71BF42EE5002178AE /* GTMBase64.m in Sources */,
 				4EE2B8EE1C3190E100CD3A10 /* OrderCell2.m in Sources */,
+				E14A61031C4392F800E6BFCF /* TransferredHeaderView.m in Sources */,
 				4E21B5A81C3AAC2C00848287 /* TransactionDetailViewController.m in Sources */,
 				4ED797171C2AD13100766A6E /* ResetPwdViewController.m in Sources */,
+				E14A610D1C43990900E6BFCF /* TransferredInputCell.m in Sources */,
 				620876C61BF42EE5002178AE /* CusCategory.m in Sources */,
 				6218B1FC1BFEBF380085AB7C /* PhotoSelectManager.m in Sources */,
 				4E52B5F11C37933B00C347F2 /* PNChartLabel.m in Sources */,
@@ -2045,6 +2160,7 @@
 				E15E3B191BDDB67F00976465 /* AppDelegate.m in Sources */,
 				4EACA8D21C2844B900BFC62F /* ResetPwdFootView.m in Sources */,
 				620876EC1BF42EE5002178AE /* UIImageView+MKNetworkKitAdditions.m in Sources */,
+				E1652C3E1C43B2F5004E3282 /* MoreLogoCell.m in Sources */,
 				E1F3F70C1C31166900A33954 /* PaymentCell3.m in Sources */,
 				620877561BF4CB11002178AE /* AESCrypt.m in Sources */,
 				620876E01BF42EE5002178AE /* MJRefreshConst.m in Sources */,
@@ -2069,6 +2185,7 @@
 				620876C71BF42EE5002178AE /* CusWidget.m in Sources */,
 				4E52B5AF1C36E52C00C347F2 /* MyAccountCell.m in Sources */,
 				620877401BF4CA34002178AE /* NetDataManager.m in Sources */,
+				E1652C331C43ABED004E3282 /* TransferredIntoResultViewController.m in Sources */,
 				E1B226E31C34C67A00973195 /* RechargeConfirmationHeader.m in Sources */,
 				4E12FF1E1C32B4F0004126A4 /* AssetDetailsViewController.m in Sources */,
 				E1C2E3961C33C0C000804EB2 /* CashDetailCell01.m in Sources */,
@@ -2082,6 +2199,7 @@
 				E1B226F01C34C6A100973195 /* RechargeConfirmationFooter1.m in Sources */,
 				4E2343251C3EA49600976283 /* DeleteBankCardViewController.m in Sources */,
 				E1F3F7021C310FDB00A33954 /* PaymentCell1.m in Sources */,
+				E14A60FE1C4392CC00E6BFCF /* TransferredBankCell.m in Sources */,
 				4E52B5F41C37933B00C347F2 /* PNLineChart.m in Sources */,
 				620876DF1BF42EE5002178AE /* MJRefreshBaseView.m in Sources */,
 				4E21B5B71C3AAD2100848287 /* TransactionDateFootView.m in Sources */,

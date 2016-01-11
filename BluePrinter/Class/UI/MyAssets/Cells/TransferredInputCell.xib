@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="TransferredInputCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbo-bX-J7h">
+                        <rect key="frame" x="21" y="13" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="Nj4-HO-ChC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.44705882352941173" green="0.44313725490196076" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="建议装上100以上的金额" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HIm-FL-R7G">
+                        <rect key="frame" x="71" y="8" width="241" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="HIm-FL-R7G" secondAttribute="trailing" constant="8" id="9ZW-PN-zUF"/>
+                    <constraint firstItem="HIm-FL-R7G" firstAttribute="leading" secondItem="sbo-bX-J7h" secondAttribute="trailing" constant="8" id="EWb-Cl-j62"/>
+                    <constraint firstItem="HIm-FL-R7G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="NlE-6P-k5S"/>
+                    <constraint firstAttribute="bottom" secondItem="sbo-bX-J7h" secondAttribute="bottom" constant="14" id="QxF-7M-1nC"/>
+                    <constraint firstItem="sbo-bX-J7h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="RK3-TW-YrI"/>
+                    <constraint firstItem="sbo-bX-J7h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="m9e-Xc-lat"/>
+                    <constraint firstAttribute="bottom" secondItem="HIm-FL-R7G" secondAttribute="bottom" constant="8" id="vZ0-rb-yhy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="moneyInput" destination="HIm-FL-R7G" id="WzC-r9-a7J"/>
+            </connections>
+            <point key="canvasLocation" x="488" y="386.5"/>
+        </tableViewCell>
+    </objects>
+</document>

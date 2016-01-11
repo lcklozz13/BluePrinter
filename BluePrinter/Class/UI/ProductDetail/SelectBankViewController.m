@@ -95,4 +95,14 @@
     
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.selectedAction)
+    {
+        self.selectedAction(indexPath.row, nil);
+    }
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end

@@ -10,6 +10,12 @@
 #import <UIKit/UIKit.h>
 #import "SlideMenuViewController.h"
 
+typedef NS_ENUM(NSInteger, ViewType)
+{
+    ViewTyp_turnInto,
+    ViewType_turnOut
+};
+
 @interface ViewControllerManager : NSObject
 + (ViewControllerManager *)getInstance;
 - (UIViewController *)getRootViewController;

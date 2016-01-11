@@ -7,6 +7,7 @@
 //
 
 #import "BalanceBoxViewController.h"
+#import "TransferredIntoViewController.h"
 #import "BalanceBoxIncomeRateCell.h"
 #import "BalanceBoxOtherCell.h"
 #import "PNChartDelegate.h"
@@ -14,6 +15,8 @@
 
 @interface BalanceBoxViewController ()<PNChartDelegate>
 @property (weak, nonatomic) IBOutlet    UITableView *tableview;
+- (IBAction)turnIntoAction:(id)sender;
+- (IBAction)turnOutAction:(id)sender;
 @end
 
 @implementation BalanceBoxViewController
@@ -30,6 +33,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)turnIntoAction:(id)sender
+{
+    TransferredIntoViewController *view = [[TransferredIntoViewController alloc] initWithViewType:ViewTyp_turnInto];
+    [self.navigationController pushViewController:view animated:YES];
+}
+
+- (IBAction)turnOutAction:(id)sender
+{
+    TransferredIntoViewController *view = [[TransferredIntoViewController alloc] initWithViewType:ViewType_turnOut];
+    [self.navigationController pushViewController:view animated:YES];
 }
 
 /*

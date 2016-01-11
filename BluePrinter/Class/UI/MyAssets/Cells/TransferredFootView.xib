@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="YsI-2g-b9y" customClass="TransferredFootView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMm-Tr-3QN">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AF-2m-TOp">
+                    <rect key="frame" x="23" y="45" width="274" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="bg4-q1-50c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="确认转出" backgroundImage="btn-blue-large">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" backgroundImage="btn-gray-large"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预计收益到帐时间10-18（星期五）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBO-G3-icR">
+                    <rect key="frame" x="23" y="88" width="274" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="TFp-mi-rdC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.70980392156862748" green="0.71372549019607845" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qMm-Tr-3QN" secondAttribute="trailing" id="2KC-Sj-Qgk"/>
+                <constraint firstItem="SBO-G3-icR" firstAttribute="leading" secondItem="YsI-2g-b9y" secondAttribute="leading" constant="23" id="4la-rb-Hl8"/>
+                <constraint firstAttribute="trailing" secondItem="3AF-2m-TOp" secondAttribute="trailing" constant="23" id="FE9-mz-mn0"/>
+                <constraint firstAttribute="bottom" secondItem="qMm-Tr-3QN" secondAttribute="bottom" id="I6o-rG-VFk"/>
+                <constraint firstItem="3AF-2m-TOp" firstAttribute="top" secondItem="YsI-2g-b9y" secondAttribute="top" constant="45" id="Sk0-5T-SCV"/>
+                <constraint firstItem="qMm-Tr-3QN" firstAttribute="top" secondItem="YsI-2g-b9y" secondAttribute="top" id="SwL-3h-BmS"/>
+                <constraint firstItem="qMm-Tr-3QN" firstAttribute="leading" secondItem="YsI-2g-b9y" secondAttribute="leading" id="SyS-n9-PbU"/>
+                <constraint firstItem="SBO-G3-icR" firstAttribute="top" secondItem="3AF-2m-TOp" secondAttribute="bottom" constant="8" id="TYq-n0-K0m"/>
+                <constraint firstAttribute="trailing" secondItem="SBO-G3-icR" secondAttribute="trailing" constant="23" id="aNT-vC-ZIj"/>
+                <constraint firstItem="3AF-2m-TOp" firstAttribute="leading" secondItem="YsI-2g-b9y" secondAttribute="leading" constant="23" id="exR-Me-hXV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="confromBtn" destination="3AF-2m-TOp" id="Gqt-xa-RHW"/>
+                <outlet property="inforLab" destination="SBO-G3-icR" id="9Wa-ow-f7Z"/>
+            </connections>
+            <point key="canvasLocation" x="457" y="275"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn-blue-large" width="332" height="35"/>
+        <image name="btn-gray-large" width="332" height="35"/>
+    </resources>
+</document>
