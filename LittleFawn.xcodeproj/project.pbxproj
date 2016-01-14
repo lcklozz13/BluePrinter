@@ -263,6 +263,10 @@
 		6223A0101C118C22004A090E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6223A00F1C118C22004A090E /* Security.framework */; };
 		6223A0121C118C32004A090E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6223A0111C118C32004A090E /* SystemConfiguration.framework */; };
 		6223A0141C118C47004A090E /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6223A0131C118C47004A090E /* libxml2.tbd */; };
+		E10D3CDF1C473E72008D7369 /* ForwardingFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10D3CDD1C473E72008D7369 /* ForwardingFriendViewController.m */; };
+		E10D3CE01C473E72008D7369 /* ForwardingFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E10D3CDE1C473E72008D7369 /* ForwardingFriendViewController.xib */; };
+		E10D3CE41C477E17008D7369 /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E10D3CE21C477E17008D7369 /* ContactUsViewController.m */; };
+		E10D3CE51C477E17008D7369 /* ContactUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E10D3CE31C477E17008D7369 /* ContactUsViewController.xib */; };
 		E145AB591C2CCD18008BC687 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E145AB571C2CCD18008BC687 /* ProductDetailViewController.m */; };
 		E145AB5A1C2CCD18008BC687 /* ProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E145AB581C2CCD18008BC687 /* ProductDetailViewController.xib */; };
 		E145AB5F1C2CD050008BC687 /* ProductHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = E145AB5D1C2CD050008BC687 /* ProductHeadView.m */; };
@@ -312,6 +316,30 @@
 		E1B226F61C34C6B800973195 /* RechargeConfirmationFooter2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B226F41C34C6B800973195 /* RechargeConfirmationFooter2.xib */; };
 		E1B226FA1C350EF600973195 /* RechargeConfirmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B226F81C350EF600973195 /* RechargeConfirmCell.m */; };
 		E1B226FB1C350EF600973195 /* RechargeConfirmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B226F91C350EF600973195 /* RechargeConfirmCell.xib */; };
+		E1B8E52D1C478C6900970C28 /* ContactUsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8E52B1C478C6900970C28 /* ContactUsCell.m */; };
+		E1B8E52E1C478C6900970C28 /* ContactUsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B8E52C1C478C6900970C28 /* ContactUsCell.xib */; };
+		E1B8E5321C47946800970C28 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8E5301C47946800970C28 /* AboutUsViewController.m */; };
+		E1B8E5331C47946800970C28 /* AboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B8E5311C47946800970C28 /* AboutUsViewController.xib */; };
+		E1B8E5371C4797F000970C28 /* SubmitCommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8E5351C4797F000970C28 /* SubmitCommentsViewController.m */; };
+		E1B8E5381C4797F000970C28 /* SubmitCommentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B8E5361C4797F000970C28 /* SubmitCommentsViewController.xib */; };
+		E1B8E53C1C4798EF00970C28 /* SubmitCommentsCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8E53A1C4798EF00970C28 /* SubmitCommentsCell1.m */; };
+		E1B8E53D1C4798EF00970C28 /* SubmitCommentsCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B8E53B1C4798EF00970C28 /* SubmitCommentsCell1.xib */; };
+		E1B8E5411C4798FC00970C28 /* SubmitCommentsCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8E53F1C4798FC00970C28 /* SubmitCommentsCell2.m */; };
+		E1B8E5421C4798FC00970C28 /* SubmitCommentsCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B8E5401C4798FC00970C28 /* SubmitCommentsCell2.xib */; };
+		E1B8E5461C47990900970C28 /* SubmitCommentsCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8E5441C47990900970C28 /* SubmitCommentsCell3.m */; };
+		E1B8E5471C47990900970C28 /* SubmitCommentsCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B8E5451C47990900970C28 /* SubmitCommentsCell3.xib */; };
+		E1B8E54B1C47991800970C28 /* SubmitCommentsCell4.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8E5491C47991800970C28 /* SubmitCommentsCell4.m */; };
+		E1B8E54C1C47991800970C28 /* SubmitCommentsCell4.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B8E54A1C47991800970C28 /* SubmitCommentsCell4.xib */; };
+		E1B8E5501C47994600970C28 /* SubmitCommentsFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8E54E1C47994600970C28 /* SubmitCommentsFootView.m */; };
+		E1B8E5511C47994600970C28 /* SubmitCommentsFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B8E54F1C47994600970C28 /* SubmitCommentsFootView.xib */; };
+		E1B8E5571C47A52100970C28 /* SystemMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8E5551C47A52100970C28 /* SystemMessagesViewController.m */; };
+		E1B8E5581C47A52100970C28 /* SystemMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B8E5561C47A52100970C28 /* SystemMessagesViewController.xib */; };
+		E1B8E55C1C47A6ED00970C28 /* MessagesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8E55A1C47A6ED00970C28 /* MessagesDetailViewController.m */; };
+		E1B8E55D1C47A6ED00970C28 /* MessagesDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B8E55B1C47A6ED00970C28 /* MessagesDetailViewController.xib */; };
+		E1B8E5611C47A70A00970C28 /* MessagesDetailCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8E55F1C47A70A00970C28 /* MessagesDetailCell1.m */; };
+		E1B8E5621C47A70A00970C28 /* MessagesDetailCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B8E5601C47A70A00970C28 /* MessagesDetailCell1.xib */; };
+		E1B8E5661C47A71800970C28 /* MessagesDetailCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B8E5641C47A71800970C28 /* MessagesDetailCell2.m */; };
+		E1B8E5671C47A71800970C28 /* MessagesDetailCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B8E5651C47A71800970C28 /* MessagesDetailCell2.xib */; };
 		E1C2E3611C336BD100804EB2 /* BecomeCashDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E35F1C336BD100804EB2 /* BecomeCashDetailViewController.m */; };
 		E1C2E3621C336BD100804EB2 /* BecomeCashDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C2E3601C336BD100804EB2 /* BecomeCashDetailViewController.xib */; };
 		E1C2E36E1C33730B00804EB2 /* BecomeCashDetailCell00.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C2E36C1C33730B00804EB2 /* BecomeCashDetailCell00.m */; };
@@ -773,6 +801,12 @@
 		6223A00F1C118C22004A090E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6223A0111C118C32004A090E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6223A0131C118C47004A090E /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		E10D3CDC1C473E72008D7369 /* ForwardingFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardingFriendViewController.h; sourceTree = "<group>"; };
+		E10D3CDD1C473E72008D7369 /* ForwardingFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForwardingFriendViewController.m; sourceTree = "<group>"; };
+		E10D3CDE1C473E72008D7369 /* ForwardingFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForwardingFriendViewController.xib; sourceTree = "<group>"; };
+		E10D3CE11C477E17008D7369 /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
+		E10D3CE21C477E17008D7369 /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
+		E10D3CE31C477E17008D7369 /* ContactUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactUsViewController.xib; sourceTree = "<group>"; };
 		E13968CE1BF046D300C1E8C3 /* BluePrint_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluePrint_PrefixHeader.pch; sourceTree = "<group>"; };
 		E145AB561C2CCD18008BC687 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductDetailViewController.h; path = ProductDetail/ProductDetailViewController.h; sourceTree = "<group>"; };
 		E145AB571C2CCD18008BC687 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductDetailViewController.m; path = ProductDetail/ProductDetailViewController.m; sourceTree = "<group>"; };
@@ -848,6 +882,42 @@
 		E1B226F71C350EF600973195 /* RechargeConfirmCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RechargeConfirmCell.h; path = ProductDetail/Cells/RechargeConfirmCell.h; sourceTree = "<group>"; };
 		E1B226F81C350EF600973195 /* RechargeConfirmCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RechargeConfirmCell.m; path = ProductDetail/Cells/RechargeConfirmCell.m; sourceTree = "<group>"; };
 		E1B226F91C350EF600973195 /* RechargeConfirmCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RechargeConfirmCell.xib; path = ProductDetail/Cells/RechargeConfirmCell.xib; sourceTree = "<group>"; };
+		E1B8E52A1C478C6900970C28 /* ContactUsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsCell.h; sourceTree = "<group>"; };
+		E1B8E52B1C478C6900970C28 /* ContactUsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsCell.m; sourceTree = "<group>"; };
+		E1B8E52C1C478C6900970C28 /* ContactUsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactUsCell.xib; sourceTree = "<group>"; };
+		E1B8E52F1C47946800970C28 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		E1B8E5301C47946800970C28 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		E1B8E5311C47946800970C28 /* AboutUsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutUsViewController.xib; sourceTree = "<group>"; };
+		E1B8E5341C4797F000970C28 /* SubmitCommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitCommentsViewController.h; sourceTree = "<group>"; };
+		E1B8E5351C4797F000970C28 /* SubmitCommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitCommentsViewController.m; sourceTree = "<group>"; };
+		E1B8E5361C4797F000970C28 /* SubmitCommentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitCommentsViewController.xib; sourceTree = "<group>"; };
+		E1B8E5391C4798EF00970C28 /* SubmitCommentsCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitCommentsCell1.h; sourceTree = "<group>"; };
+		E1B8E53A1C4798EF00970C28 /* SubmitCommentsCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitCommentsCell1.m; sourceTree = "<group>"; };
+		E1B8E53B1C4798EF00970C28 /* SubmitCommentsCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitCommentsCell1.xib; sourceTree = "<group>"; };
+		E1B8E53E1C4798FC00970C28 /* SubmitCommentsCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitCommentsCell2.h; sourceTree = "<group>"; };
+		E1B8E53F1C4798FC00970C28 /* SubmitCommentsCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitCommentsCell2.m; sourceTree = "<group>"; };
+		E1B8E5401C4798FC00970C28 /* SubmitCommentsCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitCommentsCell2.xib; sourceTree = "<group>"; };
+		E1B8E5431C47990900970C28 /* SubmitCommentsCell3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitCommentsCell3.h; sourceTree = "<group>"; };
+		E1B8E5441C47990900970C28 /* SubmitCommentsCell3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitCommentsCell3.m; sourceTree = "<group>"; };
+		E1B8E5451C47990900970C28 /* SubmitCommentsCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitCommentsCell3.xib; sourceTree = "<group>"; };
+		E1B8E5481C47991800970C28 /* SubmitCommentsCell4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitCommentsCell4.h; sourceTree = "<group>"; };
+		E1B8E5491C47991800970C28 /* SubmitCommentsCell4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitCommentsCell4.m; sourceTree = "<group>"; };
+		E1B8E54A1C47991800970C28 /* SubmitCommentsCell4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitCommentsCell4.xib; sourceTree = "<group>"; };
+		E1B8E54D1C47994600970C28 /* SubmitCommentsFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitCommentsFootView.h; sourceTree = "<group>"; };
+		E1B8E54E1C47994600970C28 /* SubmitCommentsFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitCommentsFootView.m; sourceTree = "<group>"; };
+		E1B8E54F1C47994600970C28 /* SubmitCommentsFootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitCommentsFootView.xib; sourceTree = "<group>"; };
+		E1B8E5541C47A52100970C28 /* SystemMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemMessagesViewController.h; sourceTree = "<group>"; };
+		E1B8E5551C47A52100970C28 /* SystemMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemMessagesViewController.m; sourceTree = "<group>"; };
+		E1B8E5561C47A52100970C28 /* SystemMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SystemMessagesViewController.xib; sourceTree = "<group>"; };
+		E1B8E5591C47A6ED00970C28 /* MessagesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesDetailViewController.h; sourceTree = "<group>"; };
+		E1B8E55A1C47A6ED00970C28 /* MessagesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesDetailViewController.m; sourceTree = "<group>"; };
+		E1B8E55B1C47A6ED00970C28 /* MessagesDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesDetailViewController.xib; sourceTree = "<group>"; };
+		E1B8E55E1C47A70A00970C28 /* MessagesDetailCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesDetailCell1.h; sourceTree = "<group>"; };
+		E1B8E55F1C47A70A00970C28 /* MessagesDetailCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesDetailCell1.m; sourceTree = "<group>"; };
+		E1B8E5601C47A70A00970C28 /* MessagesDetailCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesDetailCell1.xib; sourceTree = "<group>"; };
+		E1B8E5631C47A71800970C28 /* MessagesDetailCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesDetailCell2.h; sourceTree = "<group>"; };
+		E1B8E5641C47A71800970C28 /* MessagesDetailCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesDetailCell2.m; sourceTree = "<group>"; };
+		E1B8E5651C47A71800970C28 /* MessagesDetailCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesDetailCell2.xib; sourceTree = "<group>"; };
 		E1C2E35E1C336BD100804EB2 /* BecomeCashDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BecomeCashDetailViewController.h; path = ProductDetail/BecomeCashDetailViewController.h; sourceTree = "<group>"; };
 		E1C2E35F1C336BD100804EB2 /* BecomeCashDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BecomeCashDetailViewController.m; path = ProductDetail/BecomeCashDetailViewController.m; sourceTree = "<group>"; };
 		E1C2E3601C336BD100804EB2 /* BecomeCashDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BecomeCashDetailViewController.xib; path = ProductDetail/BecomeCashDetailViewController.xib; sourceTree = "<group>"; };
@@ -1141,6 +1211,24 @@
 				4ED797381C2C253200766A6E /* MoreActionViewController.h */,
 				4ED797391C2C253200766A6E /* MoreActionViewController.m */,
 				4ED7973A1C2C253200766A6E /* MoreActionViewController.xib */,
+				E10D3CDC1C473E72008D7369 /* ForwardingFriendViewController.h */,
+				E10D3CDD1C473E72008D7369 /* ForwardingFriendViewController.m */,
+				E10D3CDE1C473E72008D7369 /* ForwardingFriendViewController.xib */,
+				E10D3CE11C477E17008D7369 /* ContactUsViewController.h */,
+				E10D3CE21C477E17008D7369 /* ContactUsViewController.m */,
+				E10D3CE31C477E17008D7369 /* ContactUsViewController.xib */,
+				E1B8E52F1C47946800970C28 /* AboutUsViewController.h */,
+				E1B8E5301C47946800970C28 /* AboutUsViewController.m */,
+				E1B8E5311C47946800970C28 /* AboutUsViewController.xib */,
+				E1B8E5341C4797F000970C28 /* SubmitCommentsViewController.h */,
+				E1B8E5351C4797F000970C28 /* SubmitCommentsViewController.m */,
+				E1B8E5361C4797F000970C28 /* SubmitCommentsViewController.xib */,
+				E1B8E5541C47A52100970C28 /* SystemMessagesViewController.h */,
+				E1B8E5551C47A52100970C28 /* SystemMessagesViewController.m */,
+				E1B8E5561C47A52100970C28 /* SystemMessagesViewController.xib */,
+				E1B8E5591C47A6ED00970C28 /* MessagesDetailViewController.h */,
+				E1B8E55A1C47A6ED00970C28 /* MessagesDetailViewController.m */,
+				E1B8E55B1C47A6ED00970C28 /* MessagesDetailViewController.xib */,
 			);
 			path = MoreAction;
 			sourceTree = "<group>";
@@ -1819,6 +1907,30 @@
 				E1652C401C43B308004E3282 /* MoreDetailCell.h */,
 				E1652C411C43B308004E3282 /* MoreDetailCell.m */,
 				E1652C421C43B308004E3282 /* MoreDetailCell.xib */,
+				E1B8E52A1C478C6900970C28 /* ContactUsCell.h */,
+				E1B8E52B1C478C6900970C28 /* ContactUsCell.m */,
+				E1B8E52C1C478C6900970C28 /* ContactUsCell.xib */,
+				E1B8E5391C4798EF00970C28 /* SubmitCommentsCell1.h */,
+				E1B8E53A1C4798EF00970C28 /* SubmitCommentsCell1.m */,
+				E1B8E53B1C4798EF00970C28 /* SubmitCommentsCell1.xib */,
+				E1B8E53E1C4798FC00970C28 /* SubmitCommentsCell2.h */,
+				E1B8E53F1C4798FC00970C28 /* SubmitCommentsCell2.m */,
+				E1B8E5401C4798FC00970C28 /* SubmitCommentsCell2.xib */,
+				E1B8E5431C47990900970C28 /* SubmitCommentsCell3.h */,
+				E1B8E5441C47990900970C28 /* SubmitCommentsCell3.m */,
+				E1B8E5451C47990900970C28 /* SubmitCommentsCell3.xib */,
+				E1B8E5481C47991800970C28 /* SubmitCommentsCell4.h */,
+				E1B8E5491C47991800970C28 /* SubmitCommentsCell4.m */,
+				E1B8E54A1C47991800970C28 /* SubmitCommentsCell4.xib */,
+				E1B8E54D1C47994600970C28 /* SubmitCommentsFootView.h */,
+				E1B8E54E1C47994600970C28 /* SubmitCommentsFootView.m */,
+				E1B8E54F1C47994600970C28 /* SubmitCommentsFootView.xib */,
+				E1B8E55E1C47A70A00970C28 /* MessagesDetailCell1.h */,
+				E1B8E55F1C47A70A00970C28 /* MessagesDetailCell1.m */,
+				E1B8E5601C47A70A00970C28 /* MessagesDetailCell1.xib */,
+				E1B8E5631C47A71800970C28 /* MessagesDetailCell2.h */,
+				E1B8E5641C47A71800970C28 /* MessagesDetailCell2.m */,
+				E1B8E5651C47A71800970C28 /* MessagesDetailCell2.xib */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -1899,13 +2011,17 @@
 				4E21B5A41C3AA1DC00848287 /* TransactionInquiryViewController.xib in Resources */,
 				E1B226E41C34C67A00973195 /* RechargeConfirmationHeader.xib in Resources */,
 				4E0E5DA51C3418CB00BE9F94 /* RechargeConfirmationViewController.xib in Resources */,
+				E10D3CE01C473E72008D7369 /* ForwardingFriendViewController.xib in Resources */,
 				E1652C391C43AC4B004E3282 /* TransferredIntoResultCell.xib in Resources */,
 				4E12FF1F1C32B4F0004126A4 /* AssetDetailsViewController.xib in Resources */,
 				E1C2E3831C33B76100804EB2 /* CashDetailCell00.xib in Resources */,
 				4E52B6071C3966C800C347F2 /* AccumulatedEarningsTitleCell.xib in Resources */,
 				4E21B5B31C3AACF800848287 /* TransactionHistoryDetailCell.xib in Resources */,
 				4ED7970E1C2AC47700766A6E /* AccountLoginViewController.xib in Resources */,
+				E1B8E5381C4797F000970C28 /* SubmitCommentsViewController.xib in Resources */,
+				E1B8E5581C47A52100970C28 /* SystemMessagesViewController.xib in Resources */,
 				4ED797181C2AD13100766A6E /* ResetPwdViewController.xib in Resources */,
+				E10D3CE51C477E17008D7369 /* ContactUsViewController.xib in Resources */,
 				4E12FF4B1C32B50A004126A4 /* AssetDetailCell20.xib in Resources */,
 				E1F3F70D1C31166900A33954 /* PaymentCell3.xib in Resources */,
 				620877351BF4AB78002178AE /* LeftMenuHeadView.xib in Resources */,
@@ -1914,6 +2030,7 @@
 				4EADDA711C2FDC5000DE49A6 /* PurchaseViewController.xib in Resources */,
 				E145AB651C2CE2B4008BC687 /* ProductProfitCell.xib in Resources */,
 				E1C2E3791C33733D00804EB2 /* BecomeCashDetailCell11.xib in Resources */,
+				E1B8E55D1C47A6ED00970C28 /* MessagesDetailViewController.xib in Resources */,
 				E145AB5A1C2CCD18008BC687 /* ProductDetailViewController.xib in Resources */,
 				4E2343171C3E96B700976283 /* AddBankViewController.xib in Resources */,
 				4E0E5D9B1C340AF200BE9F94 /* RechargeFootView.xib in Resources */,
@@ -1932,6 +2049,8 @@
 				E1F3F6EC1C30D9DF00A33954 /* PurchaseProtocolViewController.xib in Resources */,
 				4E21B59A1C3AA19A00848287 /* TransactionInquiryDetailCell.xib in Resources */,
 				4ED312801C2628790041A546 /* LoginOrRegisterViewController.xib in Resources */,
+				E1B8E5671C47A71800970C28 /* MessagesDetailCell2.xib in Resources */,
+				E1B8E52E1C478C6900970C28 /* ContactUsCell.xib in Resources */,
 				4EE2B8EF1C3190E100CD3A10 /* OrderCell2.xib in Resources */,
 				4E52B5BF1C378BF700C347F2 /* MyAssetDetailOtherCell.xib in Resources */,
 				4E12FF4D1C32B50A004126A4 /* AssetDetailCell30.xib in Resources */,
@@ -1941,11 +2060,14 @@
 				4EADDA7B1C2FE95A00DE49A6 /* PurchaseFootView.xib in Resources */,
 				4E21B5B81C3AAD2100848287 /* TransactionDateFootView.xib in Resources */,
 				4ED797321C2AFD1300766A6E /* LeftMenuTableViewController.xib in Resources */,
+				E1B8E53D1C4798EF00970C28 /* SubmitCommentsCell1.xib in Resources */,
+				E1B8E5511C47994600970C28 /* SubmitCommentsFootView.xib in Resources */,
 				4E23433A1C3FE2E700976283 /* InputTextForChangeCell.xib in Resources */,
 				4E52B5C41C37900C00C347F2 /* BalanceBoxOtherCell.xib in Resources */,
 				4EACA8CE1C283BA200BFC62F /* RegisterFootView.xib in Resources */,
 				4E21B5BD1C3B96AF00848287 /* TransactionHistoryCell.xib in Resources */,
 				4ED797091C2AC1C000766A6E /* GuidViewController.xib in Resources */,
+				E1B8E5621C47A70A00970C28 /* MessagesDetailCell1.xib in Resources */,
 				4ED797131C2ACD6B00766A6E /* RegisterAccountViewController.xib in Resources */,
 				4E21B5AE1C3AACCC00848287 /* TransactionTotalIncomeCell.xib in Resources */,
 				4ED3128C1C262B7E0041A546 /* Launch Screen.storyboard in Resources */,
@@ -1956,6 +2078,7 @@
 				4EADDA6C1C2FD48900DE49A6 /* RiskDisclosureViewController.xib in Resources */,
 				E14A610E1C43990900E6BFCF /* TransferredInputCell.xib in Resources */,
 				4EE2B8DE1C316BE200CD3A10 /* InputPayPasswordViewController.xib in Resources */,
+				E1B8E5421C4798FC00970C28 /* SubmitCommentsCell2.xib in Resources */,
 				4E52B5C91C37906000C347F2 /* BalanceBoxIncomeRateCell.xib in Resources */,
 				621764811C0FDBF900613950 /* Localizable.strings in Resources */,
 				4E12FF4F1C32B50A004126A4 /* AssetDetailsHeadView.xib in Resources */,
@@ -1965,6 +2088,7 @@
 				4EE2B8F41C3190F800CD3A10 /* OrderCell3.xib in Resources */,
 				E1F3F7031C310FDB00A33954 /* PaymentCell1.xib in Resources */,
 				4EE2B8D11C3164EE00CD3A10 /* SelectBankCell.xib in Resources */,
+				E1B8E5331C47946800970C28 /* AboutUsViewController.xib in Resources */,
 				4E12FF471C32B50A004126A4 /* AssetDetailCell10.xib in Resources */,
 				4E2343261C3EA49600976283 /* DeleteBankCardViewController.xib in Resources */,
 				4EADDA531C2E744700DE49A6 /* RegularProductCell.xib in Resources */,
@@ -1983,6 +2107,7 @@
 				4EADDA761C2FE7B000DE49A6 /* PurchaseCell.xib in Resources */,
 				E1F3F6FE1C30E35500A33954 /* PaymentFootView.xib in Resources */,
 				E1F3F7081C3111E300A33954 /* PaymentCell2.xib in Resources */,
+				E1B8E54C1C47991800970C28 /* SubmitCommentsCell4.xib in Resources */,
 				4EE2B8EA1C3190C800CD3A10 /* OrderCell1.xib in Resources */,
 				4E0E5D961C340ACF00BE9F94 /* RechargeCell01.xib in Resources */,
 				620876DE1BF42EE5002178AE /* MJRefresh.bundle in Resources */,
@@ -2006,6 +2131,7 @@
 				4E12FF211C32B4F0004126A4 /* BecomeCashViewController.xib in Resources */,
 				4ED7974B1C2C253200766A6E /* MyAssetsViewController.xib in Resources */,
 				E1C2E38D1C33BB6800804EB2 /* CashDetailCell1.xib in Resources */,
+				E1B8E5471C47990900970C28 /* SubmitCommentsCell3.xib in Resources */,
 				E1C2E3741C33732500804EB2 /* BecomeCashDetailCell10.xib in Resources */,
 				4E52B5B51C37818500C347F2 /* MyAssetDetailViewController.xib in Resources */,
 				4E52B60C1C3966DE00C347F2 /* AccumulatedEarningsDetailCell.xib in Resources */,
@@ -2026,6 +2152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B8E5461C47990900970C28 /* SubmitCommentsCell3.m in Sources */,
 				4E52B5F21C37933B00C347F2 /* PNCircleChart.m in Sources */,
 				4E23431B1C3E979100976283 /* AddBackFootView.m in Sources */,
 				4E21B5BC1C3B96AF00848287 /* TransactionHistoryCell.m in Sources */,
@@ -2081,13 +2208,16 @@
 				4E52B5C81C37906000C347F2 /* BalanceBoxIncomeRateCell.m in Sources */,
 				E1B226FA1C350EF600973195 /* RechargeConfirmCell.m in Sources */,
 				4E2343111C3E919E00976283 /* AddBankCardCell.m in Sources */,
+				E1B8E54B1C47991800970C28 /* SubmitCommentsCell4.m in Sources */,
 				620877361BF4AB78002178AE /* LeftMenuTableViewController.m in Sources */,
+				E1B8E5411C4798FC00970C28 /* SubmitCommentsCell2.m in Sources */,
 				620876E51BF42EE5002178AE /* UIView+MJExtension.m in Sources */,
 				E1652C2E1C43A7F2004E3282 /* TransferredIntoExplanationViewController.m in Sources */,
 				4E12FF481C32B50A004126A4 /* AssetDetailCell11.m in Sources */,
 				4E12FF4E1C32B50A004126A4 /* AssetDetailsHeadView.m in Sources */,
 				4E52B59B1C36C83B00C347F2 /* AccountInforCell.m in Sources */,
 				4E12FF461C32B50A004126A4 /* AssetDetailCell10.m in Sources */,
+				E1B8E52D1C478C6900970C28 /* ContactUsCell.m in Sources */,
 				620877571BF4CB11002178AE /* NSData+Base64.m in Sources */,
 				620876EE1BF42EE5002178AE /* MKNetworkOperation.m in Sources */,
 				6208775E1BF4CB11002178AE /* SBJsonWriter.m in Sources */,
@@ -2129,6 +2259,7 @@
 				620877321BF4AB78002178AE /* LeftMenuCell.m in Sources */,
 				620876D41BF42EE5002178AE /* ASIHTTPRequest.m in Sources */,
 				620876D71BF42EE5002178AE /* GTMBase64.m in Sources */,
+				E1B8E53C1C4798EF00970C28 /* SubmitCommentsCell1.m in Sources */,
 				4EE2B8EE1C3190E100CD3A10 /* OrderCell2.m in Sources */,
 				E14A61031C4392F800E6BFCF /* TransferredHeaderView.m in Sources */,
 				4E21B5A81C3AAC2C00848287 /* TransactionDetailViewController.m in Sources */,
@@ -2144,10 +2275,12 @@
 				4ED797081C2AC1C000766A6E /* GuidViewController.m in Sources */,
 				620876DB1BF42EE5002178AE /* FMDatabaseQueue.m in Sources */,
 				620876E91BF42EE5002178AE /* NSDictionary+RequestEncoding.m in Sources */,
+				E1B8E5501C47994600970C28 /* SubmitCommentsFootView.m in Sources */,
 				4ED797251C2AF98400766A6E /* LeftMenuFootView.m in Sources */,
 				4EADDA701C2FDC5000DE49A6 /* PurchaseViewController.m in Sources */,
 				620876E61BF42EE5002178AE /* NSAlert+MKNetworkKitAdditions.m in Sources */,
 				4E21B5AD1C3AACCC00848287 /* TransactionTotalIncomeCell.m in Sources */,
+				E1B8E5321C47946800970C28 /* AboutUsViewController.m in Sources */,
 				4ED3127F1C2628790041A546 /* LoginOrRegisterViewController.m in Sources */,
 				620876EF1BF42EE5002178AE /* Reachability.m in Sources */,
 				4ED7974A1C2C253200766A6E /* MyAssetsViewController.m in Sources */,
@@ -2166,6 +2299,7 @@
 				620876E01BF42EE5002178AE /* MJRefreshConst.m in Sources */,
 				4EE2B8F31C3190F800CD3A10 /* OrderCell3.m in Sources */,
 				4E12FF4A1C32B50A004126A4 /* AssetDetailCell20.m in Sources */,
+				E1B8E5371C4797F000970C28 /* SubmitCommentsViewController.m in Sources */,
 				620876D31BF42EE5002178AE /* ASIFormDataRequest.m in Sources */,
 				4EADDA751C2FE7B000DE49A6 /* PurchaseCell.m in Sources */,
 				E15E3B161BDDB67F00976465 /* main.m in Sources */,
@@ -2186,10 +2320,13 @@
 				4E52B5AF1C36E52C00C347F2 /* MyAccountCell.m in Sources */,
 				620877401BF4CA34002178AE /* NetDataManager.m in Sources */,
 				E1652C331C43ABED004E3282 /* TransferredIntoResultViewController.m in Sources */,
+				E10D3CE41C477E17008D7369 /* ContactUsViewController.m in Sources */,
 				E1B226E31C34C67A00973195 /* RechargeConfirmationHeader.m in Sources */,
 				4E12FF1E1C32B4F0004126A4 /* AssetDetailsViewController.m in Sources */,
+				E1B8E5661C47A71800970C28 /* MessagesDetailCell2.m in Sources */,
 				E1C2E3961C33C0C000804EB2 /* CashDetailCell01.m in Sources */,
 				4EADDA6B1C2FD48900DE49A6 /* RiskDisclosureViewController.m in Sources */,
+				E1B8E5571C47A52100970C28 /* SystemMessagesViewController.m in Sources */,
 				4E23432F1C3FE24A00976283 /* RetrieveLoginPwdViewController.m in Sources */,
 				4ED7974C1C2C253200766A6E /* RecommendedViewController.m in Sources */,
 				6208775A1BF4CB11002178AE /* NSObject+SBJSON.m in Sources */,
@@ -2208,10 +2345,13 @@
 				6208775B1BF4CB11002178AE /* NSString+SBJSON.m in Sources */,
 				4ED797481C2C253200766A6E /* MoreActionViewController.m in Sources */,
 				620877381BF4AB78002178AE /* SlideMenuViewController.m in Sources */,
+				E10D3CDF1C473E72008D7369 /* ForwardingFriendViewController.m in Sources */,
 				4E52B6061C3966C800C347F2 /* AccumulatedEarningsTitleCell.m in Sources */,
 				E1B226F51C34C6B800973195 /* RechargeConfirmationFooter2.m in Sources */,
+				E1B8E55C1C47A6ED00970C28 /* MessagesDetailViewController.m in Sources */,
 				4E52B60B1C3966DE00C347F2 /* AccumulatedEarningsDetailCell.m in Sources */,
 				4E52B5FB1C37933B00C347F2 /* PNScatterChartDataItem.m in Sources */,
+				E1B8E5611C47A70A00970C28 /* MessagesDetailCell1.m in Sources */,
 				4E52B6011C3964A600C347F2 /* AccumulatedEarningsViewController.m in Sources */,
 				4E0E5DA41C3418CB00BE9F94 /* RechargeConfirmationViewController.m in Sources */,
 				4ED797121C2ACD6B00766A6E /* RegisterAccountViewController.m in Sources */,

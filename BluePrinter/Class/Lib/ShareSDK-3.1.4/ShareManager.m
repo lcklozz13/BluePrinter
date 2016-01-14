@@ -7,8 +7,6 @@
 //
 
 #import "ShareManager.h"
-#import <ShareSDK/ShareSDK.h>
-#import <ShareSDKUI/ShareSDK+SSUI.h>
 
 static ShareManager *instance = nil;
 
@@ -29,16 +27,19 @@ static ShareManager *instance = nil;
 
 - (void)initialization
 {
-    [ShareSDK registerApp:@"iosv1101" activePlatforms:@[@(SSDKPlatformTypeFacebook), @(SSDKPlatformTypeTwitter)] onImport:^(SSDKPlatformType platformType) {
+    [ShareSDK registerApp:@"eada945e0218" activePlatforms:@[@(SSDKPlatformSubTypeWechatSession), @(SSDKPlatformSubTypeWechatTimeline), @(SSDKPlatformTypeSinaWeibo)] onImport:^(SSDKPlatformType platformType) {
         
     } onConfiguration:^(SSDKPlatformType platformType, NSMutableDictionary *appInfo) {
         switch (platformType) {
-            case SSDKPlatformTypeFacebook:
-                //设置Facebook应用信息，其中authType设置为只用SSO形式授权
-                [appInfo SSDKSetupFacebookByApiKey:@"107704292745179" appSecret:@"38053202e1a5fe26c80c753071f0b573" authType:SSDKAuthTypeBoth];
+            case SSDKPlatformTypeWechat:
+                [appInfo SSDKSetupWeChatByAppId:@"wx42f62ab42e5c1c6e"
+                                      appSecret:@"7448cd9de6b3c6cd5f3dddbf4cce8c95"];
                 break;
-            case SSDKPlatformTypeTwitter:
-                [appInfo SSDKSetupTwitterByConsumerKey:@"LRBM0H75rWrU9gNHvlEAA2aOy" consumerSecret:@"gbeWsZvA9ELJSdoBzJ5oLKX0TU09UOwrzdGfo9Tg7DjyGuMe8G" redirectUri:@"http://mob.com"];
+            case SSDKPlatformTypeSinaWeibo:
+                [appInfo SSDKSetupSinaWeiboByAppKey:@"4046900797"
+                                          appSecret:@"c5c01398d97f74c85e688bd80e5f01b7"
+                                        redirectUri:@"http://mob.com"
+                                           authType:SSDKAuthTypeBoth];
                 break;
             default:
                 break;
@@ -46,7 +47,9 @@ static ShareManager *instance = nil;
     }];
 }
 
-- (void)shareWithTitle:(NSString *)title
+- (void)shareWithEditor:(SSDKPlatformType)platformType
+     otherPlatformTypes:(NSArray *)otherPlatformTypes
+                  title:(NSString *)title
                content:(NSString *)content
                 images:(id)images
                    url:(NSString *)url
@@ -59,8 +62,8 @@ static ShareManager *instance = nil;
                                       title:title
                                        type:SSDKContentTypeImage];
     
-    [ShareSDK showShareEditor:SSDKPlatformTypeSinaWeibo
-           otherPlatformTypes:@[@(SSDKPlatformTypeFacebook), @(SSDKPlatformTypeTwitter)]
+    [ShareSDK showShareEditor:platformType
+           otherPlatformTypes:otherPlatformTypes
                   shareParams:shareParams
           onShareStateChanged:^(SSDKResponseState state, SSDKPlatformType platformType, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error, BOOL end)
      {

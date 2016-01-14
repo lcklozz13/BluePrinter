@@ -10,6 +10,13 @@
 #import "MoreLogoCell.h"
 #import "MoreDetailCell.h"
 
+#import "ForwardingFriendViewController.h"
+#import "ContactUsViewController.h"
+#import "AboutUsViewController.h"
+#import "SubmitCommentsViewController.h"
+#import "SystemMessagesViewController.h"
+
+
 @interface MoreActionViewController ()
 @property (weak, nonatomic) IBOutlet    UITableView     *tableview;
 @end
@@ -158,6 +165,48 @@
     if (indexPath.row > 0)
     {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        UIViewController *vc = nil;
+        
+        switch (indexPath.row)
+        {
+            case 1:
+            {
+                vc = [[ForwardingFriendViewController alloc] init];
+            }
+                break;
+                
+            case 2:
+            {
+                vc = [[ContactUsViewController alloc] init];
+            }
+                break;
+                
+            case 3:
+            {
+                vc = [[AboutUsViewController alloc] init];
+            }
+                break;
+                
+            case 4:
+            {
+                vc = [[SubmitCommentsViewController alloc] init];
+            }
+                break;
+                
+            case 5:
+            {
+                vc = [[SystemMessagesViewController alloc] init];
+            }
+                break;
+                
+            default:
+                break;
+        }
+        
+        if (vc)
+        {
+            [self.navigationController pushViewController:vc animated:YES];
+        }
     }
 }
 

@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ShareSDK/ShareSDK.h>
+#import <ShareSDKUI/ShareSDK+SSUI.h>
 
 #define SHARE_MANAGER [ShareManager sharedInstance]
 
@@ -17,10 +19,15 @@
 
 - (void)initialization;
 
-- (void)shareWithTitle:(NSString *)title
-               content:(NSString *)content
-                images:(id)images
-                   url:(NSString *)url
-                 block:(void (^)(BOOL success))block;
+/**
+ *@[@(SSDKPlatformSubTypeWechatSession), @(SSDKPlatformSubTypeWechatTimeline), @(SSDKPlatformTypeSinaWeibo)]
+ */
+- (void)shareWithEditor:(SSDKPlatformType)platformType
+     otherPlatformTypes:(NSArray *)otherPlatformTypes
+                  title:(NSString *)title
+                content:(NSString *)content
+                 images:(id)images
+                    url:(NSString *)url
+                  block:(void (^)(BOOL success))block;
 
 @end
