@@ -9,6 +9,7 @@
 #import "RecommendedViewController.h"
 #import "ViewControllerManager.h"
 #import "ProductDetailViewController.h"
+#import "SearchViewController.h"
 
 @interface RecommendedViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *title1;
@@ -67,7 +68,9 @@
 
 - (void)searchAction
 {
+    SearchViewController *view = [[SearchViewController alloc] init];
     
+    [self.parentViewController presentViewController:view animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

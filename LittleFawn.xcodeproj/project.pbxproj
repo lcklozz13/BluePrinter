@@ -172,6 +172,8 @@
 		4EE2B8EF1C3190E100CD3A10 /* OrderCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE2B8ED1C3190E100CD3A10 /* OrderCell2.xib */; };
 		4EE2B8F31C3190F800CD3A10 /* OrderCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE2B8F11C3190F800CD3A10 /* OrderCell3.m */; };
 		4EE2B8F41C3190F800CD3A10 /* OrderCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE2B8F21C3190F800CD3A10 /* OrderCell3.xib */; };
+		4EF094871C4A6FD800B143BF /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF094851C4A6FD800B143BF /* SearchViewController.m */; };
+		4EF094881C4A6FD800B143BF /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EF094861C4A6FD800B143BF /* SearchViewController.xib */; };
 		620876C61BF42EE5002178AE /* CusCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6208765C1BF42EE5002178AE /* CusCategory.m */; };
 		620876C71BF42EE5002178AE /* CusWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = 6208765E1BF42EE5002178AE /* CusWidget.m */; };
 		620876C81BF42EE5002178AE /* LoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 620876601BF42EE5002178AE /* LoadingHUD.m */; };
@@ -632,6 +634,9 @@
 		4EE2B8F01C3190F800CD3A10 /* OrderCell3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderCell3.h; path = ProductDetail/Cells/OrderCell3.h; sourceTree = "<group>"; };
 		4EE2B8F11C3190F800CD3A10 /* OrderCell3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderCell3.m; path = ProductDetail/Cells/OrderCell3.m; sourceTree = "<group>"; };
 		4EE2B8F21C3190F800CD3A10 /* OrderCell3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrderCell3.xib; path = ProductDetail/Cells/OrderCell3.xib; sourceTree = "<group>"; };
+		4EF094841C4A6FD800B143BF /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		4EF094851C4A6FD800B143BF /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		4EF094861C4A6FD800B143BF /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		6208765B1BF42EE5002178AE /* CusCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CusCategory.h; sourceTree = "<group>"; };
 		6208765C1BF42EE5002178AE /* CusCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CusCategory.m; sourceTree = "<group>"; };
 		6208765D1BF42EE5002178AE /* CusWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CusWidget.h; sourceTree = "<group>"; };
@@ -1292,6 +1297,9 @@
 				4ED797401C2C253200766A6E /* RecommendedViewController.h */,
 				4ED797411C2C253200766A6E /* RecommendedViewController.m */,
 				4ED797421C2C253200766A6E /* RecommendedViewController.xib */,
+				4EF094841C4A6FD800B143BF /* SearchViewController.h */,
+				4EF094851C4A6FD800B143BF /* SearchViewController.m */,
+				4EF094861C4A6FD800B143BF /* SearchViewController.xib */,
 			);
 			path = Recommended;
 			sourceTree = "<group>";
@@ -2121,6 +2129,7 @@
 				4ED7971D1C2AD60000766A6E /* RegisterProtocolViewController.xib in Resources */,
 				E1B226F11C34C6A100973195 /* RechargeConfirmationFooter1.xib in Resources */,
 				4E2343301C3FE24A00976283 /* RetrieveLoginPwdViewController.xib in Resources */,
+				4EF094881C4A6FD800B143BF /* SearchViewController.xib in Resources */,
 				E1C2E3621C336BD100804EB2 /* BecomeCashDetailViewController.xib in Resources */,
 				4E2343211C3EA22A00976283 /* DeleteBankCardCell.xib in Resources */,
 				4ED797471C2C253200766A6E /* FinancialProductViewController.xib in Resources */,
@@ -2174,6 +2183,7 @@
 				620876CF1BF42EE5002178AE /* ASIAuthenticationDialog.m in Sources */,
 				E182C8861C2D2C9200050471 /* ProductInfoCell.m in Sources */,
 				E1C2E3911C33BB8700804EB2 /* CashDetailFootView.m in Sources */,
+				4EF094871C4A6FD800B143BF /* SearchViewController.m in Sources */,
 				4E52B5F91C37933B00C347F2 /* PNScatterChart.m in Sources */,
 				620876DA1BF42EE5002178AE /* FMDatabasePool.m in Sources */,
 				4ED7974E1C2C253200766A6E /* ViewControllerManager.m in Sources */,

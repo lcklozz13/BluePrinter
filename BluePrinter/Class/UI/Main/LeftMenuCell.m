@@ -32,6 +32,13 @@
     frame = self.textLabel.frame;
     frame.origin.x = self.imageView.frame.origin.x + self.imageView.frame.size.width + 19;
     self.textLabel.frame = frame;
+    
+    if (self.accessoryView)
+    {
+        frame = self.accessoryView.frame;
+        frame.origin.x = 230.0f - frame.size.width;
+        self.accessoryView.frame = frame;
+    }
 }
 
 @end

@@ -9,6 +9,7 @@
 #import "FinancialProductViewController.h"
 #import "ProductDetailViewController.h"
 #import "RegularProductCell.h"
+#import "SearchViewController.h"
 
 typedef NS_ENUM(NSUInteger, CurrentModel)
 {
@@ -171,7 +172,9 @@ typedef NS_ENUM(NSUInteger, CurrentModel)
 
 - (void)searchAction
 {
+    SearchViewController *view = [[SearchViewController alloc] init];
     
+    [self.parentViewController presentViewController:view animated:YES completion:nil];
 }
 
 /*

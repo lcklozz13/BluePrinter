@@ -14,6 +14,8 @@
 #import "LeftMenuFootView.h"
 #import "LeftMenuCell.h"
 #import "LoginOrRegisterViewController.h"
+#import "AboutUsViewController.h"
+#import "ChangeLoginPwdViewController.h"
 
 @interface LeftMenuTableViewController ()
 
@@ -52,6 +54,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)selectNigntModel:(UISwitch *)sender
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [PublicMethods setNightModel:sender.isOn];
+    });
 }
 
 - (void)userInfoUpdateCallback
@@ -124,6 +133,28 @@
     [cell.contentView bringSubviewToFront:cell.separatorLine];
     [cell setBackgroundColor:[UIColor clearColor]];
     
+    if (!cell.accessoryView)
+    {
+        UIView *accossoryView = nil;
+        if (path.row == 1)
+        {
+            UISwitch *switchBtn = [[UISwitch alloc] init];
+            
+            switchBtn.onTintColor = [PublicMethods gs_colorWithHexString:@"F53845"];
+            [switchBtn addTarget:self action:@selector(selectNigntModel:) forControlEvents:UIControlEventValueChanged];
+            [switchBtn setOn:[PublicMethods isNightModel] animated:NO];
+            accossoryView = switchBtn;
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        }
+        else
+        {
+            UIImageView *image = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon-arrow-r-2"]];
+            accossoryView = image;
+        }
+        
+        cell.accessoryView = accossoryView;
+    }
+    
     switch (path.row)
     {
         case 0:
@@ -170,52 +201,57 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 1)
+    {
+        return;
+    }
+    
     //显示根视图控制器
     SlideMenuViewController *viewController = (SlideMenuViewController *)[[UIApplication sharedApplication].keyWindow rootViewController];
     [viewController showRootController:YES];
 
-    if (!DATA_MANAGER.isLogin) {
-        //未登录 跳到登录界面
-        LoginOrRegisterViewController *view = [[LoginOrRegisterViewController alloc] init];
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:view];
-        
+    UIViewController *vc = nil;
+    
+    switch (indexPath.row)
+    {
+        case 0:
+        {
+            if (!DATA_MANAGER.isLogin)
+            {
+                //MARK:未登录 跳到登录界面
+                vc = [[LoginOrRegisterViewController alloc] init];
+            }
+            else
+            {
+                //MARK:修改登录密码界面
+                vc = [[ChangeLoginPwdViewController alloc] init];
+            }
+        }
+            break;
+        case 2:
+            vc = [[AboutUsViewController alloc] init];
+            break;
+        case 3:
+        {
+            UITabBarController *tvc = (UITabBarController *)viewController.rootViewController;
+            [tvc setSelectedIndex:1];
+        }
+            break;
+        default:
+            vc = nil;
+            break;
+    }
+    
+    
+    if (vc)
+    {
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
         
         [[ViewControllerManager getInstance] setLoginSuccessBackViewController:self];
         [[[ViewControllerManager getInstance] getVisableRootViewController] presentViewController:nav animated:YES completion:nil];
-        
-        return;
     }
-    
-//    UIViewController *vc = nil;
-//    switch (indexPath.row) {
-//        case 0:
-//            vc = [[SelectCustomProductsViewController alloc] init];
-//            break;
-//        case 1:
-//            vc = [[DesignerStoresViewController alloc] init];
-//            break;
-//        case 2:
-//            vc = [[MyCreationViewController alloc] init];
-//            break;
-//        case 3:
-//            vc = [[ShoppingCartTableViewController alloc] init];
-//            break;
-//        case 4:
-//            vc = [[MyOrdersViewController alloc] init];
-//            break;
-//        case 5:
-//            vc = [[SettingViewController alloc] init];
-//            break;
-//        case 6:
-//            vc = [[HelpMainTableViewController alloc] init];
-//            break;
-//        default:
-//            vc = nil;
-//        break;
-//    }
-//    if (vc)
-//        [(UINavigationController *)viewController.rootViewController pushViewController:vc animated:NO];
 }
 
 

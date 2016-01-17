@@ -76,7 +76,9 @@
     
     if ([[[ViewControllerManager getInstance] loginSuccessBackViewController] isKindOfClass:[LeftMenuTableViewController class]])
     {
-        [self.parentViewController dismissViewControllerAnimated:YES completion:nil];
+        [self.parentViewController dismissViewControllerAnimated:YES completion:^{
+            [[ViewControllerManager getInstance] setLoginSuccessBackViewController:nil];
+        }];
     }
     else
     {

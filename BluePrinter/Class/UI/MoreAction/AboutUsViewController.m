@@ -27,6 +27,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)backAction
+{
+    if (self.navigationController.viewControllers.count == 1)
+    {
+        [self.parentViewController dismissViewControllerAnimated:YES completion:^{
+            [[ViewControllerManager getInstance] setLoginSuccessBackViewController:nil];
+        }];
+    }
+    else
+    {
+        [super backAction];
+    }
+}
+
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
