@@ -28,6 +28,6 @@
                 content:(NSString *)content
                  images:(id)images
                     url:(NSString *)url
-                  block:(void (^)(BOOL success))block;
+                  block:(void (^)(BOOL success, NSError *error))block;
 
 @end

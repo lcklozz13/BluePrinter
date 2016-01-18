@@ -102,6 +102,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSArray *shareImage = @[[UIImage imageNamed:@"icon-logo1"]];
     
     switch (indexPath.row)
     {
@@ -109,13 +110,29 @@
         {
             [SHARE_MANAGER shareWithEditor:SSDKPlatformSubTypeWechatSession
                         otherPlatformTypes:@[@(SSDKPlatformSubTypeWechatTimeline), @(SSDKPlatformTypeSinaWeibo)]
-                                     title:@""
+                                     title:@"装小鹿理财了吗？"
                                    content:@"我正在使用小鹿理财，是个理想的理财平台，推荐大家试一下。http://www.xiaolulicai.com.cn/tosearch.do?page=0&world"
-                                    images:nil
+                                    images:shareImage
                                        url:@"http://www.xiaolulicai.com.cn/tosearch.do?page=0&world"
-                                     block:^(BOOL success)
+                                     block:^(BOOL success, NSError *error)
              {
+                 NSString *msg = nil;
                  
+                 if (!success)
+                 {
+                     msg = @"分享失败";
+                     
+                     if (error.userInfo[@"error_message"])
+                     {
+                         msg = [[NSString alloc] initWithFormat:@"%@:%@", msg, error.userInfo[@"error_message"]];
+                     }
+                 }
+                 else
+                 {
+                     msg = @"分享成功";
+                 }
+                 
+                 [ShareFunction showToast:msg];
              }];
         }
             break;
@@ -124,13 +141,29 @@
         {
             [SHARE_MANAGER shareWithEditor:SSDKPlatformSubTypeWechatTimeline
                         otherPlatformTypes:@[@(SSDKPlatformSubTypeWechatSession), @(SSDKPlatformTypeSinaWeibo)]
-                                     title:@""
+                                     title:@"装小鹿理财了吗？"
                                    content:@"我正在使用小鹿理财，是个理想的理财平台，推荐大家试一下。http://www.xiaolulicai.com.cn/tosearch.do?page=0&world"
-                                    images:nil
+                                    images:shareImage
                                        url:@"http://www.xiaolulicai.com.cn/tosearch.do?page=0&world"
-                                     block:^(BOOL success)
+                                     block:^(BOOL success, NSError *error)
              {
+                 NSString *msg = nil;
                  
+                 if (!success)
+                 {
+                     msg = @"分享失败";
+                     
+                     if (error.userInfo[@"error_message"])
+                     {
+                         msg = [[NSString alloc] initWithFormat:@"%@:%@", msg, error.userInfo[@"error_message"]];
+                     }
+                 }
+                 else
+                 {
+                     msg = @"分享成功";
+                 }
+                 
+                 [ShareFunction showToast:msg];
              }];
         }
             break;
@@ -139,13 +172,29 @@
         {
             [SHARE_MANAGER shareWithEditor:SSDKPlatformTypeSinaWeibo
                         otherPlatformTypes:@[@(SSDKPlatformSubTypeWechatTimeline), @(SSDKPlatformSubTypeWechatSession)]
-                                     title:@""
+                                     title:@"装小鹿理财了吗？"
                                    content:@"我正在使用小鹿理财，是个理想的理财平台，推荐大家试一下。http://www.xiaolulicai.com.cn/tosearch.do?page=0&world"
-                                    images:nil
+                                    images:shareImage
                                        url:@"http://www.xiaolulicai.com.cn/tosearch.do?page=0&world"
-                                     block:^(BOOL success)
+                                     block:^(BOOL success, NSError *error)
              {
+                 NSString *msg = nil;
                  
+                 if (!success)
+                 {
+                     msg = @"分享失败";
+                     
+                     if (error.userInfo[@"error_message"])
+                     {
+                         msg = [[NSString alloc] initWithFormat:@"%@:%@", msg, error.userInfo[@"error_message"]];
+                     }
+                 }
+                 else
+                 {
+                     msg = @"分享成功";
+                 }
+                 
+                 [ShareFunction showToast:msg];
              }];
         }
             break;
