@@ -60,20 +60,20 @@
     
     [self.view endEditing:YES];
     //MARK:login test
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://qznl.qz-software.com/auth/login"]];
-    [request setHTTPMethod:@"POST"];
-
-    NSString *postString = [[NSString alloc] initWithFormat:@"uname=%@&pwd=%@&captcha=", self.username.text, self.pwd.text];
-    [request setHTTPBody:[postString dataUsingEncoding:NSUTF8StringEncoding]];
-    
-    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
-        NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        NSLog(@"%@", string);
-    }];
-    
-//    [NET_DATA_MANAGER requestLoginWithAccount:self.username.text password:self.pwd.text completion:^(NetResponse *response) {
-//        
+//    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://qznl.qz-software.com/auth/login"]];
+//    [request setHTTPMethod:@"POST"];
+//
+//    NSString *postString = [[NSString alloc] initWithFormat:@"uname=%@&pwd=%@&captcha=", self.username.text, self.pwd.text];
+//    [request setHTTPBody:[postString dataUsingEncoding:NSUTF8StringEncoding]];
+//    
+//    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+//        NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+//        NSLog(@"%@", string);
 //    }];
+    
+    [NET_DATA_MANAGER requestLoginWithAccount:self.username.text password:self.pwd.text completion:^(NetResponse *response) {
+        
+    }];
     
     //TODO:获取到账户信息
     DATA_MANAGER.isLogin = YES;
