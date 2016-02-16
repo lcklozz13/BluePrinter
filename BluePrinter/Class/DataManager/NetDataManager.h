@@ -176,4 +176,12 @@ typedef void (^NetResponseBlock) (NetResponse* response);
 - (void)requestForgetPasswordWithEmail:(NSString *)email
                             completion:(NetResponseBlock)response;
 
+
+#pragma mark -
+#pragma mark login
+
+- (void)requestLoginWithAccount:(NSString *)account
+                       password:(NSString *)pwd
+                     completion:(NetResponseBlock)response;
+
 @end

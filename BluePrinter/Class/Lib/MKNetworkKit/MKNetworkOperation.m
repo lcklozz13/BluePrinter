@@ -1318,6 +1318,7 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite {
     NSString* accept_language = self.shouldSendAcceptLanguageHeader ? [self languagesFromLocale] : nil;
     [r setValue:accept_language forHTTPHeaderField:@"Accept-Language"];
   }
+    [r setHTTPMethod:@"GET"];
   return r;
 }
 

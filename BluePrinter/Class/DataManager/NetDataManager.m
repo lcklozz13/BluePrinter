@@ -11,7 +11,8 @@
 #import "NSData+Base64.h"
 #import "JSON.h"
 
-#define SEAVER_URL @"112.74.87.87:8080/blueprint"
+//#define SEAVER_URL @"112.74.87.87:8080/blueprint"
+#define SEAVER_URL @"qznl.qz-software.com"
 
 @implementation NetResponse
 
@@ -85,18 +86,18 @@ static NetDataManager *instance = nil;
     
     //分离要上传的文件路径
     NSMutableDictionary *tempParams = NSMUTABLEDICTIONARY(params);
-    NSString *filePath = [tempParams objectForKey:@"path"];
-    [tempParams setValue:nil forKey:@"path"];
+//    NSString *filePath = [tempParams objectForKey:@"path"];
+//    [tempParams setValue:nil forKey:@"path"];
     
     MKNetworkOperation *op = [_networkEngine operationWithPath:path params:tempParams httpMethod:@"POST" ssl:NO];
     
-    //添加sessionId
-    if (DATA_MANAGER.sessionId)
-        [op addHeader:@"Cookie" withValue:[NSString stringWithFormat:@"JSESSIONID=%@", DATA_MANAGER.sessionId]];
-    
-    //文件上传
-    if (([path isEqualToString:@"/app/uploadPhoto"] || [path isEqualToString:@"/app/user/edit/headPic"]) && filePath)
-        [op addFile:filePath forKey:@"file"];
+//    //添加sessionId
+//    if (DATA_MANAGER.sessionId)
+//        [op addHeader:@"Cookie" withValue:[NSString stringWithFormat:@"JSESSIONID=%@", DATA_MANAGER.sessionId]];
+//    
+//    //文件上传
+//    if (([path isEqualToString:@"/app/uploadPhoto"] || [path isEqualToString:@"/app/user/edit/headPic"]) && filePath)
+//        [op addFile:filePath forKey:@"file"];
     
     [op addCompletionHandler:^(MKNetworkOperation *operation) {
         NSLog(@"请求成功 %@\n%@", operation.url, operation.responseJSON);
@@ -437,6 +438,21 @@ static NetDataManager *instance = nil;
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     [params setValue:email forKey:@"email"];
     [self sendRequestWithPath:@"/app/user/forgetPassword" params:params onCompletion:response cancelLastRequest:YES];
+}
+
+#pragma mark -
+- (void)requestLoginWithAccount:(NSString *)account
+                       password:(NSString *)pwd
+                     completion:(NetResponseBlock)response
+{
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+
+//    [params setValue:@"F0MwNjkm0tPOEj07CyLn8yfjX4hnORVZTkBddjFf" forKey:@"_token"];
+    [params setValue:account forKey:@"uname"];
+    [params setValue:pwd forKey:@"pwd"];
+    [params setValue:@"" forKey:@"captcha"];
+    
+    [self sendRequestWithPath:@"/auth/login" params:params onCompletion:response cancelLastRequest:YES];
 }
 
 @end
