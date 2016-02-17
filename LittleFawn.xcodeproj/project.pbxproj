@@ -297,6 +297,7 @@
 		E1652C3F1C43B2F5004E3282 /* MoreLogoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1652C3D1C43B2F5004E3282 /* MoreLogoCell.xib */; };
 		E1652C431C43B308004E3282 /* MoreDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1652C411C43B308004E3282 /* MoreDetailCell.m */; };
 		E1652C441C43B308004E3282 /* MoreDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1652C421C43B308004E3282 /* MoreDetailCell.xib */; };
+		E16D7B271C745CF3004FDF4B /* RecommendedProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = E16D7B261C745CF3004FDF4B /* RecommendedProductView.m */; };
 		E182C8861C2D2C9200050471 /* ProductInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E182C8841C2D2C9200050471 /* ProductInfoCell.m */; };
 		E182C8871C2D2C9200050471 /* ProductInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E182C8851C2D2C9200050471 /* ProductInfoCell.xib */; };
 		E182C8931C2D35FF00050471 /* ProductDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E182C8911C2D35FF00050471 /* ProductDescriptionCell.m */; };
@@ -867,6 +868,8 @@
 		E1652C401C43B308004E3282 /* MoreDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreDetailCell.h; sourceTree = "<group>"; };
 		E1652C411C43B308004E3282 /* MoreDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreDetailCell.m; sourceTree = "<group>"; };
 		E1652C421C43B308004E3282 /* MoreDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreDetailCell.xib; sourceTree = "<group>"; };
+		E16D7B251C745CF3004FDF4B /* RecommendedProductView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendedProductView.h; sourceTree = "<group>"; };
+		E16D7B261C745CF3004FDF4B /* RecommendedProductView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendedProductView.m; sourceTree = "<group>"; };
 		E182C8831C2D2C9200050471 /* ProductInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductInfoCell.h; path = ProductDetail/Cells/ProductInfoCell.h; sourceTree = "<group>"; };
 		E182C8841C2D2C9200050471 /* ProductInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductInfoCell.m; path = ProductDetail/Cells/ProductInfoCell.m; sourceTree = "<group>"; };
 		E182C8851C2D2C9200050471 /* ProductInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductInfoCell.xib; path = ProductDetail/Cells/ProductInfoCell.xib; sourceTree = "<group>"; };
@@ -1329,6 +1332,7 @@
 		4ED7973F1C2C253200766A6E /* Recommended */ = {
 			isa = PBXGroup;
 			children = (
+				E16D7B241C745CB1004FDF4B /* Views */,
 				4ED797401C2C253200766A6E /* RecommendedViewController.h */,
 				4ED797411C2C253200766A6E /* RecommendedViewController.m */,
 				4ED797421C2C253200766A6E /* RecommendedViewController.xib */,
@@ -1965,6 +1969,15 @@
 			path = cells;
 			sourceTree = "<group>";
 		};
+		E16D7B241C745CB1004FDF4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E16D7B251C745CF3004FDF4B /* RecommendedProductView.h */,
+				E16D7B261C745CF3004FDF4B /* RecommendedProductView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E1B226FE1C3527ED00973195 /* cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -2410,6 +2423,7 @@
 				4EE2B8D01C3164EE00CD3A10 /* SelectBankCell.m in Sources */,
 				620876CC1BF42EE5002178AE /* DataManager.m in Sources */,
 				E1F3F7111C313A0E00A33954 /* SelectBankViewController.m in Sources */,
+				E16D7B271C745CF3004FDF4B /* RecommendedProductView.m in Sources */,
 				4E52B5F51C37933B00C347F2 /* PNLineChartData.m in Sources */,
 				4E52B5F01C37933B00C347F2 /* PNBarChart.m in Sources */,
 				4E2343341C3FE29300976283 /* ChangeTransactionPwdViewController.m in Sources */,
