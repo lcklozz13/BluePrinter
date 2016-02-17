@@ -7,7 +7,7 @@
 //
 
 #import "ProductProfitCell.h"
-#define PROGRESS_START_TAG      1001
+//#define PROGRESS_START_TAG      1001
 
 @interface ProductProfitCell ()
 @property (weak, nonatomic) IBOutlet UILabel *annualRateLab;
@@ -16,7 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *progressRateLab;
 @property (weak, nonatomic) IBOutlet UILabel *purchasedQuantityLab;
 @property (weak, nonatomic) IBOutlet UILabel *remainingAmountLab;
-
+@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 @end
 
 @implementation ProductProfitCell
@@ -77,14 +77,18 @@
     [ratestring appendAttributedString:Amount];
     self.remainingAmountLab.attributedText = ratestring;
     
-    UIImageView *progressImage = nil;
-    int progressValue = [product.product_progress_rate intValue] / 10;
+//    UIImageView *progressImage = nil;
+//    int progressValue = [product.product_progress_rate intValue] / 10;
     
-    for (int i=0; i<10; i++)
-    {
-        progressImage = [self.contentView viewWithTag:PROGRESS_START_TAG+i];
-        [progressImage setHighlighted:progressValue > i ? YES : NO];
-    }
+//    for (int i=0; i<10; i++)
+//    {
+//        progressImage = [self.contentView viewWithTag:PROGRESS_START_TAG+i];
+//        [progressImage setHighlighted:progressValue > i ? YES : NO];
+//    }
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.58 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        float progressValue = [product.product_progress_rate floatValue] / 100.0f;
+        [self.progressView setProgress:progressValue animated:YES];
+    });
 }
 
 @end

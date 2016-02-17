@@ -189,7 +189,7 @@ typedef NS_ENUM(NSUInteger, CurrentModel)
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 8.0f;
+    return 4.0f;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
