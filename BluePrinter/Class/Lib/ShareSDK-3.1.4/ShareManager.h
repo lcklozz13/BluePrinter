@@ -30,4 +30,11 @@
                     url:(NSString *)url
                   block:(void (^)(BOOL success, NSError *error))block;
 
+- (void)shareActionSheet:(UIView *)view
+                   title:(NSString *)title
+                 content:(NSString *)content
+                  images:(id)images
+                     url:(NSString *)url
+                   block:(void (^)(BOOL success, NSError *error))block;
+
 @end

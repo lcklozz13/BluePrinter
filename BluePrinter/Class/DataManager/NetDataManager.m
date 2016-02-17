@@ -452,7 +452,7 @@ static NetDataManager *instance = nil;
     [params setValue:pwd forKey:@"pwd"];
     [params setValue:@"" forKey:@"captcha"];
     
-    [self sendRequestWithPath:@"/auth/login" params:params onCompletion:response cancelLastRequest:YES];
+    [self sendRequestWithPath:@"/auth/mlogin" params:params onCompletion:response cancelLastRequest:YES];
 }
 
 @end

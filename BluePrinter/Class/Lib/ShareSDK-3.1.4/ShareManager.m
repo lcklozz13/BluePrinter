@@ -82,12 +82,10 @@ static ShareManager *instance = nil;
                                       title:title
                                        type:SSDKContentTypeImage];
     
-    [ShareSDK showShareEditor:platformType
-           otherPlatformTypes:otherPlatformTypes
-                  shareParams:shareParams
-          onShareStateChanged:^(SSDKResponseState state, SSDKPlatformType platformType, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error, BOOL end)
+    [ShareSDK share:platformType
+         parameters:shareParams
+     onStateChanged:^(SSDKResponseState state, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error)
      {
-         
          switch (state)
          {
              case SSDKResponseStateSuccess:
@@ -127,6 +125,112 @@ static ShareManager *instance = nil;
                  break;
          }
      }];
+    
+//    [ShareSDK showShareEditor:platformType
+//           otherPlatformTypes:otherPlatformTypes
+//                  shareParams:shareParams
+//          onShareStateChanged:^(SSDKResponseState state, SSDKPlatformType platformType, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error, BOOL end)
+//     {
+//         
+//         switch (state)
+//         {
+//             case SSDKResponseStateSuccess:
+//             {
+//                 if (block)
+//                 {
+//                     block(YES, error);
+//                 }
+//                 break;
+//             }
+//             case SSDKResponseStateFail:
+//             {
+//                 if (block)
+//                 {
+//                     block(NO, error);
+//                 }
+//                 break;
+//             }
+//             case SSDKResponseStateCancel:
+//             {
+//                 if (block)
+//                 {
+//                     block(NO, error);
+//                 }
+//                 break;
+//             }
+//             case SSDKResponseStateBegin:
+//             {
+//                 
+//             }
+//                 break;
+//             default:
+//                 if (block)
+//                 {
+//                     block(NO, error);
+//                 }
+//                 break;
+//         }
+//     }];
+}
+
+- (void)shareActionSheet:(UIView *)view
+                   title:(NSString *)title
+                 content:(NSString *)content
+                  images:(id)images
+                     url:(NSString *)url
+                   block:(void (^)(BOOL success, NSError *error))block
+{
+    NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
+    [shareParams SSDKSetupShareParamsByText:content
+                                     images:images
+                                        url:[NSURL URLWithString:url]
+                                      title:title
+                                       type:SSDKContentTypeImage];
+    
+    [ShareSDK showShareActionSheet:view
+                             items:nil
+                       shareParams:shareParams
+               onShareStateChanged:^(SSDKResponseState state, SSDKPlatformType platformType, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error, BOOL end)
+    {
+        switch (state)
+        {
+            case SSDKResponseStateSuccess:
+            {
+                if (block)
+                {
+                    block(YES, error);
+                }
+                break;
+            }
+            case SSDKResponseStateFail:
+            {
+                if (block)
+                {
+                    block(NO, error);
+                }
+                break;
+            }
+            case SSDKResponseStateCancel:
+            {
+                if (block)
+                {
+                    block(NO, error);
+                }
+                break;
+            }
+            case SSDKResponseStateBegin:
+            {
+                
+            }
+                break;
+            default:
+                if (block)
+                {
+                    block(NO, error);
+                }
+                break;
+        }
+    }];
 }
 
 @end

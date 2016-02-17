@@ -60,7 +60,7 @@
     
     [self.view endEditing:YES];
     //MARK:login test
-//    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://qznl.qz-software.com/auth/login"]];
+//    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://qznl.qz-software.com/auth/mlogin"]];
 //    [request setHTTPMethod:@"POST"];
 //
 //    NSString *postString = [[NSString alloc] initWithFormat:@"uname=%@&pwd=%@&captcha=", self.username.text, self.pwd.text];

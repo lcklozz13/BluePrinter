@@ -10,22 +10,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BluePrinter/Class/DataManager/NetDataManager.m"
-            timestampString = "477283878.271628"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "-sendRequestWithPath:params:onCompletion:cancelLastRequest:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BluePrinter/Class/DataManager/NetDataManager.m"
             timestampString = "477300957.429839"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -41,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BluePrinter/Class/Lib/MKNetworkKit/MKNetworkOperation.m"
-            timestampString = "477307714.220867"
+            filePath = "BluePrinter/Class/DataManager/NetDataManager.m"
+            timestampString = "477372614.081151"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1436"
-            endingLineNumber = "1436"
-            landmarkName = "-responseJSON"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "-sendRequestWithPath:params:onCompletion:cancelLastRequest:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

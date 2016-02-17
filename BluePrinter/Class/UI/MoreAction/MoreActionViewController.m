@@ -15,6 +15,7 @@
 #import "AboutUsViewController.h"
 #import "SubmitCommentsViewController.h"
 #import "SystemMessagesViewController.h"
+#import "ShareManager.h"
 
 
 @interface MoreActionViewController ()
@@ -172,6 +173,34 @@
             case 1:
             {
                 vc = [[ForwardingFriendViewController alloc] init];
+//                NSArray *shareImage = @[[UIImage imageNamed:@"icon-logo1"]];
+//                [SHARE_MANAGER shareActionSheet:[PublicMethods getKeyWindow]
+//                                          title:@"装小鹿理财了吗？"
+//                                        content:@"我正在使用小鹿理财，是个理想的理财平台，推荐大家试一下。http://www.xiaolulicai.com.cn/tosearch.do?page=0&world"
+//                                         images:shareImage
+//                                            url:@"http://www.xiaolulicai.com.cn/tosearch.do?page=0&world"
+//                                          block:^(BOOL success, NSError *error)
+//                {
+//                    NSString *msg = nil;
+//                    
+//                    if (!success)
+//                    {
+//                        msg = @"分享失败";
+//                        
+//                        if (error.userInfo[@"error_message"])
+//                        {
+//                            msg = [[NSString alloc] initWithFormat:@"%@:%@", msg, error.userInfo[@"error_message"]];
+//                        }
+//                    }
+//                    else
+//                    {
+//                        msg = @"分享成功";
+//                    }
+//                    
+//                    [ShareFunction showToast:msg];
+//                }];
+//                
+//                return;
             }
                 break;
                 
