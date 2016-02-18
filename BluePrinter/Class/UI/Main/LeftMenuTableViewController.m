@@ -16,12 +16,14 @@
 #import "LoginOrRegisterViewController.h"
 #import "AboutUsViewController.h"
 #import "ChangeLoginPwdViewController.h"
+#import "LoginLockView.h"
 
-@interface LeftMenuTableViewController ()
-
+@interface LeftMenuTableViewController ()<LoginLockViewDelegate>
+@property (nonatomic, strong) LoginLockView     *lockView;
 @end
 
 @implementation LeftMenuTableViewController
+@synthesize lockView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -260,11 +262,28 @@
 - (void)loginSuccessCallback
 {
     [self.tableView reloadData];
+    
+    if (DATA_MANAGER.isAotoLogin)
+    {
+        if (!lockView)
+        {
+            lockView = [[LoginLockView alloc] initWithFrame:[PublicMethods getKeyWindow].bounds];
+            lockView.delegate = self;
+        }
+        
+        [[PublicMethods getKeyWindow] addSubview:lockView];
+    }
 }
 
 - (void)logoutCallback
 {
     [self.tableView reloadData];
+}
+
+#pragma mark - LoginLockViewDelegate
+- (void)gestureLockViewDidEndWithPasscode:(NSString *)passcode
+{
+    [lockView removeFromSuperview];
 }
 
 @end

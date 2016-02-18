@@ -102,19 +102,23 @@ static NetDataManager *instance = nil;
     [op addCompletionHandler:^(MKNetworkOperation *operation) {
         NSLog(@"请求成功 %@\n%@", operation.url, operation.responseJSON);
         
+        //{"ret":"1","msg":"\u767b\u5f55\u6210\u529f!"}
         NetResponse *response = [[NetResponse alloc] init];
         response.requestData = operation.readonlyPostDictionary;
         response.responseData = operation.responseJSON;
-        response.msgCode = [[operation.responseJSON objectForKey:@"msgCode"] integerValue];
-        response.data = [operation.responseJSON objectForKey:@"data"];
-        response.result = (response.msgCode == 1000 && [[operation.responseJSON objectForKey:@"result"] boolValue]);
-        response.msgInfo = [operation.responseJSON objectForKey:@"msgInfo"];
-
-        if (response.msgCode == 9997) {
-            //未登录
-            [DATA_MANAGER logout];
-            return;
-        }
+        response.msgCode = [[operation.responseJSON objectForKey:@"ret"] integerValue];
+        response.msgInfo = [operation.responseJSON objectForKey:@"msg"];
+        response.result = response.msgCode == 1;
+//        response.msgCode = [[operation.responseJSON objectForKey:@"msgCode"] integerValue];
+//        response.data = [operation.responseJSON objectForKey:@"data"];
+//        response.result = (response.msgCode == 1000 && [[operation.responseJSON objectForKey:@"result"] boolValue]);
+//        response.msgInfo = [operation.responseJSON objectForKey:@"msgInfo"];
+//
+//        if (response.msgCode == 9997) {
+//            //未登录
+//            [DATA_MANAGER logout];
+//            return;
+//        }
         
         if (responseBlock)
             responseBlock(response);
@@ -447,7 +451,6 @@ static NetDataManager *instance = nil;
 {
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
 
-//    [params setValue:@"F0MwNjkm0tPOEj07CyLn8yfjX4hnORVZTkBddjFf" forKey:@"_token"];
     [params setValue:account forKey:@"uname"];
     [params setValue:pwd forKey:@"pwd"];
     [params setValue:@"" forKey:@"captcha"];

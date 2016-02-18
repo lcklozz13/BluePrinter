@@ -71,35 +71,42 @@
 //        NSLog(@"%@", string);
 //    }];
     
-    [NET_DATA_MANAGER requestLoginWithAccount:self.username.text password:self.pwd.text completion:^(NetResponse *response) {
-        
+    [LoadingHUD show];
+    [DATA_MANAGER loginWithAccount:self.username.text
+                          password:self.pwd.text
+                             block:^(BOOL success, NSString *msgInfo)
+     {
+         [LoadingHUD hide];
+         if (success)
+         {
+//             DATA_MANAGER.isLogin = YES;
+//             DATA_MANAGER.userInfo = [[UserInfo alloc] init];
+//             DATA_MANAGER.userInfo.nickname = self.username.text;
+//             DATA_MANAGER.userInfo.leaveMoney = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:1000 to:1000000]];
+//             DATA_MANAGER.userInfo.accountID = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:10000000 to:100000000]];
+//             DATA_MANAGER.userInfo.bankInfor = @"云南建行分行";
+//             DATA_MANAGER.userInfo.totalAsset = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:10000 to:1000000]];
+//             DATA_MANAGER.userInfo.balance = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:10000 to:1000000]];
+//             DATA_MANAGER.userInfo.income = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:10000 to:1000000]];
+             
+             
+             if ([[[ViewControllerManager getInstance] loginSuccessBackViewController] isKindOfClass:[LeftMenuTableViewController class]])
+             {
+                 [self.parentViewController dismissViewControllerAnimated:YES completion:^{
+                     [[ViewControllerManager getInstance] setLoginSuccessBackViewController:nil];
+                 }];
+             }
+             else
+             {
+                 //TODO:前往购买界面
+                 [self.navigationController popToViewController:[[ViewControllerManager getInstance] loginSuccessBackViewController] animated:YES];
+             }
+         }
+         else
+         {
+             [ShareFunction showToast:msgInfo];
+         }
     }];
-    
-    //TODO:获取到账户信息
-    DATA_MANAGER.isLogin = YES;
-    DATA_MANAGER.userInfo = [[UserInfo alloc] init];
-    DATA_MANAGER.userInfo.nickname = self.username.text;
-    DATA_MANAGER.userInfo.leaveMoney = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:1000 to:1000000]];
-    DATA_MANAGER.userInfo.accountID = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:10000000 to:100000000]];
-    DATA_MANAGER.userInfo.bankInfor = @"云南建行分行";
-    DATA_MANAGER.userInfo.totalAsset = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:10000 to:1000000]];
-    DATA_MANAGER.userInfo.balance = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:10000 to:1000000]];
-    DATA_MANAGER.userInfo.income = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:10000 to:1000000]];
-    
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIF_REQUEST_LOGIN_SUCCESS object:nil];
-    
-    if ([[[ViewControllerManager getInstance] loginSuccessBackViewController] isKindOfClass:[LeftMenuTableViewController class]])
-    {
-        [self.parentViewController dismissViewControllerAnimated:YES completion:^{
-            [[ViewControllerManager getInstance] setLoginSuccessBackViewController:nil];
-        }];
-    }
-    else
-    {
-        //TODO:前往购买界面
-        [self.navigationController popToViewController:[[ViewControllerManager getInstance] loginSuccessBackViewController] animated:YES];
-    }
 }
 
 - (void)didReceiveMemoryWarning {

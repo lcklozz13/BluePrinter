@@ -25,6 +25,7 @@
 #pragma begin mark    - 用户登录信息
 
 @property (nonatomic, assign) BOOL isLogin;//是否已登录
+@property (nonatomic, assign) BOOL isAotoLogin;
 @property (nonatomic, strong) UserInfo *userInfo;
 @property (nonatomic, strong) NSString *sessionId;
 

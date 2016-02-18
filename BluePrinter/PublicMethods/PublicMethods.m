@@ -98,5 +98,39 @@
     return (int)(from + (arc4random() % (to - from + 1)));
 }
 
++ (UIImage *)saveView:(UIView *)resource withSize:(CGSize)saveSize
+{
+    static CGFloat scale = -1.0;
+    
+    if (scale<0.0)
+    {
+        UIScreen *screen = [UIScreen mainScreen];
+        
+        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 4.0)
+        {
+            scale = [screen scale];
+        }
+        else
+        {
+            scale = 0.0;    // Use the standard API
+        }
+    }
+    
+    if (scale>0.0)
+    {
+        UIGraphicsBeginImageContextWithOptions(saveSize, NO, scale);
+    }
+    else
+    {
+        UIGraphicsBeginImageContext(saveSize);
+    }
+    
+    [resource.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
 @end
 

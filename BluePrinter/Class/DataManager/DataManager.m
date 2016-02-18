@@ -54,6 +54,7 @@ static DataManager *instance = nil;
     else {
         self.userInfo = nil;
         self.isLogin = NO;
+        self.isAotoLogin = NO;
         
         [ud setValue:nil forKey:key];
     }
@@ -114,8 +115,11 @@ static DataManager *instance = nil;
 {
     NSString *account = [self getLoginAccount];
     NSString *password = [self getLoginPassword];
-    if (account && password) {
-        [self loginWithAccount:account password:password block:^(BOOL success, NSString *msgInfo) {
+    if (account && password)
+    {
+        self.isAotoLogin = YES;
+        [self loginWithAccount:account password:password block:^(BOOL success, NSString *msgInfo)
+        {
         }];
     }
 }
@@ -123,9 +127,21 @@ static DataManager *instance = nil;
 //登录
 - (void)loginWithAccount:(NSString *)account password:(NSString *)password block:(void(^)(BOOL success, NSString *msgInfo))block
 {
-    [NET_DATA_MANAGER requestLoginWithPhone:account password:password completion:^(NetResponse *response) {
+    [NET_DATA_MANAGER requestLoginWithAccount:account password:password completion:^(NetResponse *response) {
         
         if (response.result) {
+            //FIXME:START -临时文件适配后需要删除-
+            NSMutableDictionary *dict = [NSMutableDictionary new];
+            
+            dict[@"nickname"] = account;
+            dict[@"leaveMoney"] = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:1000 to:1000000]];
+            dict[@"accountID"] = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:10000000 to:100000000]];
+            dict[@"bankInfor"] = @"云南建行分行";
+            dict[@"totalAsset"] = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:10000 to:1000000]];
+            dict[@"balance"] = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:10000 to:1000000]];
+            dict[@"income"] = [[NSString alloc] initWithFormat:@"%d", [PublicMethods getRandomNumber:10000 to:1000000]];
+            response.data = dict;
+            //FIXME:END
             [self setUserData:response.data account:account password:password];
             [[NSNotificationCenter defaultCenter]postNotificationName:NOTIF_REQUEST_LOGIN_SUCCESS object:nil];
         }
@@ -139,6 +155,23 @@ static DataManager *instance = nil;
             block(response.result, response.msgInfo);
         }
     }];
+    
+//    [NET_DATA_MANAGER requestLoginWithPhone:account password:password completion:^(NetResponse *response) {
+//        
+//        if (response.result) {
+//            [self setUserData:response.data account:account password:password];
+//            [[NSNotificationCenter defaultCenter]postNotificationName:NOTIF_REQUEST_LOGIN_SUCCESS object:nil];
+//        }
+//        else
+//            [self setUserData:nil account:[self getLoginAccount] password:nil];
+//        if (response.msgCode == -1)
+//            response.msgInfo = NSLocalizedString(@"网络太差", nil);
+//        else
+//            response.msgInfo = NSLocalizedString(@"账号或密码错误", nil);
+//        if (block) {
+//            block(response.result, response.msgInfo);
+//        }
+//    }];
 }
 
 

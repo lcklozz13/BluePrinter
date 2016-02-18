@@ -298,6 +298,9 @@
 		E1652C431C43B308004E3282 /* MoreDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1652C411C43B308004E3282 /* MoreDetailCell.m */; };
 		E1652C441C43B308004E3282 /* MoreDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1652C421C43B308004E3282 /* MoreDetailCell.xib */; };
 		E16D7B271C745CF3004FDF4B /* RecommendedProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = E16D7B261C745CF3004FDF4B /* RecommendedProductView.m */; };
+		E16D7B2E1C75606F004FDF4B /* LoginLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = E16D7B2D1C75606F004FDF4B /* LoginLockView.m */; };
+		E16D7B3A1C756E27004FDF4B /* KKGestureLockPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = E16D7B371C756E27004FDF4B /* KKGestureLockPreviewView.m */; };
+		E16D7B3B1C756E27004FDF4B /* KKGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = E16D7B391C756E27004FDF4B /* KKGestureLockView.m */; };
 		E182C8861C2D2C9200050471 /* ProductInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E182C8841C2D2C9200050471 /* ProductInfoCell.m */; };
 		E182C8871C2D2C9200050471 /* ProductInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E182C8851C2D2C9200050471 /* ProductInfoCell.xib */; };
 		E182C8931C2D35FF00050471 /* ProductDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E182C8911C2D35FF00050471 /* ProductDescriptionCell.m */; };
@@ -870,6 +873,12 @@
 		E1652C421C43B308004E3282 /* MoreDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreDetailCell.xib; sourceTree = "<group>"; };
 		E16D7B251C745CF3004FDF4B /* RecommendedProductView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendedProductView.h; sourceTree = "<group>"; };
 		E16D7B261C745CF3004FDF4B /* RecommendedProductView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendedProductView.m; sourceTree = "<group>"; };
+		E16D7B2C1C75606F004FDF4B /* LoginLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginLockView.h; sourceTree = "<group>"; };
+		E16D7B2D1C75606F004FDF4B /* LoginLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginLockView.m; sourceTree = "<group>"; };
+		E16D7B361C756E27004FDF4B /* KKGestureLockPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKGestureLockPreviewView.h; sourceTree = "<group>"; };
+		E16D7B371C756E27004FDF4B /* KKGestureLockPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKGestureLockPreviewView.m; sourceTree = "<group>"; };
+		E16D7B381C756E27004FDF4B /* KKGestureLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKGestureLockView.h; sourceTree = "<group>"; };
+		E16D7B391C756E27004FDF4B /* KKGestureLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKGestureLockView.m; sourceTree = "<group>"; };
 		E182C8831C2D2C9200050471 /* ProductInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductInfoCell.h; path = ProductDetail/Cells/ProductInfoCell.h; sourceTree = "<group>"; };
 		E182C8841C2D2C9200050471 /* ProductInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductInfoCell.m; path = ProductDetail/Cells/ProductInfoCell.m; sourceTree = "<group>"; };
 		E182C8851C2D2C9200050471 /* ProductInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductInfoCell.xib; path = ProductDetail/Cells/ProductInfoCell.xib; sourceTree = "<group>"; };
@@ -1014,6 +1023,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62239FFC1C118BD5004A090E /* Accelerate.framework in Frameworks */,
 				E1B766531C4C824700127720 /* AdSupport.framework in Frameworks */,
 				621964451C22B1AB004EF284 /* JavaScriptCore.framework in Frameworks */,
 				621964431C22B19D004EF284 /* libstdc++.6.0.9.tbd in Frameworks */,
@@ -1038,7 +1048,6 @@
 				E15E3B381BDDCFD600976465 /* CoreGraphics.framework in Frameworks */,
 				6223A0001C118BE5004A090E /* AVFoundation.framework in Frameworks */,
 				62239FFE1C118BDC004A090E /* AudioToolbox.framework in Frameworks */,
-				62239FFC1C118BD5004A090E /* Accelerate.framework in Frameworks */,
 				E1B766441C4C813500127720 /* TencentOpenAPI.framework in Frameworks */,
 				620877141BF4356C002178AE /* libz.1.2.5.tbd in Frameworks */,
 				620877101BF43536002178AE /* CFNetwork.framework in Frameworks */,
@@ -1404,6 +1413,7 @@
 		620876701BF42EE5002178AE /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				E16D7B351C756E27004FDF4B /* KKGestureLockView */,
 				4E52B5CF1C37933B00C347F2 /* PNChart */,
 				4E52B5EC1C37933B00C347F2 /* UICountingLabel */,
 				6219642F1C229A2D004EF284 /* ShareSDK-3.1.4 */,
@@ -1627,6 +1637,8 @@
 				4ED797221C2AF98400766A6E /* LeftMenuFootView.h */,
 				4ED797231C2AF98400766A6E /* LeftMenuFootView.m */,
 				4ED797241C2AF98400766A6E /* LeftMenuFootView.xib */,
+				E16D7B2C1C75606F004FDF4B /* LoginLockView.h */,
+				E16D7B2D1C75606F004FDF4B /* LoginLockView.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1978,6 +1990,17 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E16D7B351C756E27004FDF4B /* KKGestureLockView */ = {
+			isa = PBXGroup;
+			children = (
+				E16D7B361C756E27004FDF4B /* KKGestureLockPreviewView.h */,
+				E16D7B371C756E27004FDF4B /* KKGestureLockPreviewView.m */,
+				E16D7B381C756E27004FDF4B /* KKGestureLockView.h */,
+				E16D7B391C756E27004FDF4B /* KKGestureLockView.m */,
+			);
+			path = KKGestureLockView;
+			sourceTree = "<group>";
+		};
 		E1B226FE1C3527ED00973195 /* cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -2289,12 +2312,14 @@
 				E182C8861C2D2C9200050471 /* ProductInfoCell.m in Sources */,
 				E1C2E3911C33BB8700804EB2 /* CashDetailFootView.m in Sources */,
 				4EF094871C4A6FD800B143BF /* SearchViewController.m in Sources */,
+				E16D7B3B1C756E27004FDF4B /* KKGestureLockView.m in Sources */,
 				4E52B5F91C37933B00C347F2 /* PNScatterChart.m in Sources */,
 				620876DA1BF42EE5002178AE /* FMDatabasePool.m in Sources */,
 				4ED7974E1C2C253200766A6E /* ViewControllerManager.m in Sources */,
 				620877311BF4AB78002178AE /* BaseViewController.m in Sources */,
 				620876E81BF42EE5002178AE /* NSDate+RFC1123.m in Sources */,
 				E182C8981C2D42D600050471 /* ContractInformationCell.m in Sources */,
+				E16D7B3A1C756E27004FDF4B /* KKGestureLockPreviewView.m in Sources */,
 				620876CA1BF42EE5002178AE /* ShareFunction.m in Sources */,
 				620876EB1BF42EE5002178AE /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
 				4EACA8C31C28361900BFC62F /* TextInputCell.m in Sources */,
@@ -2445,6 +2470,7 @@
 				E1B8E5571C47A52100970C28 /* SystemMessagesViewController.m in Sources */,
 				4E23432F1C3FE24A00976283 /* RetrieveLoginPwdViewController.m in Sources */,
 				4ED7974C1C2C253200766A6E /* RecommendedViewController.m in Sources */,
+				E16D7B2E1C75606F004FDF4B /* LoginLockView.m in Sources */,
 				6208775A1BF4CB11002178AE /* NSObject+SBJSON.m in Sources */,
 				4EE2B8DD1C316BE200CD3A10 /* InputPayPasswordViewController.m in Sources */,
 				4E52B5CD1C37909000C347F2 /* BalanceBoxViewController.m in Sources */,
