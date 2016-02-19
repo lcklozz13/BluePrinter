@@ -238,7 +238,7 @@
         case 3:
         {
             UITabBarController *tvc = (UITabBarController *)viewController.rootViewController;
-            [tvc setSelectedIndex:1];
+            [tvc setSelectedIndex:0];
         }
             break;
         default:
