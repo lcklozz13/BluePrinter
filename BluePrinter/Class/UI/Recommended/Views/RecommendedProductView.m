@@ -50,6 +50,7 @@
     [ratestring appendAttributedString:Percent];
     title1.attributedText = ratestring;
     [title1 setTextAlignment:NSTextAlignmentCenter];
+    title1.minimumScaleFactor = 0.5f;
     [self addSubview:title1];
     
     UILabel *title2 = [[UILabel alloc] initWithFrame:CGRectMake((self.frame.size.width-126.0f)/2.0, 140, 126, 21)];

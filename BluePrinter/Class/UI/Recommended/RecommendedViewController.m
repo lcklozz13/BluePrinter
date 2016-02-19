@@ -14,6 +14,7 @@
 
 #import "ProductDetailViewController.h"
 #import "RegularProductCell.h"
+#import "RecommendedHeaderView.h"
 
 @interface RecommendedViewController ()<UIScrollViewDelegate>
 //@property (weak, nonatomic) IBOutlet UILabel *title1;
@@ -60,21 +61,11 @@
 //    self.curProduct = product;
 //    [self setRecommendedProduct:product];
     
-    curRecommondProductArray = [[NSMutableArray alloc] init];
-    
-    for (int i=0; i<[PublicMethods getRandomNumber:1 to:5]; i++)
-    {
-        FinancialProductType type = [PublicMethods getRandomNumber:0 to:2];
-        [curRecommondProductArray addObject:[FinancialProduct createFinancialProductFromFinancialProductType:type]];
-    }
-    
-    [self setRecommendedProducts];
-    self.page = 0;
-    [self.leftBtn addTarget:self action:@selector(showForwordItem) forControlEvents:UIControlEventTouchUpInside];
-    [self.rightBtn addTarget:self action:@selector(showNextItem) forControlEvents:UIControlEventTouchUpInside];
+//    [self setRecommendedProducts];
     
     [self tableView:self.tableView registionReuseIdentifierWithNibName:@"RegularProductCell" forCellOrHeaderFootViewFlag:YES];
     [self tableView:self.tableView registionClass:[UITableViewHeaderFooterView class] withReuseIdentifier:@"UITableViewHeaderFooterView" forCellOrHeaderFootViewFlag:NO];
+    [self tableView:self.tableView registionReuseIdentifierWithNibName:@"RecommendedHeaderView" forCellOrHeaderFootViewFlag:NO];
     [self initDatas];
 }
 
@@ -108,6 +99,19 @@
 
 - (void)setRecommendedProducts
 {
+    if (curRecommondProductArray)
+    {
+        return;
+    }
+    
+    curRecommondProductArray = [[NSMutableArray alloc] init];
+    
+    for (int i=0; i<[PublicMethods getRandomNumber:1 to:5]; i++)
+    {
+        FinancialProductType type = [PublicMethods getRandomNumber:0 to:2];
+        [curRecommondProductArray addObject:[FinancialProduct createFinancialProductFromFinancialProductType:type]];
+    }
+    
     CGSize size = CGSizeMake(SCREEN_SIZE.width, self.recommondView.frame.size.height);
     int index = 0;
     
@@ -122,6 +126,10 @@
     }
     
     [self.recommondView setContentSize:CGSizeMake(size.width*index, size.height)];
+    
+    self.page = 0;
+    [self.leftBtn addTarget:self action:@selector(showForwordItem) forControlEvents:UIControlEventTouchUpInside];
+    [self.rightBtn addTarget:self action:@selector(showNextItem) forControlEvents:UIControlEventTouchUpInside];
 }
 
 //- (void)setRecommendedProduct:(FinancialProduct *)product
@@ -202,6 +210,11 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
+    if (section == 0)
+    {
+        return [RecommendedHeaderView ViewHeight];
+    }
+    
     return 4.0f;
 }
 
@@ -212,6 +225,19 @@
 
 - (nullable UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
+    if (section == 0)
+    {
+        RecommendedHeaderView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"RecommendedHeaderView"];
+        view.recommondView.delegate = self;
+        self.recommondView = view.recommondView;
+        self.leftBtn = view.leftBtn;
+        self.rightBtn = view.rightBtn;
+        
+        [self setRecommendedProducts];
+        
+        return view;
+    }
+    
     UITableViewHeaderFooterView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"UITableViewHeaderFooterView"];
     [view.contentView setBackgroundColor:[PublicMethods gs_colorWithHexString:@"EFEFEF"]];
     

@@ -48,9 +48,9 @@
                             </constraints>
                             <state key="normal" image="icon-arrow-r"/>
                         </button>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="180" sectionHeaderHeight="4" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="KEE-J7-4lS">
-                            <rect key="frame" x="0.0" y="222" width="320" height="75"/>
-                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="180" sectionHeaderHeight="4" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="KEE-J7-4lS">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="297"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <connections>
                                 <outlet property="dataSource" destination="-1" id="7HU-oW-v3I"/>
                                 <outlet property="delegate" destination="-1" id="Spx-d4-lL2"/>
@@ -70,7 +70,7 @@
                         <constraint firstAttribute="trailing" secondItem="KEE-J7-4lS" secondAttribute="trailing" id="kc2-5H-lX8"/>
                         <constraint firstItem="T3L-qx-Tbo" firstAttribute="centerY" secondItem="SFA-Hs-UWE" secondAttribute="centerY" id="ro6-Gb-vO4"/>
                         <constraint firstItem="DqD-io-aul" firstAttribute="top" secondItem="rKY-w3-2sz" secondAttribute="top" id="yR3-Ft-Jsb"/>
-                        <constraint firstItem="KEE-J7-4lS" firstAttribute="top" secondItem="DqD-io-aul" secondAttribute="bottom" id="zBT-ch-tXb"/>
+                        <constraint firstItem="KEE-J7-4lS" firstAttribute="top" secondItem="DqD-io-aul" secondAttribute="bottom" constant="-222" id="zBT-ch-tXb"/>
                     </constraints>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-banner" translatesAutoresizingMaskIntoConstraints="NO" id="GyD-vx-tvA">
