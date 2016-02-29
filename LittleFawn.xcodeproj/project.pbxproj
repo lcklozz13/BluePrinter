@@ -1021,6 +1021,7 @@
 		E1F3F70E1C313A0E00A33954 /* SelectBankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectBankViewController.h; path = ProductDetail/SelectBankViewController.h; sourceTree = "<group>"; };
 		E1F3F70F1C313A0E00A33954 /* SelectBankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectBankViewController.m; path = ProductDetail/SelectBankViewController.m; sourceTree = "<group>"; };
 		E1F3F7101C313A0E00A33954 /* SelectBankViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SelectBankViewController.xib; path = ProductDetail/SelectBankViewController.xib; sourceTree = "<group>"; };
+		E1F6E19E1C83E8E8000DEDFF /* ReadMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1933,6 +1934,7 @@
 		E15E3B141BDDB67F00976465 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E1F6E19E1C83E8E8000DEDFF /* ReadMe */,
 				E13968CE1BF046D300C1E8C3 /* BluePrint_PrefixHeader.pch */,
 				E15E3B151BDDB67F00976465 /* main.m */,
 				621764831C0FDBF900613950 /* Localizable.strings */,
